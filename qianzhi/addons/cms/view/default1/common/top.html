@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0">
+{if condition="empty($__CHANNEL__) AND empty($__ARCHIVES__) AND empty($__PAGE__)"}
+<title>{$site.name}</title>
+<meta name="keywords" content="{$site.keywords}" />
+<meta name="description" content="{$site.description}" />
+{else/}
+<title>{cms:config name="cms.title"/}-{$site.name}</title>
+<meta name="keywords" content="{cms:config name='cms.keywords'/}" />
+<meta name="description" content="{cms:config name='cms.description'/}" />
+{/if}
+<!-- link -->
+<link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_601403_l9mrrofm0m.css">
+<link rel="stylesheet" type="text/css" href="https:{$site.ico}">
+<link rel="stylesheet" ype="text/css" href="__CDN__/template/default1/css/common.css?v={$site.version}">
+<link rel="stylesheet" type="text/css"media="screen and (min-width:1280px)" href="__CDN__/template/default1/css/pc.css?v={$site.version}">
+<link rel="stylesheet" type="text/css" media="screen and (max-width:1279px)" href="__CDN__/template/default1/css/wap.css?v={$site.version}">
+<!-- link -->
+<!-- script -->
+<script type="text/javascript" src="__CDN__/template/default1/js/jquery.js?v={$site.version}"></script>
+<script type="text/javascript" src="__CDN__/template/default1/js/img.js?v={$site.version}"></script>
+<script type="text/javascript" src="__CDN__/template/default1/js/easyzoom.js?v={$site.version}"></script>
+<script type="text/javascript" src="__CDN__/template/default1/js/swiper.js?v={$site.version}"></script>
+<!-- script -->
+</head>
+<body class="{if condition="$_SERVER['REQUEST_URI'] neq '/'"}content{/if}">
+{switch name="site.head" }
+{case value="1"}
+<div class="indexNav" id="indexNav">
+     <div class="indexheadbj">
+        <div class="box indexhead">
+                <div class="indexheadL">Welcome to {$site.name}</div>
+                <div class="indexheaR">
+               {cms:blocklist id="block" name="contact" orderby="weigh" orderway="desc" condition="1=foottop"}
+                    <p><a href="{$block.url}" title="">{$block.title} : {:str_replace(["<p>","</p>"], "", $block.content)}</a></p>
+               {/cms:blocklist}
+               </div>
+        </div>
+    </div>
+
+    <div class="indexNavNr box">
+     	<a class="logo" href="/">
+    	{empty name="site.logotxt"}
+        <img class="logo1" src="{$site.logo}">
+        <img class="logo2" src="{$site.logo2}">
+    	{else /}
+            <h1>{$site.logotxt}</h1>
+    	{/empty}
+    	</a>
+
+        <div class="indexNavNrRight">
+        <div class="navA">
+            <ul class="qc" id="nav">
+            {cms:channellist id="nav" type="top" cache="0" condition="1=isnav" row="20"}
+                <li>
+                    <a class="{if $nav->is_active}this{/if}" {if $nav.href eq 0}href="{$nav.url}"{/if}  {if $nav.target eq 1}target="_blank"{/if}>{$nav.name}</a>
+                    {if $nav.has_child}
+                    <ul>
+
+                        {cms:arclist id="navshow" channel="nav['id']"  orderby="weigh" orderway="desc" flag="top" row="20"}
+                        <li><a href="{$navshow.url}" title="{$navshow.title}">{$navshow.title}</a></li>
+                        {/cms:arclist}
+
+                        {cms:channellist id="son" type="son" condition="1=isnav" typeid="nav['id']" cache="0" row="20"}
+
+                            <li><a class="{if $son->is_active}this{/if}"  href="{$son.url}">{$son.name}</a>
+                                 {if $son.has_child}
+                                 <ul>
+                                    {cms:channellist id="sons" condition="1=isnav" type="son" typeid="son['id']" cache="0" }
+                                    <li><a class="{if $sons->is_active}this{/if}"  href="{$sons.url}">{$sons.name}</a></li>
+                                    {/cms:channellist}
+                                </ul>
+                                {/if}
+                            </li>
+
+                        {/cms:channellist}
+                    </ul>
+                    {else /}
+                    <ul>
+                        {cms:arclist id="navshow" channel="nav['id']"  orderby="weigh" orderway="desc" flag="top" }
+                        <li><a href="{$navshow.url}" title="{$navshow.title}">{$navshow.title}</a></li>
+                        {/cms:arclist}
+                    </ul>
+                   {/if}
+               </li>
+            {/cms:channellist}
+            </ul>
+        </div>
+
+        {range name="$site.indexcp" value="1" type="in"}
+        <a class="CartIco" href="/Cart.html"><i class="ico icon-gouwuche"></i><em>0</em></a>
+        {/range}
+
+        {volist name="$site.languages" id="item"}
+        <a class="RequestAQuote" href="{$item}"> {$key} <i class="ico icon-arrow-left-copy"></i></a>
+        {/volist}
+
+        {range name="$site.sousuo" value="1" type="in"}
+        <div class="sousuoA">
+              <form action="/s.html" method="post">
+                <input autocomplete = "off" class="form-control" name="q" data-suggestion-url="/addons/cms/search/suggestion.html" type="text" value="" placeholder="Key words">
+                <button class="ico icon-icon-test"></button>
+            </form>
+    	</div>
+        {/range}
+
+       </div>
+   </div>
+</div>
+{/case}
+
+
+
+
+{case value="2"}
+<div class="indexNavC" id="indexNav">
+    <div class="headC box">
+        <div class="headCNr">
+            <a class="headCNrlogo" href="/">
+            	{empty name="site.logotxt"}
+                <img class="logo1" src="{$site.logo}">
+                <img class="logo2" src="{$site.logo2}">
+            	{else /}
+                    <h1>{$site.logotxt}</h1>
+            	{/empty}
+        	</a>
+            <div class="headCRight">
+                <a><span><i class="ico icon-1-03"></i></span><p><em>Working Days</em>Mon - Sat: 09:00 AM - 06:00 PM</p></a>
+                {cms:blocklist id="block" name="contact" orderby="weigh" orderway="desc" condition="1=foottop"}
+     		    <a><span><i class="ico {$block.image}"></i></span><p><em>{$block.title}</em>{:str_replace(["<p>","</p>"], "", $block.content)}</p></a>
+     			{/cms:blocklist}
+            </div>
+        </div>
+    </div>
+
+
+ <div class="indexNavNrC">
+   <div class="box indexNavNrCBox">
+
+    <ul class="qc" id="navC">
+    {cms:channellist id="nav" type="top" cache="0" condition="1=isnav" row="20"}
+        <li>
+            <a class="{if $nav->is_active}this{/if}" href="{$nav.url}">{$nav.name}</a>
+            {if $nav.has_child}
+            <ul>
+
+                {cms:arclist id="navshow" channel="nav['id']"  orderby="weigh" orderway="desc" flag="top" }
+                <li><a href="{$navshow.url}" title="{$navshow.title}">{$navshow.title}</a></li>
+                {/cms:arclist}
+
+                {cms:channellist id="son" type="son" condition="1=isnav" typeid="nav['id']" cache="0" }
+
+                    <li><a class="{if $son->is_active}this{/if}"  href="{$son.url}">{$son.name}</a>
+                         {if $son.has_child}
+                         <ul>
+                            {cms:channellist id="sons" condition="1=isnav" type="son" typeid="son['id']" cache="0" }
+                            <li><a class="{if $sons->is_active}this{/if}"  href="{$sons.url}">{$sons.name}</a></li>
+                            {/cms:channellist}
+                        </ul>
+                        {/if}
+                    </li>
+
+                {/cms:channellist}
+            </ul>
+            {else /}
+            <ul>
+                {cms:arclist id="navshow" channel="nav['id']"  orderby="weigh" orderway="desc" flag="top" }
+                <li><a href="{$navshow.url}" title="{$navshow.title}">{$navshow.title}</a></li>
+                {/cms:arclist}
+            </ul>
+           {/if}
+        </li>
+    {/cms:channellist}
+    </ul>
+
+    {range name="site.sousuo" value="1" type="in"}
+    <div class="sousuonr">
+           <form action="/s.html" method="post">
+                <input autocomplete = "off" class="form-control" name="q" data-suggestion-url="/addons/cms/search/suggestion.html" type="text" value="" placeholder="Key words">
+                <button class="ico icon-icon-test"></button>
+            </form>
+	</div>
+	{/range}
+
+   </div>
+    </div>
+</div>
+
+    <script>
+    function fixedb(a,b){
+      var topb=$(a).offset().top;
+      $(window).scroll(function(){
+          var topa=$(window).scrollTop();
+          if(topa>topb){
+                 $('html').addClass(b);
+           } else {
+                 $('html').removeClass(b);
+           }
+      });
+    };
+    fixedb('#navC','fixedC');
+    </script>
+
+{/case}
+{/switch}
+
+
+
+
+<!-- wapNav -->
+<div class='WapHead'>
+    <a class="WapLogo" href="/">
+    {empty name="site.logotxt"}
+    <img src="{$site.logo}">
+    {else /}
+    {$site.logotxt}
+	{/empty}</a>
+    <i class='ico menu icon-webicon03'></i>
+</div>
+<div class='WapNav'>
+    <ul class="qc">
+    {cms:channellist id="nav" type="top" cache="0" condition="1=isnav" row="20"}
+        <li>
+            <a class="{if $nav->is_active}this{/if}" {if $nav.href eq 0}href="{$nav.url}"{/if}  {if $nav.target eq 1}target="_blank"{/if}>{$nav.name}</a>
+            {if $nav.has_child}
+            <ul>
+                {cms:arclist id="navshow" channel="nav['id']"  orderby="weigh" orderway="desc" flag="top" row="20"}
+                <li><a href="{$navshow.url}" title="{$navshow.title}">{$navshow.title}</a></li>
+                {/cms:arclist}
+                {cms:channellist id="son" type="son" typeid="nav['id']" cache="0" condition="1=isnav"}
+
+                <li><a class="{if $son->is_active}this{/if}"  href="{$son.url}">{$son.name}</a>
+                     {if $son.has_child}
+
+                     <ul>
+                        {cms:channellist id="sons"  type="son" typeid="son['id']" cache="0" condition="1=isnav" row="20"}
+                        <li><a class="{if $sons->is_active}this{/if}"  href="{$sons.url}">{$sons.name}</a></li>
+                        {/cms:channellist}
+                    </ul>
+                    {/if}
+                </li>
+
+                {/cms:channellist}
+
+            </ul>
+             {else /}
+            <ul>
+                {cms:arclist id="navshow" channel="nav['id']"  orderby="weigh" orderway="desc" flag="top" row="20"}
+                <li><a href="{$navshow.url}" title="{$navshow.title}">{$navshow.title}</a></li>
+                {/cms:arclist}
+            </ul>
+
+            {/if}
+        </li>
+    {/cms:channellist}
+    </ul>
+
+
+
+
+
+    {range name="site.sousuo" value="1" type="in"}
+    <div class="sousuonr">
+          <form action="/s.html" method="post">
+                <input autocomplete = "off" class="form-control" name="q" data-suggestion-url="/addons/cms/search/suggestion.html" type="text" value="" placeholder="Key words">
+                <button class="ico icon-icon-test"></button>
+            </form>
+	</div>
+	{/range}
+
+
+</div>
+<!-- wapNav -->

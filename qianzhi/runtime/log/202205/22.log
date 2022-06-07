@@ -1,0 +1,6 @@
+---------------------------------------------------------------
+[ 2022-05-22T14:08:27+08:00 ] 222.244.106.216 GET au.zjszjs.com/Sell.html
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'top' in 'where clause'
+---------------------------------------------------------------
+[ 2022-05-22T22:07:20+08:00 ] 45.134.144.140 GET 8.129.145.153///remote/fgt_lang?lang=/../../../..//////////dev/
+[ error ] [2]is_file(): open_basedir restriction in effect. File(/www/wwwroot/au.zjszjs.com/thinkphp/lang//../../../..//////////dev/.php) is not within the allowed path(s): (/www/wwwroot/au.zjszjs.com/:/tmp/)

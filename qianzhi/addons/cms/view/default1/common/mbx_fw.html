@@ -1,0 +1,17 @@
+<div class="lanmubanner qc">
+    <img src="{cms:archives name="image" /}" alt="{cms:archives name="title" /}">
+ 	<div class="lanmubannerTxt">
+		 	<div class="box">
+		 		<h2>{cms:archives name="title" /}</h2>
+		 		    
+                  
+                        <div class="Breadcrumbs">
+                        {cms:breadcrumb id="item" key="k"}
+        		        {if $k>1}<i class="ico icon-arrow-left-copy"></i>{/if}<a title="{$item.name}" href="{$item.url}">{$item.name}</a>
+        				{/cms:breadcrumb}
+        				</div>
+                 
+                    
+		 	</div>
+	</div>
+</div>

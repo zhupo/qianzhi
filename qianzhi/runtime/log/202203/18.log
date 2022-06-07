@@ -1,0 +1,6 @@
+---------------------------------------------------------------
+[ 2022-03-18T02:22:47+08:00 ] 185.232.52.38 GET 8.129.145.153:443/remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession
+[ error ] [2]is_file(): open_basedir restriction in effect. File(/www/wwwroot/au.zjszjs.com/thinkphp/lang//../../../..//////////dev/cmdb/sslvpn_websession.php) is not within the allowed path(s): (/www/wwwroot/au.zjszjs.com/:/tmp/)
+---------------------------------------------------------------
+[ 2022-03-18T14:38:11+08:00 ] 139.224.238.204 GET 8.129.145.153/
+[ error ] [8]未定义数组索引: sousuo

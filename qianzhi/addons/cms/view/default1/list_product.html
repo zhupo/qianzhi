@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	{include file="common/meta" /}
+	<link rel="stylesheet" href="__CDN__/assets/qianzhi/frontend/product/list/list.css">
+</head>
+
+<body class="product-wrap">
+{include file="common/header" /}
+{include file="common/mbx" /}
+<!--<div id="header-banner" class="product-header">-->
+<!--	<div class="container relative" style="height: 100%;">-->
+<!--		<div class="product-header-content">-->
+<!--			<p class="title font-bold">PRODUCT CENTER</p>-->
+<!--			<div>-->
+<!--				<span class="glyphicon glyphicon-home"></span>-->
+<!--				<span>Home</span>-->
+<!--				»-->
+<!--				<span>Product Center</span>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</div>-->
+
+
+<main id="product-list-body">
+	<div class="container card-item">
+		<div class="row" id="productList">
+			<script id="productListTemplate" type="text/html">
+				{cms:pagelist id="item"}
+				<div class="col-sm-6 col-md-4">
+					<a href="{$item.url}"  title="{$item.title}">
+					<div class="thumbnail content-item">
+						<div class="card-img-wrap">
+							<img src="{$item.image}" alt="{$item.title}">
+						</div>
+						<div class="caption">
+							<p class="font-bold f20 mt-3">{$item.title}</p>
+							<p class="caption-content multiple-text-ellipsis">{$item.description}</p>
+						</div>
+					</div>
+					</a>
+				</div>
+				{/cms:pagelist}
+			</script>
+		</div>
+		<nav aria-label="Product list pagination" class="text-center nav-pagination">
+			{cms:pageinfo type="full" /}
+		</nav>
+<!--		<div class="Pagination">-->
+<!--			{cms:pageinfo type="full" /}-->
+<!--		</div>-->
+	</div>
+</main>
+
+{include file="common/footer" /}
+{include file="common/script" /}
+
+<script
+		data-main="__CDN__/assets/qianzhi/frontend/product/list/list.js"
+		src="__CDN__/assets/qianzhi/require.min.js"
+>
+</script>
+
+</body>
+
+</html>

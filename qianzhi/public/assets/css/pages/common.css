@@ -1,0 +1,48 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+.d-flex {
+  display: flex;
+}
+.d-iblock {
+  display: inline-block;
+}
+.d-block {
+  display: block;
+}
+.font-bold {
+  font-weight: bold;
+}
+.f12 {
+  font-size: 12px;
+}
+.f14 {
+  font-size: 14px;
+}
+.f18 {
+  font-size: 18px;
+}
+.f20 {
+  font-size: 20px;
+}
+.f28 {
+  font-size: 28px !important;
+}
+.f50 {
+  font-size: 50px;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.multiple-text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+

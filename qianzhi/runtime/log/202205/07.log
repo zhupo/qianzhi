@@ -1,0 +1,12 @@
+---------------------------------------------------------------
+[ 2022-05-07T17:24:14+08:00 ] 8.210.210.172 POST au.zjszjs.com/cms.php/general/config/emailtest
+[ error ] [2]fsockopen(): unable to connect to ssl://hwhzsmtp.qiye.163.com:25 (Connection timed out)
+---------------------------------------------------------------
+[ 2022-05-07T17:26:43+08:00 ] 175.9.131.152 POST au.zjszjs.com/cms.php/general/config/emailtest
+[ error ] [2]fsockopen(): unable to connect to ssl://hwhzsmtp.qiye.163.com:25 (Connection timed out)
+---------------------------------------------------------------
+[ 2022-05-07T17:28:34+08:00 ] 175.9.131.152 POST au.zjszjs.com/d/customer/post.html
+[ error ] [2]fsockopen(): unable to connect to ssl://smtphz.qiye.163.com:25 (Connection timed out)
+---------------------------------------------------------------
+[ 2022-05-07T21:25:28+08:00 ] 45.134.144.140 GET 8.129.145.153///remote/fgt_lang?lang=/../../../..//////////dev/
+[ error ] [2]is_file(): open_basedir restriction in effect. File(/www/wwwroot/au.zjszjs.com/thinkphp/lang//../../../..//////////dev/.php) is not within the allowed path(s): (/www/wwwroot/au.zjszjs.com/:/tmp/)

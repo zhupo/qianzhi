@@ -1,0 +1,37 @@
+@themeColor: #fff;
+
+.product-wrap {
+  padding-top: 0;
+  .product-header {
+    height: 470px;
+    width: 100%;
+    background: url('../../../../img/png/product-banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .product-header-content {
+      position: absolute;
+      left: 15px;
+      bottom: 20px;
+      width: 450px;
+      height: 105px;
+      background-color: rgba(28, 113, 192, 0.5);
+      color: @themeColor;
+      padding: 16px 24px;
+      .title {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .product-wrap {
+    .product-header {
+      .product-header-content {
+        width: auto;
+      }
+    }
+  }
+}

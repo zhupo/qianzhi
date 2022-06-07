@@ -1,0 +1,31 @@
+{include file="common/top" /}
+{include file="common/mbx" /}
+ 
+ 
+ <div class="Faq box">
+     
+     <div class="FqaRight">
+ 
+    {cms:pagelist id="item"}
+        {if condition="$key eq 0"}
+        <dl data-key="{$key}">
+             <dt class="this"> 
+             <span><i class="ico icon-jiahao"></i></span>
+             <h3>{$item.title}</h3></dt>
+             <dd class="BJQ">{$item.content}</dd>
+         </dl>
+      
+       {else/}
+       <dl data-key="{$key}">
+             <dt> 
+             <span><i class="ico icon-jiahao"></i></span>
+             <h3>{$item.title}</h3></dt>
+             <dd class="BJQ">{$item.content}</dd>
+         </dl>
+       {/if}
+    {/cms:pagelist}
+       
+     </div>
+ </div>
+
+{include file="common/foot" /}

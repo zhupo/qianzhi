@@ -1,0 +1,9 @@
+---------------------------------------------------------------
+[ 2021-04-23T10:08:45+08:00 ] 185.191.32.185 GET 8.129.145.153/remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession
+[ error ] [2]is_file(): open_basedir restriction in effect. File(/www/wwwroot/demo.zhoujiangshou.com/thinkphp/lang//../../../..//////////dev/cmdb/sslvpn_websession.php) is not within the allowed path(s): (/www/wwwroot/demo.zhoujiangshou.com/:/tmp/)
+---------------------------------------------------------------
+[ 2021-04-23T13:48:59+08:00 ] 175.0.56.7 GET demo.zhoujiangshou.com/a/pagea.html
+[ error ] [8]未定义数组下标: 0
+---------------------------------------------------------------
+[ 2021-04-23T13:49:06+08:00 ] 175.0.56.7 GET demo.zhoujiangshou.com/a/pagea.html
+[ error ] [8]未定义数组下标: 0

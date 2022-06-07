@@ -1,0 +1,95 @@
+<div class="footA"{notempty name="$site.footimg"}style="background-image: url({$site.footimg});"{/notempty}>
+       <div class="footHead">
+		<div class="footHeadNr box">
+			<em>BE IN TOUCH WITH US:</em>
+		    <form id="form"  onsubmit="return $('.formPoint').show();" method="POST" action="/d/customer/post.html">
+            <input type="hidden" name="__diyname__" value="customer">
+            {:token()}
+				<input placeholder="Enter your e-mail">
+				<button>JOIN US</button>
+			</form>
+
+		</div>
+	</div>
+          <div class="box">
+             <div class="footBNr">
+                <!--公司介绍 -->
+                 <div class="footAA">
+                    <h4>About us</h4>
+                    <p>{$site.description}</p>
+            	 </div>
+
+
+            	 <div class="footAB">
+
+                <h4>Quick link</h4>
+
+        	    {cms:channellist id="channel" type="son" condition="1=isnav"}
+                <a href="{$channel.url}" title="{$channel.name}">{$channel.name}</a>
+                {/cms:channellist}
+              	</div>
+
+
+        	    <!--菜单-->
+        	    <div class="footAB">
+
+                <h4>Services</h4>
+        	    {cms:arclist id="navshow" channel="38"  orderby="weigh" orderway="desc" flag="index" }
+                      <a href="{$navshow.url}" title="{$navshow.title}">{$navshow.title}</a>
+                {/cms:arclist}
+
+        	    <div class="footABNr hide">
+                {cms:arclist id="navshow" channel="51"  orderby="weigh" orderway="desc" flag="index" }
+                      <a href="{$navshow.url}" title="{$navshow.title}"><img src="{$navshow.image}"><h3>{$navshow.title}</h3></a>
+                {/cms:arclist}
+        		</div>
+        		</div>
+
+        	    <!--联系方式-->
+            	<div class="footAC">
+                    <h4>Contact Us</h4>
+                    <ul>
+                    {cms:blocklist id="block" name="contact" orderby="weigh" orderway="desc" condition="1=sf"}
+                    <li><span><i class="ico {$block.image}"></i></span><p><a href="{$block.url}" title="">{$block.title} : {:str_replace(["<p>","</p>"], "", $block.content)}</a></p></li>
+                    {/cms:blocklist}
+
+                     </ul>
+                </div>
+            </div>
+          </div>
+
+          <!--版权-->
+          <div class="copyright">
+            <div class="box">
+               {cms:blocklist id="block" name="zf" orderby="weigh" orderway="desc" }
+              <div class="copyrightRight">
+
+                    {volist name="$block.images|explode=',',###" id="image"}
+                     <a><img src="{$image|cdnurl}"></a>
+                    {/volist}
+
+              </div>
+              {/cms:blocklist}
+
+              <div class="copyrightLeft">
+                <a href="">{$site.beian}</a>
+              </div>
+
+              <div class="shemei">
+			    {cms:blocklist id="block" name="sm" orderby="weigh" orderway="desc" }
+				<a href="{$block.url}" title="{$block.title}" target="_blank"><i class="ico {$block.image}"></i></a>
+			    {/cms:blocklist}
+			</div>
+            </div>
+          </div>
+    </div>
+
+
+ <script type="text/javascript">
+          $('body').append('<div class="formPoint"><div id="loading1"><div class="demo1"></div><div class="demo1"></div><div class="demo1"></div><div class="demo1"></div><div class="demo1"></div></div></div>')
+</script>
+
+
+<script type="text/javascript" src="__CDN__/template/default1/js/common.js?v={$site.version}"></script>
+</body>
+</html>

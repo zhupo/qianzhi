@@ -1,0 +1,54 @@
+{include file="common/top" /}
+{include file="common/mbx" /}
+
+
+<script>
+window.onload  = function () {
+    //读取数据 
+    loadAll();
+    function loadAll(){
+        var list = document.getElementById("Cart");
+      
+        if(localStorage.length>0){
+            var result = "<table>";
+            var total=0;
+            result += "<tr><th>Product</th><th>Product name</th><th>price</th><th>quantity</th><th>Subtotal</th><th>delete</th></tr>";
+            for(var i=0;i<localStorage.length;i++){
+                var id = localStorage.key(i);
+                if(!isNaN(id)){
+                var content = localStorage.getItem(id);
+                var data = ''+content+'';
+                var obj = JSON.parse(data);
+                var sum=(obj["jiage"]*obj["quantity"]);
+                result += "<tr><td><img src="+obj["img"]+"></td><td>"+obj["title"]+"</td><td>"+obj["jiage"]+"</td><td>"+obj["quantity"]+"</td><td>"+ sum+"</td>" +"<td><a href='javascript:;' id='del' value='"+id+"'>X</a></td></tr>";
+                    total+=sum;
+                }
+            }
+            result+= "<tr><td colspan='4'><a class='Backshopping' href='javascript:history.go(-1)'>Back to shopping</a></td><td>"+total+"</td><td><a class='Proceedto' href='Cart2.html'>Proceed to checkout</a></td></tr>";
+            list.innerHTML = result ;
+        }else{
+            list.innerHTML = "Cart is empty !";
+        }
+
+        // for循环删除购物车商品
+        let del = document.querySelectorAll('#del');
+        for (let i = 0; i < del.length; i++) {
+            del[i].onclick = function () {
+                var val =$(this).attr("value"); 
+                localStorage.removeItem(val);
+                loadAll();
+            }
+        }
+    }
+
+};
+</script>
+
+<div id="Cart" class="box"></div>
+
+ 
+ 
+
+{include file="common/foot" /}
+
+ 

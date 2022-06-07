@@ -1,0 +1,1224 @@
+---------------------------------------------------------------
+[ 2021-03-02T17:59:57+08:00 ] 175.0.57.161 POST www.zhoujiangshou.top/d/customer/post.html
+[ error ] [0]语法解析错误: syntax error, unexpected 'public' (T_PUBLIC)
+---------------------------------------------------------------
+[ 2021-03-02T18:04:55+08:00 ] 175.0.57.161 POST www.zhoujiangshou.top/d/customer/post.html
+[ error ] [0]语法解析错误: syntax error, unexpected 'public' (T_PUBLIC)
+---------------------------------------------------------------
+[ 2021-03-02T18:08:28+08:00 ] 175.0.57.161 GET www.zhoujiangshou.top/cms.php/ajax/wipecache?type=all&_=1614678470287
+[运行时间：0.049045s] [吞吐率：20.39req/s] [内存消耗：3,679.99kb] [文件加载：139]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002614s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002640s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000235s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'wipecache',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=h3bssfmr6umj71dfjc0j5id8hk; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'host' => 'www.zhoujiangshou.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'all',
+  '_' => '1614678470287',
+)
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001200s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->wipecache[ /www/wwwroot/zhoujiangshou.top/application/admin/controller/Ajax.php ]
+[ info ] [ BEHAVIOR ] Run \addons\tinymce\Tinymce @wipecache_after [ RunTime:0.000303s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000118s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-02T18:08:28+08:00 ] 175.0.57.161 GET www.zhoujiangshou.top/
+[运行时间：0.096202s] [吞吐率：10.39req/s] [内存消耗：4,758.08kb] [文件加载：153]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002543s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002571s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000236s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'index',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=h3bssfmr6umj71dfjc0j5id8hk; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-user' => '?1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => 'www.zhoujiangshou.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /www/wwwroot/zhoujiangshou.top/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001319s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/addons/cms/lang/zh-cn.php
+[ info ] [ VIEW ] /www/wwwroot/zhoujiangshou.top/addons/cms/view/default/index.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000115s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-02T18:08:30+08:00 ] 175.0.57.161 GET www.zhoujiangshou.top/Contact.html
+[运行时间：0.123753s] [吞吐率：8.08req/s] [内存消耗：5,053.24kb] [文件加载：159]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002459s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002483s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000211s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'channel',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=h3bssfmr6umj71dfjc0j5id8hk; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://www.zhoujiangshou.top/',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-user' => '?1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => 'www.zhoujiangshou.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'diyname' => 'Contact',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /www/wwwroot/zhoujiangshou.top/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001220s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/addons/cms/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/zhoujiangshou.top/addons/cms/view/default/channel_contact.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+  4 => '__FILTERLIST__',
+  5 => '__ORDERLIST__',
+  6 => '__PAGELIST__',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000066s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-02T18:08:35+08:00 ] 175.0.57.161 POST www.zhoujiangshou.top/d/customer/post.html
+[运行时间：0.067390s] [吞吐率：14.84req/s] [内存消耗：2,641.94kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000029s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002509s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002538s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000221s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'diyform',
+    'action' => 'post',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=h3bssfmr6umj71dfjc0j5id8hk; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://www.zhoujiangshou.top/Contact.html',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-user' => '?1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'https://www.zhoujiangshou.top',
+  'cache-control' => 'max-age=0',
+  'content-length' => '190',
+  'host' => 'www.zhoujiangshou.top',
+)
+[ info ] [ PARAM ] array (
+  '__diyname__' => 'customer',
+  '__token__' => 'e6a352f676f5cc6ff84d9c117f369f76',
+  'row' => 
+  array (
+    'name' => '周江寿',
+    'telephone' => '15974119545',
+    'email' => 'admin123@qq.com',
+    'content' => '123',
+  ),
+  'diyname' => 'customer',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /www/wwwroot/zhoujiangshou.top/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001258s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected 'public' (T_PUBLIC)[/www/wwwroot/zhoujiangshou.top/addons/cms/controller/Diyform.php:261]
+---------------------------------------------------------------
+[ 2021-03-02T18:10:46+08:00 ] 175.0.57.161 POST www.zhoujiangshou.top/cms.php/general.config/edit
+[运行时间：0.143412s] [吞吐率：6.97req/s] [内存消耗：4,361.34kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002585s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002622s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000270s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'general.config',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=h3bssfmr6umj71dfjc0j5id8hk; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'https://www.zhoujiangshou.top',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '328',
+  'host' => 'www.zhoujiangshou.top',
+)
+[ info ] [ PARAM ] array (
+  '__token__' => 'd28c343770415919fc32757de1e6fa94',
+  'row' => 
+  array (
+    'mail_type' => '1',
+    'mail_smtp_host' => 'smtp.qq.com',
+    'mail_smtp_port' => '465',
+    'mail_smtp_user' => '1911689555@qq.com',
+    'mail_smtp_pass' => 'ryualjehaihpbedc',
+    'mail_verify_type' => '2',
+    'mail_from' => '1911689555@qq.com',
+    'yes' => '0',
+    'email' => '913083812@qq.com',
+  ),
+)
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001435s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/public/../application/admin/lang/zh-cn/general/config.php
+[ info ] [ RUN ] app\admin\controller\general\Config->edit[ /www/wwwroot/zhoujiangshou.top/application/admin/controller/general/Config.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.075135s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-02T18:10:48+08:00 ] 175.0.57.161 POST www.zhoujiangshou.top/cms.php/general.config/edit
+[运行时间：0.160227s] [吞吐率：6.24req/s] [内存消耗：4,366.98kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000027s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003034s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003063s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000222s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'general.config',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=h3bssfmr6umj71dfjc0j5id8hk; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'https://www.zhoujiangshou.top',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '328',
+  'host' => 'www.zhoujiangshou.top',
+)
+[ info ] [ PARAM ] array (
+  '__token__' => '11981e564801ee04e1d0cc42467a9960',
+  'row' => 
+  array (
+    'mail_type' => '1',
+    'mail_smtp_host' => 'smtp.qq.com',
+    'mail_smtp_port' => '465',
+    'mail_smtp_user' => '1911689555@qq.com',
+    'mail_smtp_pass' => 'ryualjehaihpbedc',
+    'mail_verify_type' => '2',
+    'mail_from' => '1911689555@qq.com',
+    'yes' => '0',
+    'email' => '913083812@qq.com',
+  ),
+)
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001344s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/public/../application/admin/lang/zh-cn/general/config.php
+[ info ] [ RUN ] app\admin\controller\general\Config->edit[ /www/wwwroot/zhoujiangshou.top/application/admin/controller/general/Config.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.007536s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-02T18:11:01+08:00 ] 175.0.57.161 GET www.zhoujiangshou.top/d/customer/post.html
+[运行时间：0.029825s] [吞吐率：33.53req/s] [内存消耗：2,639.53kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002408s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002433s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000232s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'diyform',
+    'action' => 'post',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=h3bssfmr6umj71dfjc0j5id8hk; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-user' => '?1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => 'www.zhoujiangshou.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'diyname' => 'customer',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /www/wwwroot/zhoujiangshou.top/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001330s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected 'public' (T_PUBLIC)[/www/wwwroot/zhoujiangshou.top/addons/cms/controller/Diyform.php:261]
+---------------------------------------------------------------
+[ 2021-03-02T18:11:03+08:00 ] 175.0.57.161 GET www.zhoujiangshou.top/favicon.ico
+[运行时间：0.031127s] [吞吐率：32.13req/s] [内存消耗：2,320.32kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002417s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002460s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000225s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=h3bssfmr6umj71dfjc0j5id8hk; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'sec-fetch-mode' => 'no-cors',
+  'sec-fetch-site' => 'none',
+  'host' => 'www.zhoujiangshou.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-02T18:11:04+08:00 ] 175.0.57.161 GET www.zhoujiangshou.top/
+[运行时间：0.082675s] [吞吐率：12.10req/s] [内存消耗：4,474.52kb] [文件加载：149]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002733s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002780s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000231s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'index',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=h3bssfmr6umj71dfjc0j5id8hk; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-user' => '?1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => 'www.zhoujiangshou.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /www/wwwroot/zhoujiangshou.top/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001407s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/addons/cms/lang/zh-cn.php
+[ info ] [ VIEW ] /www/wwwroot/zhoujiangshou.top/addons/cms/view/default/index.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000074s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-02T18:11:05+08:00 ] 175.0.57.161 GET www.zhoujiangshou.top/Contact.html
+[运行时间：0.083803s] [吞吐率：11.93req/s] [内存消耗：4,628.06kb] [文件加载：153]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003182s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003210s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000251s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'channel',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=h3bssfmr6umj71dfjc0j5id8hk; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://www.zhoujiangshou.top/',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-user' => '?1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => 'www.zhoujiangshou.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'diyname' => 'Contact',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /www/wwwroot/zhoujiangshou.top/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001365s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/addons/cms/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/zhoujiangshou.top/addons/cms/view/default/channel_contact.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+  4 => '__FILTERLIST__',
+  5 => '__ORDERLIST__',
+  6 => '__PAGELIST__',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000090s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-02T18:25:51+08:00 ] 185.191.171.40 GET zhoujiangshou.top/chanpinzhongxin/gaochunbacai/taocibacai/20170222/356.html
+[运行时间：0.026122s] [吞吐率：38.28req/s] [内存消耗：2,318.25kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002612s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002634s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000206s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'chanpinzhongxin',
+    1 => 'gaochunbacai',
+    2 => 'taocibacai',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (compatible; SemrushBot/7~bl; +http://www.semrush.com/bot.html)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html, application/rss+xml, application/atom+xml, text/xml, text/rss+xml, application/xhtml+xml',
+  'host' => 'zhoujiangshou.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => '356',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-02T18:30:48+08:00 ] 185.191.171.20 GET zhoujiangshou.top/chanpinzhongxin/guijinshu/bo
+[运行时间：0.030705s] [吞吐率：32.57req/s] [内存消耗：2,317.20kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002642s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002668s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000332s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'chanpinzhongxin',
+    1 => 'guijinshu',
+    2 => 'bo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (compatible; SemrushBot/7~bl; +http://www.semrush.com/bot.html)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html, application/rss+xml, application/atom+xml, text/xml, text/rss+xml, application/xhtml+xml',
+  'host' => 'zhoujiangshou.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-02T18:49:39+08:00 ] 209.17.97.82 GET www.zhoujiangshou.top/
+[运行时间：0.083220s] [吞吐率：12.02req/s] [内存消耗：4,465.73kb] [文件加载：149]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002690s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002727s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000222s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'index',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (compatible; Nimbostratus-Bot/v1.3.2; http://cloudsystemnetworks.com)',
+  'host' => 'www.zhoujiangshou.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /www/wwwroot/zhoujiangshou.top/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001408s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/addons/cms/lang/zh-cn.php
+[ info ] [ VIEW ] /www/wwwroot/zhoujiangshou.top/addons/cms/view/default/index.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000073s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-02T18:54:10+08:00 ] 185.191.171.41 GET zhoujiangshou.top/products/list_2_4.html
+[运行时间：0.034857s] [吞吐率：28.69req/s] [内存消耗：2,316.92kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002973s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002996s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000373s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'products',
+    1 => 'list_2_4',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (compatible; SemrushBot/7~bl; +http://www.semrush.com/bot.html)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html, application/rss+xml, application/atom+xml, text/xml, text/rss+xml, application/xhtml+xml',
+  'host' => 'zhoujiangshou.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-02T19:25:03+08:00 ] 34.77.162.27 GET www.zhoujiangshou.top/
+[运行时间：0.158768s] [吞吐率：6.30req/s] [内存消耗：4,466.27kb] [文件加载：149]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003209s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003238s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000230s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'index',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Expanse indexes the network perimeters of our customers. If you have any questions or concerns, please reach out to: scaninfo@expanseinc.com',
+  'host' => 'www.zhoujiangshou.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /www/wwwroot/zhoujiangshou.top/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001542s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/addons/cms/lang/zh-cn.php
+[ info ] [ VIEW ] /www/wwwroot/zhoujiangshou.top/addons/cms/view/default/index.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000079s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-02T19:34:13+08:00 ] 185.191.171.36 GET zhoujiangshou.top/chanpinzhongxin/xitujinshu/gcxtjs/
+[运行时间：0.029023s] [吞吐率：34.46req/s] [内存消耗：2,317.23kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002731s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002758s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000253s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'chanpinzhongxin',
+    1 => 'xitujinshu',
+    2 => 'gcxtjs',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (compatible; SemrushBot/7~bl; +http://www.semrush.com/bot.html)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html, application/rss+xml, application/atom+xml, text/xml, text/rss+xml, application/xhtml+xml',
+  'host' => 'zhoujiangshou.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-02T20:05:52+08:00 ] 185.191.171.26 GET zhoujiangshou.top/chanpinzhongxin/wu_mu_tan_nijiqixiangguanchanpin/mu/
+[运行时间：0.027774s] [吞吐率：36.00req/s] [内存消耗：2,317.37kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002424s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002444s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000236s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'chanpinzhongxin',
+    1 => 'wu_mu_tan_nijiqixiangguanchanpin',
+    2 => 'mu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (compatible; SemrushBot/7~bl; +http://www.semrush.com/bot.html)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html, application/rss+xml, application/atom+xml, text/xml, text/rss+xml, application/xhtml+xml',
+  'host' => 'zhoujiangshou.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-02T20:11:35+08:00 ] 185.191.171.1 GET zhoujiangshou.top/chanpinzhongxin/gaochuncailiao/gaochunwu/20170223/479.html
+[运行时间：0.032083s] [吞吐率：31.17req/s] [内存消耗：2,318.25kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002426s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002452s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000227s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'chanpinzhongxin',
+    1 => 'gaochuncailiao',
+    2 => 'gaochunwu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (compatible; SemrushBot/7~bl; +http://www.semrush.com/bot.html)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html, application/rss+xml, application/atom+xml, text/xml, text/rss+xml, application/xhtml+xml',
+  'host' => 'zhoujiangshou.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => '479',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-02T20:16:55+08:00 ] 54.36.148.219 GET www.zhoujiangshou.top/
+[运行时间：0.094339s] [吞吐率：10.60req/s] [内存消耗：4,466.48kb] [文件加载：149]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003106s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003141s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000315s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'index',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'deflate, gzip, br',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (compatible; AhrefsBot/7.0; +http://ahrefs.com/robot/)',
+  'host' => 'www.zhoujiangshou.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /www/wwwroot/zhoujiangshou.top/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001526s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/addons/cms/lang/zh-cn.php
+[ info ] [ VIEW ] /www/wwwroot/zhoujiangshou.top/addons/cms/view/default/index.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000081s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-02T20:28:08+08:00 ] 185.191.171.35 GET zhoujiangshou.top/chanpinzhongxin/xitujinshu/xthhw/20190214/520.html
+[运行时间：0.029293s] [吞吐率：34.14req/s] [内存消耗：2,318.13kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000029s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003014s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003051s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000233s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'chanpinzhongxin',
+    1 => 'xitujinshu',
+    2 => 'xthhw',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (compatible; SemrushBot/7~bl; +http://www.semrush.com/bot.html)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html, application/rss+xml, application/atom+xml, text/xml, text/rss+xml, application/xhtml+xml',
+  'host' => 'zhoujiangshou.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => '520',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-02T21:06:02+08:00 ] 185.191.171.42 GET zhoujiangshou.top/chanpinzhongxin/wu_mu_tan_nijiqixiangguanchanpin/tan/20170223/469.html
+[运行时间：0.053658s] [吞吐率：18.64req/s] [内存消耗：2,318.33kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000029s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004053s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004097s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000332s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'chanpinzhongxin',
+    1 => 'wu_mu_tan_nijiqixiangguanchanpin',
+    2 => 'tan',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (compatible; SemrushBot/7~bl; +http://www.semrush.com/bot.html)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html, application/rss+xml, application/atom+xml, text/xml, text/rss+xml, application/xhtml+xml',
+  'host' => 'zhoujiangshou.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => '469',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-02T21:18:42+08:00 ] 185.191.171.1 GET zhoujiangshou.top/products/
+[运行时间：0.151677s] [吞吐率：6.59req/s] [内存消耗：4,361.40kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003367s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003399s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000285s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'channel',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (compatible; SemrushBot/7~bl; +http://www.semrush.com/bot.html)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html, application/rss+xml, application/atom+xml, text/xml, text/rss+xml, application/xhtml+xml',
+  'host' => 'zhoujiangshou.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'diyname' => 'products',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /www/wwwroot/zhoujiangshou.top/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.005748s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/addons/cms/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/zhoujiangshou.top/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+  4 => 'code',
+  5 => 'msg',
+  6 => 'data',
+  7 => 'url',
+  8 => 'wait',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000097s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-02T22:06:19+08:00 ] 185.191.171.43 GET zhoujiangshou.top/chanpinzhongxin/guijinshu/liao/20170223/489.html
+[运行时间：0.099347s] [吞吐率：10.07req/s] [内存消耗：2,318.12kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.016215s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.016253s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000307s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'chanpinzhongxin',
+    1 => 'guijinshu',
+    2 => 'liao',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (compatible; SemrushBot/7~bl; +http://www.semrush.com/bot.html)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html, application/rss+xml, application/atom+xml, text/xml, text/rss+xml, application/xhtml+xml',
+  'host' => 'zhoujiangshou.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => '489',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-02T22:10:44+08:00 ] 185.191.171.1 GET zhoujiangshou.top/chanpinzhongxin/gaochuncailiao/gaochunwu/20170223/480.html
+[运行时间：0.060144s] [吞吐率：16.63req/s] [内存消耗：2,318.25kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.019246s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.019282s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000273s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'chanpinzhongxin',
+    1 => 'gaochuncailiao',
+    2 => 'gaochunwu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (compatible; SemrushBot/7~bl; +http://www.semrush.com/bot.html)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html, application/rss+xml, application/atom+xml, text/xml, text/rss+xml, application/xhtml+xml',
+  'host' => 'zhoujiangshou.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => '480',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-02T23:01:06+08:00 ] 185.191.171.1 GET zhoujiangshou.top/chanpinzhongxin/gaochuncailiao/gaochunnie/20170222/414.html
+[运行时间：0.037500s] [吞吐率：26.67req/s] [内存消耗：2,318.25kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002875s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002939s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000258s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'chanpinzhongxin',
+    1 => 'gaochuncailiao',
+    2 => 'gaochunnie',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (compatible; SemrushBot/7~bl; +http://www.semrush.com/bot.html)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html, application/rss+xml, application/atom+xml, text/xml, text/rss+xml, application/xhtml+xml',
+  'host' => 'zhoujiangshou.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => '414',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-02T23:32:38+08:00 ] 185.191.171.12 GET zhoujiangshou.top/chanpinzhongxin/xisanjinshuxilie/bi/20170222/383.html
+[运行时间：0.036552s] [吞吐率：27.36req/s] [内存消耗：2,318.17kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002774s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002800s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000339s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'chanpinzhongxin',
+    1 => 'xisanjinshuxilie',
+    2 => 'bi',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (compatible; SemrushBot/7~bl; +http://www.semrush.com/bot.html)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html, application/rss+xml, application/atom+xml, text/xml, text/rss+xml, application/xhtml+xml',
+  'host' => 'zhoujiangshou.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => '383',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-02T23:34:23+08:00 ] 185.191.171.44 GET zhoujiangshou.top/chanpinzhongxin/wu_mu_tan_nijiqixiangguanchanpin/ni/20170223/474.html
+[运行时间：0.035667s] [吞吐率：28.04req/s] [内存消耗：2,318.33kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002511s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002531s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000288s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'chanpinzhongxin',
+    1 => 'wu_mu_tan_nijiqixiangguanchanpin',
+    2 => 'ni',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (compatible; SemrushBot/7~bl; +http://www.semrush.com/bot.html)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html, application/rss+xml, application/atom+xml, text/xml, text/rss+xml, application/xhtml+xml',
+  'host' => 'zhoujiangshou.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => '474',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-02T23:36:20+08:00 ] 185.191.171.23 GET zhoujiangshou.top/products/list_2_7.html
+[运行时间：0.029455s] [吞吐率：33.95req/s] [内存消耗：2,316.92kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003045s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003070s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000212s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'products',
+    1 => 'list_2_7',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (compatible; SemrushBot/7~bl; +http://www.semrush.com/bot.html)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html, application/rss+xml, application/atom+xml, text/xml, text/rss+xml, application/xhtml+xml',
+  'host' => 'zhoujiangshou.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-02T23:41:10+08:00 ] 185.191.171.2 GET zhoujiangshou.top/chanpinzhongxin/guangdian/lzzrj
+[运行时间：0.040967s] [吞吐率：24.41req/s] [内存消耗：2,317.23kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004103s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004168s ]
+[ info ] [ LANG ] /www/wwwroot/zhoujiangshou.top/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000356s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'chanpinzhongxin',
+    1 => 'guangdian',
+    2 => 'lzzrj',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (compatible; SemrushBot/7~bl; +http://www.semrush.com/bot.html)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html, application/rss+xml, application/atom+xml, text/xml, text/rss+xml, application/xhtml+xml',
+  'host' => 'zhoujiangshou.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {include file="common/meta" /}
+    <link rel="stylesheet" href="__CDN__/assets/qianzhi/frontend/product/detail/detail.css">
+</head>
+
+<body class="product-wrap">
+{include file="common/header" /}
+<div id="header-banner" class="product-header">
+    <div class="container relative" style="height: 100%;">
+        <div class="product-header-content">
+            <p class="title font-bold">PRODUCT CENTER</p>
+            <div>
+                <span class="glyphicon glyphicon-home"></span>
+                <span>Home</span>
+                »
+                <span>Product Center</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<main id="product-detail-body">
+    <div class="part-of-main-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" style="padding-right: 50px;">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="big-img-wrap"><img src="{$__ARCHIVES__.image}" alt="product"></div>
+                        </div>
+                        {notempty name="$__ARCHIVES__.images"}
+                        <div class="col-md-3 d-flex small-img-wrap">
+                            {volist name="$__ARCHIVES__.images|explode=',',###" id="image"}
+                                <div><img src="{$image|cdnurl}"></div>
+                            {/volist}
+                        </div>
+                        {/notempty}
+                    </div>
+                </div>
+                <div class="col-md-6" style="padding-left: 50px;">
+                    <div class="product-name">
+                        <span class="f22 font-bold mr-4 title">Fire Robot</span>
+                        <span>Model: {$__ARCHIVES__.model}</span>
+                    </div>
+                    <p class="mt-2 mb-4 f12">{$__ARCHIVES__.description}</p>
+                    <p class="font-bold f12 mb-1">Main Specifications</p>
+                    {$__ARCHIVES__.content}
+<!--                    <table class="table table-bordered">-->
+<!--                        <colgroup>-->
+<!--                            <col width="60%">-->
+<!--                            <col width="40%">-->
+<!--                        </colgroup>-->
+<!--                        <tbody>-->
+<!--                        <tr>-->
+<!--                            <td>Maximum driving speed</td>-->
+<!--                            <td>6km/h</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>Maximum driving speed</td>-->
+<!--                            <td>6km/h</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>Maximum driving speed</td>-->
+<!--                            <td>6km/h</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>Maximum driving speed</td>-->
+<!--                            <td>6km/h</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>Maximum driving speed</td>-->
+<!--                            <td>6km/h</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>Maximum driving speed</td>-->
+<!--                            <td>6km/h</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>Maximum driving speed</td>-->
+<!--                            <td>6km/h</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>Maximum driving speed</td>-->
+<!--                            <td>6km/h</td>-->
+<!--                        </tr>-->
+<!--                        </tbody>-->
+<!--                    </table>-->
+                </div>
+            </div>
+            {notempty name="$__ARCHIVES__.tedian"}
+            {$__ARCHIVES__.tedian}
+
+<!--            <div class="product-function-item">-->
+<!--                <span class="icon mr-2 mt-1 glyphicon glyphicon-triangle-right"></span>-->
+<!--                <div>-->
+<!--                    <p class="title mb-2 font-bold">fire life detection and dangerous goods detection</p>-->
+<!--                    <div class="item-content">-->
+<!--                        Remote operation by personal, instead of manually entering the fire scene for investigation and detection, obtaining information such as life.-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="product-function-item">-->
+<!--                <span class="icon mr-2 mt-1 glyphicon glyphicon-triangle-right"></span>-->
+<!--                <div>-->
+<!--                    <p class="title mb-2 font-bold">fire life detection and dangerous goods detection</p>-->
+<!--                    <div class="item-content">-->
+<!--                        Remote operation by personal, instead of manually entering the fire scene for investigation and detection, obtaining information such as lif characteristics and dangerous Remote operation by personal, instead of manually entering the fire scene for investigation and detection, obtaining information such as lif characteristics and dangerous Remote operation by personal, instead of manually entering the fire scene for dangerous.-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="product-function-item">-->
+<!--                <span class="icon mr-2 mt-1 glyphicon glyphicon-triangle-right"></span>-->
+<!--                <div>-->
+<!--                    <p class="title mb-2 font-bold">fire life detection and dangerous goods detection</p>-->
+<!--                    <div class="item-content">-->
+<!--                        Remote operation by personal, instead of manually entering the fire scene for investigation and detection, obtaining information such as lif  personal, instead of manually entering the fire scene for investigation and detection, obtaining information such as lif characteristics and dangerous.-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+            {/notempty}
+
+
+            <div class="row">
+                <div class="col-md-6" style="padding-right: 50px;">
+                    <p class="font-bold f12 mb-1 title">List of main parts</p>
+                    {$__ARCHIVES__.Introduction}
+<!--                    <table class="table table-bordered">-->
+<!--                        <colgroup>-->
+<!--                            <col width="20%">-->
+<!--                            <col width="30%">-->
+<!--                            <col width="25%">-->
+<!--                            <col width="25%">-->
+<!--                        </colgroup>-->
+<!--                        <thead>-->
+<!--                        <tr>-->
+<!--                            <th>No.</th>-->
+<!--                            <th>Part Name</th>-->
+<!--                            <th>Quantity</th>-->
+<!--                            <th>Channel</th>-->
+<!--                        </tr>-->
+<!--                        </thead>-->
+<!--                        <tbody>-->
+<!--                        <tr>-->
+<!--                            <td>1</td>-->
+<!--                            <td>body</td>-->
+<!--                            <td>1</td>-->
+<!--                            <td>Homegrown</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>2</td>-->
+<!--                            <td>body</td>-->
+<!--                            <td>1</td>-->
+<!--                            <td>Homegrown</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>3</td>-->
+<!--                            <td>body</td>-->
+<!--                            <td>1</td>-->
+<!--                            <td>Homegrown</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>4</td>-->
+<!--                            <td>body</td>-->
+<!--                            <td>1</td>-->
+<!--                            <td>Homegrown</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>5</td>-->
+<!--                            <td>body</td>-->
+<!--                            <td>1</td>-->
+<!--                            <td>Homegrown</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>6</td>-->
+<!--                            <td>body</td>-->
+<!--                            <td>1</td>-->
+<!--                            <td>Homegrown</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>7</td>-->
+<!--                            <td>body</td>-->
+<!--                            <td>1</td>-->
+<!--                            <td>Homegrown</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>8</td>-->
+<!--                            <td>body</td>-->
+<!--                            <td>1</td>-->
+<!--                            <td>Homegrown</td>-->
+<!--                        </tr>-->
+<!--                        </tbody>-->
+<!--                    </table>-->
+                </div>
+                {notempty name="$__ARCHIVES__.use"}
+                <div class="col-md-6" style="padding-left: 50px;">
+                    <p class="font-bold f12 mb-2 title">Conditions of Use</p>
+                    <div class="conditions-list pl-2">
+                        {$__ARCHIVES__.use}
+<!--                        <p>(1) Robot changing power supply: 220VAC, 400w</p>-->
+<!--                        <p>(2) Changing conditions: 29.4V, 5A</p>-->
+<!--                        <p>(3) Working temperature: 20 ~ +55</p>-->
+<!--                        <p>(4) Working humidity: < 95%</p>-->
+                    </div>
+                </div>
+                {/notempty}
+            </div>
+        </div>
+    </div>
+
+    {notempty name="$__ARCHIVES__.video"}
+    <div class="part-of-video-wrap">
+        <div class="container text-center">
+<!--            <video class="video" poster="" src="__CDN__/assets/qianzhi/frontend/product/detail/mlxg.mp4" controls="controls" controlsList="nodownload">-->
+<!--                您的浏览器不支持 video 标签。-->
+<!--            </video>-->
+            <video class="video" poster="" src="{$__ARCHIVES__.video}" controls="controls" controlsList="nodownload">
+                您的浏览器不支持 video 标签。
+            </video>
+        </div>
+    </div>
+    {/notempty}
+
+    {notempty name="$__ARCHIVES__.images"}
+    <div class="part-of-appearance">
+        <div class="container">
+            <div class="title font-bold f30 text-center">Appearance design drawing</div>
+            <div class="row">
+                {volist name="$__ARCHIVES__.images|explode=',',###" id="image"}
+                <div class="col-md-4">
+                    <div class="img-wrap">
+                        <img src="{$image|cdnurl}" alt="product">
+                    </div>
+                </div>
+                {/volist}
+            </div>
+        </div>
+    </div>
+    {/notempty}
+
+</main>
+
+{include file="common/footer" /}
+{include file="common/script" /}
+
+<script
+        data-main="__CDN__/assets/qianzhi/frontend/product/detail/detail.js"
+        src="__CDN__/assets/qianzhi/require.min.js"
+>
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,2347 @@
+---------------------------------------------------------------
+[ 2021-03-24T16:10:18+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/
+[运行时间：0.377930s] [吞吐率：2.65req/s] [内存消耗：4,870.78kb] [文件加载：153]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000211s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.007952s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007985s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.001113s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'index',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] think\addons\Route->execute[ D:\phpstudy\PHPTutorial\WWW\newcms\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.005301s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\addons\cms\lang\zh-cn.php
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\newcms\addons\cms\view\default\index.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000408s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:10:57+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/
+[运行时间：0.254672s] [吞吐率：3.93req/s] [内存消耗：4,590.68kb] [文件加载：149]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000029s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004372s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004409s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000459s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'index',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] think\addons\Route->execute[ D:\phpstudy\PHPTutorial\WWW\newcms\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.002156s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\addons\cms\lang\zh-cn.php
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\newcms\addons\cms\view\default\index.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000106s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:02+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php
+[运行时间：0.206746s] [吞吐率：4.84req/s] [内存消耗：4,715.34kb] [文件加载：152]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003967s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003998s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000424s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002117s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\view\index\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'menulist',
+  6 => 'navlist',
+  7 => 'fixedmenu',
+  8 => 'referermenu',
+  9 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000070s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000576s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:03+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/cms/archives?addtabs=1
+[运行时间：0.215931s] [吞吐率：4.63req/s] [内存消耗：4,917.48kb] [文件加载：147]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004756s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004795s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000529s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.archives',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003209s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin/lang/zh-cn/cms/archives.php
+[ info ] [ RUN ] app\admin\controller\cms\Archives->index[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\cms\Archives.php ]
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\view\cms\archives\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'channelOptions',
+  6 => 'secondChannelOptions',
+  7 => 'flagList',
+  8 => 'statusList',
+  9 => 'modelList',
+  10 => 'specialList',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000050s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000401s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:03+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/ajax/lang?callback=define&controllername=cms.archives&lang=zh-cn&v=1616573463&v=1616573463
+[运行时间：0.112378s] [吞吐率：8.90req/s] [内存消耗：3,540.33kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000053s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004069s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004102s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000469s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'cms.archives',
+  'lang' => 'zh-cn',
+  'v' => '1616573463',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003921s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin/lang/zh-cn/cms/archives.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000340s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:04+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/cms/archives/index?sort=weigh+DESC%2Cid+DESC&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1616573463324
+[运行时间：0.235637s] [吞吐率：4.24req/s] [内存消耗：4,922.18kb] [文件加载：148]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000060s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.006925s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006976s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000687s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.archives',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh DESC,id DESC',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1616573463324',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002652s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin/lang/zh-cn/cms/archives.php
+[ info ] [ RUN ] app\admin\controller\cms\Archives->index[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\cms\Archives.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000503s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:04+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/ajax/lang?callback=define&controllername=index&lang=zh-cn&v=1616573462&v=1616573462
+[运行时间：0.068461s] [吞吐率：14.61req/s] [内存消耗：3,541.74kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004548s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004582s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000429s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'lang' => 'zh-cn',
+  'v' => '1616573462',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002279s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000304s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:04+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/cms/archives/index?sort=weigh+DESC%2Cid+DESC&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1616573463325
+[运行时间：0.287168s] [吞吐率：3.48req/s] [内存消耗：4,922.18kb] [文件加载：148]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000039s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.007271s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007325s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.001000s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.archives',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh DESC,id DESC',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1616573463325',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002010s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin/lang/zh-cn/cms/archives.php
+[ info ] [ RUN ] app\admin\controller\cms\Archives->index[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\cms\Archives.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000499s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:08+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/cms/parame?name=6&addtabs=1
+[运行时间：0.181439s] [吞吐率：5.51req/s] [内存消耗：4,412.24kb] [文件加载：139]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004433s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004471s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000453s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.parame',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => '6',
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001829s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\cms\Parame->index[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\cms\Parame.php ]
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\view\cms\parame\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'statusList',
+  6 => 'product',
+  7 => 'typeList',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000069s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000522s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:08+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/ajax/lang?callback=define&controllername=cms.parame&lang=zh-cn&v=1616573468&v=1616573468
+[运行时间：0.107197s] [吞吐率：9.33req/s] [内存消耗：3,534.78kb] [文件加载：133]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.006630s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006679s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000744s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'cms.parame',
+  'lang' => 'zh-cn',
+  'v' => '1616573468',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003814s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\Ajax.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000488s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:09+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/cms/parame/index?sort=weigh&order=desc&offset=0&limit=10&filter=%7B%22name%22%3A%226%22%7D&op=%7B%22name%22%3A%22%3D%22%7D&_=1616573468511
+[运行时间：0.170935s] [吞吐率：5.85req/s] [内存消耗：4,496.13kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000034s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003930s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003960s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000462s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.parame',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{"name":"6"}',
+  'op' => '{"name":"="}',
+  '_' => '1616573468511',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001756s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\cms\Parame->index[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\cms\Parame.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000560s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:10+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/cms/archives/index?sort=weigh+DESC%2Cid+DESC&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1616573463326
+[运行时间：0.233389s] [吞吐率：4.28req/s] [内存消耗：4,922.18kb] [文件加载：148]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000043s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.007631s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007683s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000800s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.archives',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh DESC,id DESC',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1616573463326',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001766s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin/lang/zh-cn/cms/archives.php
+[ info ] [ RUN ] app\admin\controller\cms\Archives->index[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\cms\Archives.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000326s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:11+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/cms/parame?name=17&addtabs=1
+[运行时间：0.127540s] [吞吐率：7.84req/s] [内存消耗：4,412.24kb] [文件加载：139]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000028s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004216s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004251s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000461s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.parame',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => '17',
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001822s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\cms\Parame->index[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\cms\Parame.php ]
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\view\cms\parame\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'statusList',
+  6 => 'product',
+  7 => 'typeList',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000063s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000313s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:12+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/ajax/lang?callback=define&controllername=cms.parame&lang=zh-cn&v=1616573471&v=1616573471
+[运行时间：0.080262s] [吞吐率：12.46req/s] [内存消耗：3,534.78kb] [文件加载：133]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004464s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004507s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000482s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'cms.parame',
+  'lang' => 'zh-cn',
+  'v' => '1616573471',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002398s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\Ajax.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000605s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:12+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/cms/parame/index?sort=weigh&order=desc&offset=0&limit=10&filter=%7B%22name%22%3A%2217%22%7D&op=%7B%22name%22%3A%22%3D%22%7D&_=1616573472037
+[运行时间：0.186364s] [吞吐率：5.37req/s] [内存消耗：4,560.85kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004186s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004222s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000480s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.parame',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{"name":"17"}',
+  'op' => '{"name":"="}',
+  '_' => '1616573472037',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001875s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\cms\Parame->index[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\cms\Parame.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000510s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:13+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/cms/archives/index?sort=weigh+DESC%2Cid+DESC&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1616573463327
+[运行时间：0.263617s] [吞吐率：3.79req/s] [内存消耗：4,922.18kb] [文件加载：148]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.006401s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006441s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000528s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.archives',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh DESC,id DESC',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1616573463327',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002376s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin/lang/zh-cn/cms/archives.php
+[ info ] [ RUN ] app\admin\controller\cms\Archives->index[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\cms\Archives.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000547s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:15+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/cms/parame?name=5&addtabs=1
+[运行时间：0.197206s] [吞吐率：5.07req/s] [内存消耗：4,412.24kb] [文件加载：139]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004001s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004032s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000495s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.parame',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => '5',
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001882s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\cms\Parame->index[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\cms\Parame.php ]
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\view\cms\parame\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'statusList',
+  6 => 'product',
+  7 => 'typeList',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000094s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000517s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:15+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/ajax/lang?callback=define&controllername=cms.parame&lang=zh-cn&v=1616573475&v=1616573475
+[运行时间：0.092915s] [吞吐率：10.76req/s] [内存消耗：3,534.78kb] [文件加载：133]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000027s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004187s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004222s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000856s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'cms.parame',
+  'lang' => 'zh-cn',
+  'v' => '1616573475',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002539s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\Ajax.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000581s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:15+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/cms/parame/index?sort=weigh&order=desc&offset=0&limit=10&filter=%7B%22name%22%3A%225%22%7D&op=%7B%22name%22%3A%22%3D%22%7D&_=1616573475318
+[运行时间：0.177154s] [吞吐率：5.64req/s] [内存消耗：4,496.13kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004287s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004322s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000505s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.parame',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{"name":"5"}',
+  'op' => '{"name":"="}',
+  '_' => '1616573475318',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001869s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\cms\Parame->index[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\cms\Parame.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000310s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:16+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/cms/archives/index?sort=weigh+DESC%2Cid+DESC&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1616573463328
+[运行时间：0.215145s] [吞吐率：4.65req/s] [内存消耗：4,922.18kb] [文件加载：148]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004232s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004272s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000471s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.archives',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh DESC,id DESC',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1616573463328',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002775s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin/lang/zh-cn/cms/archives.php
+[ info ] [ RUN ] app\admin\controller\cms\Archives->index[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\cms\Archives.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000591s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:17+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/cms/parame/index?sort=weigh&order=desc&offset=0&limit=10&filter=%7B%22name%22%3A%226%22%7D&op=%7B%22name%22%3A%22%3D%22%7D&_=1616573468512
+[运行时间：0.174175s] [吞吐率：5.74req/s] [内存消耗：4,496.13kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000029s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005810s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005849s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000445s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.parame',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{"name":"6"}',
+  'op' => '{"name":"="}',
+  '_' => '1616573468512',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001878s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\cms\Parame->index[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\cms\Parame.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000621s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:19+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/cms/parame/add?name=6&dialog=1
+[运行时间：0.167889s] [吞吐率：5.96req/s] [内存消耗：4,439.72kb] [文件加载：139]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003959s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003993s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000438s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.parame',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => '6',
+  'dialog' => '1',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001977s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\common\controller\Backend->add[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\library\traits\Backend.php ]
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\view\cms\parame\add.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'statusList',
+  6 => 'product',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000100s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000527s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:19+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/ajax/lang?callback=define&controllername=cms.parame&lang=zh-cn&v=1616573479&v=1616573479
+[运行时间：0.106758s] [吞吐率：9.37req/s] [内存消耗：3,534.78kb] [文件加载：133]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000034s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.006832s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006882s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000899s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'cms.parame',
+  'lang' => 'zh-cn',
+  'v' => '1616573479',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004004s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\Ajax.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000487s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:20+08:00 ] 127.0.0.1 POST www.newadminzjszjs.com/cms.php/cms/parame/selectpage_type
+[运行时间：0.186811s] [吞吐率：5.35req/s] [内存消耗：4,406.35kb] [文件加载：140]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004687s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004732s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000610s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.parame',
+    2 => 'selectpage_type',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'http://www.newadminzjszjs.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '228',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'searchTable' => 'tbl',
+  'searchKey' => 'type',
+  'searchValue' => '产品参数',
+  'orderBy' => 
+  array (
+    0 => 
+    array (
+      0 => 'type',
+      1 => 'ASC',
+    ),
+  ),
+  'showField' => 'type',
+  'keyField' => 'type',
+  'keyValue' => '产品参数',
+  'searchField' => 
+  array (
+    0 => 'type',
+  ),
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002277s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\cms\Parame->selectpage_type[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\cms\Parame.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.088433s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:24+08:00 ] 127.0.0.1 POST www.newadminzjszjs.com/cms.php/cms/parame/add?name=6&dialog=1
+[运行时间：0.186476s] [吞吐率：5.36req/s] [内存消耗：4,412.63kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005286s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005320s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000497s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.parame',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'http://www.newadminzjszjs.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '249',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => '6',
+  'dialog' => '1',
+  'row' => 
+  array (
+    'type' => '产品参数',
+    'name' => '6',
+    'title' => '11111',
+    'text_type' => '1',
+    'image' => '',
+    'video' => '',
+    'imagearr' => '',
+    'imagearr_picdesc' => '',
+    'content' => '<p>11111</p>',
+    'status' => 'normal',
+  ),
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001790s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\common\controller\Backend->add[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\library\traits\Backend.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.026579s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:24+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/cms/parame/index?sort=weigh&order=desc&offset=0&limit=10&filter=%7B%22name%22%3A%226%22%7D&op=%7B%22name%22%3A%22%3D%22%7D&_=1616573468513
+[运行时间：0.252767s] [吞吐率：3.96req/s] [内存消耗：4,560.80kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000045s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.006734s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006797s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000545s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.parame',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{"name":"6"}',
+  'op' => '{"name":"="}',
+  '_' => '1616573468513',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001968s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\cms\Parame->index[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\cms\Parame.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000343s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:28+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/cms/parame/add?name=6&dialog=1
+[运行时间：0.150198s] [吞吐率：6.66req/s] [内存消耗：4,439.72kb] [文件加载：139]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004985s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005018s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000505s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.parame',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => '6',
+  'dialog' => '1',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002104s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\common\controller\Backend->add[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\library\traits\Backend.php ]
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\view\cms\parame\add.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'statusList',
+  6 => 'product',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000072s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000305s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:28+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/ajax/lang?callback=define&controllername=cms.parame&lang=zh-cn&v=1616573488&v=1616573488
+[运行时间：0.075096s] [吞吐率：13.32req/s] [内存消耗：3,534.78kb] [文件加载：133]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004506s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004543s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000504s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'cms.parame',
+  'lang' => 'zh-cn',
+  'v' => '1616573488',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002750s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\Ajax.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000363s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:29+08:00 ] 127.0.0.1 POST www.newadminzjszjs.com/cms.php/cms/parame/selectpage_type
+[运行时间：0.199509s] [吞吐率：5.01req/s] [内存消耗：4,406.35kb] [文件加载：140]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000044s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004727s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004766s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000603s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.parame',
+    2 => 'selectpage_type',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'http://www.newadminzjszjs.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '228',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'searchTable' => 'tbl',
+  'searchKey' => 'type',
+  'searchValue' => '产品参数',
+  'orderBy' => 
+  array (
+    0 => 
+    array (
+      0 => 'type',
+      1 => 'ASC',
+    ),
+  ),
+  'showField' => 'type',
+  'keyField' => 'type',
+  'keyValue' => '产品参数',
+  'searchField' => 
+  array (
+    0 => 'type',
+  ),
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002044s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\cms\Parame->selectpage_type[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\cms\Parame.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.093403s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:31+08:00 ] 127.0.0.1 POST www.newadminzjszjs.com/cms.php/cms/parame/add?name=6&dialog=1
+[运行时间：0.210929s] [吞吐率：4.74req/s] [内存消耗：4,412.63kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005517s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005603s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000874s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.parame',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'http://www.newadminzjszjs.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '248',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => '6',
+  'dialog' => '1',
+  'row' => 
+  array (
+    'type' => '产品参数',
+    'name' => '6',
+    'title' => '2222',
+    'text_type' => '1',
+    'image' => '',
+    'video' => '',
+    'imagearr' => '',
+    'imagearr_picdesc' => '',
+    'content' => '<p>22222</p>',
+    'status' => 'normal',
+  ),
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002986s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\common\controller\Backend->add[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\library\traits\Backend.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.028296s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:31+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/cms/parame/index?sort=weigh&order=desc&offset=0&limit=10&filter=%7B%22name%22%3A%226%22%7D&op=%7B%22name%22%3A%22%3D%22%7D&_=1616573468514
+[运行时间：0.237986s] [吞吐率：4.20req/s] [内存消耗：4,561.45kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004457s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004520s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000783s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.parame',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{"name":"6"}',
+  'op' => '{"name":"="}',
+  '_' => '1616573468514',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002779s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\cms\Parame->index[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\cms\Parame.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000519s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:35+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/cms/archives/index?sort=weigh+DESC%2Cid+DESC&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1616573463329
+[运行时间：0.200829s] [吞吐率：4.98req/s] [内存消耗：4,922.18kb] [文件加载：148]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.006561s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006616s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000701s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.archives',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh DESC,id DESC',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1616573463329',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002221s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin/lang/zh-cn/cms/archives.php
+[ info ] [ RUN ] app\admin\controller\cms\Archives->index[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\cms\Archives.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000387s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:36+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/cms/parame/index?sort=weigh&order=desc&offset=0&limit=10&filter=%7B%22name%22%3A%226%22%7D&op=%7B%22name%22%3A%22%3D%22%7D&_=1616573468515
+[运行时间：0.209190s] [吞吐率：4.78req/s] [内存消耗：4,561.45kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004314s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004391s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000482s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.parame',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{"name":"6"}',
+  'op' => '{"name":"="}',
+  '_' => '1616573468515',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001762s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\cms\Parame->index[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\cms\Parame.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000642s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:11:37+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/cms.php/cms/archives/index?sort=weigh+DESC%2Cid+DESC&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1616573463330
+[运行时间：0.186548s] [吞吐率：5.36req/s] [内存消耗：4,922.18kb] [文件加载：148]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000035s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004198s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004239s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000832s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.archives',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh DESC,id DESC',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1616573463330',
+)
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002905s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/admin/lang/zh-cn/cms/archives.php
+[ info ] [ RUN ] app\admin\controller\cms\Archives->index[ D:\phpstudy\PHPTutorial\WWW\newcms\application\admin\controller\cms\Archives.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000311s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:13:09+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/
+[运行时间：0.305399s] [吞吐率：3.27req/s] [内存消耗：4,590.68kb] [文件加载：149]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005417s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005463s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000786s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'index',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] think\addons\Route->execute[ D:\phpstudy\PHPTutorial\WWW\newcms\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.002647s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\addons\cms\lang\zh-cn.php
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\newcms\addons\cms\view\default\index.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000147s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:13:30+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/
+[运行时间：0.186615s] [吞吐率：5.36req/s] [内存消耗：4,590.68kb] [文件加载：149]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004096s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004128s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000424s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'index',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] think\addons\Route->execute[ D:\phpstudy\PHPTutorial\WWW\newcms\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.002111s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\addons\cms\lang\zh-cn.php
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\newcms\addons\cms\view\default\index.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000092s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:14:54+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/
+[运行时间：0.289219s] [吞吐率：3.46req/s] [内存消耗：4,591.45kb] [文件加载：149]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000035s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004033s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004066s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000423s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'index',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] think\addons\Route->execute[ D:\phpstudy\PHPTutorial\WWW\newcms\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.002148s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\addons\cms\lang\zh-cn.php
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\newcms\addons\cms\view\default\index.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000176s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:16:48+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/
+[运行时间：0.262404s] [吞吐率：3.81req/s] [内存消耗：4,591.45kb] [文件加载：149]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004805s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004841s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000682s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'index',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] think\addons\Route->execute[ D:\phpstudy\PHPTutorial\WWW\newcms\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.002593s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\addons\cms\lang\zh-cn.php
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\newcms\addons\cms\view\default\index.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000162s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:19:34+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/c/product.html
+[运行时间：0.176322s] [吞吐率：5.67req/s] [内存消耗：4,458.91kb] [文件加载：144]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000028s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004811s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004844s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000632s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'archives',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'catename' => 'c',
+  'diyname' => 'product',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ D:\phpstudy\PHPTutorial\WWW\newcms\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.002689s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\addons\cms\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/common\view\tpl\dispatch_jump.tpl [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+  4 => 'code',
+  5 => 'msg',
+  6 => 'data',
+  7 => 'url',
+  8 => 'wait',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000138s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:19:37+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/
+[运行时间：0.205005s] [吞吐率：4.88req/s] [内存消耗：4,590.68kb] [文件加载：149]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000028s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005406s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005446s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000548s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'index',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] think\addons\Route->execute[ D:\phpstudy\PHPTutorial\WWW\newcms\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.002197s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\addons\cms\lang\zh-cn.php
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\newcms\addons\cms\view\default\index.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000104s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:19:38+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/product.html
+[运行时间：0.362666s] [吞吐率：2.76req/s] [内存消耗：5,093.44kb] [文件加载：158]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004310s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004349s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000464s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'channel',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.newadminzjszjs.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'diyname' => 'product',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ D:\phpstudy\PHPTutorial\WWW\newcms\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.002744s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\addons\cms\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\newcms\addons\cms\view\default\list_product.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+  4 => '__FILTERLIST__',
+  5 => '__ORDERLIST__',
+  6 => '__PAGELIST__',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000103s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-03-24T16:19:40+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/product/abc.html
+[运行时间：0.240589s] [吞吐率：4.16req/s] [内存消耗：4,678.52kb] [文件加载：148]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003937s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003968s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000431s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'archives',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.newadminzjszjs.com/product.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'catename' => 'product',
+  'diyname' => 'abc',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ D:\phpstudy\PHPTutorial\WWW\newcms\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.003051s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\addons\cms\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\newcms\addons\cms\view\default\show_product.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+  4 => '__ARCHIVES__',
+  5 => '__MODEL__',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined method addons\cms\taglib\Cms::tagparamelist()[D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\library\think\template\TagLib.php:143]
+---------------------------------------------------------------
+[ 2021-03-24T16:20:34+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/product/abc.html
+[运行时间：0.288242s] [吞吐率：3.47req/s] [内存消耗：4,944.89kb] [文件加载：157]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000035s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004022s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004055s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000438s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'archives',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.newadminzjszjs.com/product.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'catename' => 'product',
+  'diyname' => 'abc',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ D:\phpstudy\PHPTutorial\WWW\newcms\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.002435s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\addons\cms\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\newcms\addons\cms\view\default\show_product.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+  4 => '__ARCHIVES__',
+  5 => '__MODEL__',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: title[D:\phpstudy\PHPTutorial\WWW\newcms\runtime\temp\c56a4c6516c5fb33d4748abab879a806.php:137]
+---------------------------------------------------------------
+[ 2021-03-24T16:22:53+08:00 ] 127.0.0.1 GET www.newadminzjszjs.com/product/abc.html
+[运行时间：0.271679s] [吞吐率：3.68req/s] [内存消耗：4,619.41kb] [文件加载：149]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004771s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004803s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\thinkphp\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000645s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'archives',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=djb459ifucgv1l0fk75mf37au3; think_var=zh-cn',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,ar;q=0.6,is;q=0.5',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.newadminzjszjs.com/product.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.newadminzjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'catename' => 'product',
+  'diyname' => 'abc',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ D:\phpstudy\PHPTutorial\WWW\newcms\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.002912s ]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\newcms\addons\cms\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\newcms\addons\cms\view\default\show_product.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+  4 => '__ARCHIVES__',
+  5 => 'title',
+  6 => '__MODEL__',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000147s ]
+[ info ] [ LOG ] INIT File

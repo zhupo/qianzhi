@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {include file="common/meta" /}
+    <link rel="stylesheet" href="__CDN__/assets/qianzhi/frontend/contactUs/contactUs.css">
+</head>
+
+<body class="contact-us-wrap">
+{include file="common/header" /}
+<div id="header-banner" class="contact-us-header">
+    <div class="container relative" style="height: 100%;">
+        <div class="contact-us-header-content">
+            <p class="title font-bold">CONTACT US</p>
+            <div>
+                <span class="glyphicon glyphicon-home"></span>
+                <span>Home</span>
+                »
+                <span>Contact us</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<main id="contact-us-body">
+    <div class="container">
+        <div class="row d-flex contact-us-box">
+            <div class="col-md-4">
+                <div class="box-item left">
+                    <div class="title f22">
+                        Get in touch with us.
+                    </div>
+
+                    <form id="form"  onsubmit="return $('.formPoint').show();" method="POST" action="/d/customer/post.html">
+                        <input type="hidden" name="__diyname__" value="customer">
+                        {:token()}
+                        <div>
+                            <div class="form-group">
+                                <label for="firstName"><sup>*</sup> Your name</label>
+                                <input name="row[username]" type="text" class="form-control" id="firstName">
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><sup>*</sup> Your email address</label>
+                                <input name="row[email]" type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone"><sup>*</sup> Your phone</label>
+                                <input name="row[telephone]" type="text" class="form-control" id="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea name="row[content]" class="form-control" id="message" rows="5"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-info">SEND MESSAGE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="box-item right">
+                    {notempty name="$site.map"}
+                    <div  class="map">
+                        {$site.map}
+                    </div>
+                    {/notempty}
+                    <div class="company-info">
+                        {cms:blocklist id="block" name="contact-qianzhi" orderby="id" orderway="asc"}
+                        <p class="zh-list">
+                            <span class="icon glyphicon glyphicon-{$block.image}"></span>
+                            <span>{:str_replace(["<p>","</p>"], "", $block.content)}</span>
+                        </p>
+                        {/cms:blocklist}
+                    </div>
+                    <div class="other-communication text-right">
+                        {cms:blocklist id="block" name="mt" orderby="weigh" orderway="asc" }
+                        <a href="{$block.url}" title="{$block.title}" target="_blank">
+                            <img src="{$block.image}" alt="logo">
+                        </a>
+                        {/cms:blocklist}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+{include file="common/footer" /}
+{include file="common/script" /}
+
+<script data-main="__CDN__/assets/qianzhi/frontend/contactUs/contactUs.js" src="__CDN__/assets/qianzhi/require.min.js">
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+{include file="common/top" /}
+{include file="common/mbx" /} 
+
+
+<div class="FdcLitsBJ">
+<div class="FdcLits box">
+    
+        <ul>
+			{cms:pagelist id="item"}
+			<li>
+				<a href="{$item.url}"  title="{$item.title}">
+				<div class="imghover"><img src="{$item.image}"></div>
+				
+				<div class="FdcLitstxt">
+    				<h3>{$item.title}</h3>
+    				 {notempty name="$item.add"}<h4>{$item.add}</h4>{/notempty}
+    				 {notempty name="$item.price"}<span>{$item.price}</span>{/notempty}
+    		        <h5>
+    		            {notempty name="$item.woshi"}<i class="ico icon-chuang2"></i><em>{$item.woshi}</em>{/notempty}
+    		            {notempty name="$item.yushi"}<i class="ico icon-bathroom-fill"></i><em>{$item.yushi}</em>{/notempty}
+    		            {notempty name="$item.chewei"}<i class="ico icon-chuzu"></i><em>{$item.chewei}</em>{/notempty}
+    		        </h5>
+		        </div>
+				</a>
+			</li>
+			{/cms:pagelist}
+	  	</ul>
+		
+	
+		<div class="Pagination">
+            {cms:pageinfo type="full" /}
+        </div>
+        
+   
+</div>
+</div> 
+
+ 
+{include file="common/foot" /}
+
+
+ 

@@ -1,0 +1,54 @@
+{include file="common/top" /}
+{include file="common/mbx" /}
+ 
+<div class="box EvaluateBox">
+
+<div class="Evaluate">
+    <div class="EvaluateNr">
+		        <h2>Are you curious to find out what your property is worth?</h2>
+		        <h3>Simply fill out the form below and we'll be in touch.</h3>
+		        <form onsubmit="return $('.formPoint').show();" method="POST" action="/d/customer/post.html">
+                    <input type="hidden" name="__diyname__" value="customer">
+                    {:token()}
+                    <div>
+                     <input name="row[postcode]" type="text" placeholder="*Suburb/Postcode" required="">     
+                    <input name="row[name]" type="text" placeholder="*Name :" required=""></input>
+                    <input name="row[email]" type="Email" placeholder="*Email :" required=""></input>
+                    <input name="row[telephone]" type="telephone" placeholder="Telephone :"></input>
+                    <textarea name="row[content]" type="text" placeholder="*Message:" required=""></textarea>
+                    <button type="submit">SEND</button>
+                    </div>
+               </form>      
+ </div>
+ 
+ <div class="EvaluateR">
+			<h2>Recent Listings</h2>
+			<ul>
+			    {cms:arclist id="item" channel="48"    row="2" orderby="updatetime"} 
+				<li>
+					<a href="{$item.url}" title="{$item.title}">
+					<img src=" {$item.image}" alt="{$item.title}">
+					<h3>{$item.title}</h3>
+					</a>
+				</li>
+			 {/cms:arclist}
+			</ul>
+			<h2>Get in touch</h2>
+			<ol>
+			    
+ 		   
+ 			
+ 			    {cms:blocklist id="block" name="contact" orderby="weigh" orderway="desc" condition="1=foottop"}  
+				<li>
+					<em>{$block.title}</em>
+					<a href="tel:{$block.url}">{:str_replace(["<p>","</p>"], "", $block.content)}</a>
+				</li>
+			 
+				{/cms:blocklist}
+				 
+			</ol>
+</div>
+</div> 
+ </div> 
+{include file="common/foot" /}
+ 

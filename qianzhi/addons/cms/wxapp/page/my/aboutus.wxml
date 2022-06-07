@@ -1,0 +1,12 @@
+<import src="/assets/libs/towxml/entry.wxml" />
+
+<view class="container">
+
+  <image class="logo" src="{{pageInfo.image}}" mode='widthFix'></image>
+
+    <view class="zan-panel-title">{{pageInfo.title}}</view>
+    <view class="zan-panel zan-font-12">
+      <template is="entry" data="{{...pageInfo.article}}" />
+    </view>
+  
+</view>

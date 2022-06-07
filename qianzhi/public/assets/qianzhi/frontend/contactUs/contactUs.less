@@ -1,0 +1,128 @@
+
+@themeColor: #fff;
+@grayColor: #DBDCDD;
+body {
+  background-color: #F3F4F5;
+}
+
+.contact-us-wrap {
+  padding-top: 0;
+  .contact-us-header {
+    height: 470px;
+    width: 100%;
+    background: url('./contact-us-banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .contact-us-header-content {
+      position: absolute;
+      left: 0;
+      bottom: 20px;
+      width: 450px;
+      height: 105px;
+      background-color: rgba(28, 113, 192, 0.5);
+      color: @themeColor;
+      padding: 16px 24px;
+      .title {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+#contact-us-body {
+  padding: 70px 0 100px;
+  .title {
+    color: #000;
+    margin-bottom: 20px;
+  }
+  .contact-us-box {
+    flex-wrap: wrap;
+    &>div {
+      padding-top: 20px;
+      .box-item {
+        border-radius: 5px;
+        background-color: #fff;
+        padding: 30px 30px 70px 30px;
+        height: 100%;
+      }
+      .contact-from {
+        label {
+          font-weight: normal;
+          font-size: 12px;
+        }
+        .btn {
+          margin-top: 50px;
+        }
+        .form-group {
+          margin-top: 10px;
+          input, textarea {
+            border-radius: 3px;
+            border-color: @grayColor;
+          }
+        }
+      }
+    }
+    .map {
+      height: 40%;
+      width: 100%;
+      background: #fff;
+    }
+    .company-info {
+      padding: 70px 20px;
+      .zh-list {
+        display: flex;
+        .icon {
+          margin-right: 10px;
+          margin-top: 3px;
+          color: #B5B6B7;
+        }
+        span:last-child {
+          flex: 1;
+          font-size: 14px;
+          color: #333;
+        }
+      }
+    }
+    .other-communication {
+      img {
+        width: 30px;
+        height: auto;
+        margin-left: 28px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+  .contact-us-wrap {
+    .contact-us-header {
+      .contact-us-header-content {
+        width: auto;
+        left: 15px;
+      }
+    }
+  }
+  #contact-us-body {
+    .contact-us-box {
+      &>div {
+        width: 100%;
+        .box-item  {
+          height: auto;
+        }
+      }
+
+      .other-communication {
+        img {
+          width: 30px;
+          height: auto;
+          margin-left: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

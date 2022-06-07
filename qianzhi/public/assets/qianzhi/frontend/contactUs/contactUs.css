@@ -1,0 +1,106 @@
+body {
+  background-color: #F3F4F5;
+}
+.contact-us-wrap {
+  padding-top: 0;
+}
+.contact-us-wrap .contact-us-header {
+  height: 470px;
+  width: 100%;
+  background: url('./contact-us-banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.contact-us-wrap .contact-us-header .contact-us-header-content {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 450px;
+  height: 105px;
+  background-color: rgba(28, 113, 192, 0.5);
+  color: #fff;
+  padding: 16px 24px;
+}
+.contact-us-wrap .contact-us-header .contact-us-header-content .title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+#contact-us-body {
+  padding: 70px 0 100px;
+}
+#contact-us-body .title {
+  color: #000;
+  margin-bottom: 20px;
+}
+#contact-us-body .contact-us-box {
+  flex-wrap: wrap;
+}
+#contact-us-body .contact-us-box > div {
+  padding-top: 20px;
+}
+#contact-us-body .contact-us-box > div .box-item {
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 30px 30px 70px 30px;
+  height: 100%;
+}
+#contact-us-body .contact-us-box > div .contact-from label {
+  font-weight: normal;
+  font-size: 12px;
+}
+#contact-us-body .contact-us-box > div .contact-from .btn {
+  margin-top: 50px;
+}
+#contact-us-body .contact-us-box > div .contact-from .form-group {
+  margin-top: 10px;
+}
+#contact-us-body .contact-us-box > div .contact-from .form-group input,
+#contact-us-body .contact-us-box > div .contact-from .form-group textarea {
+  border-radius: 3px;
+  border-color: #DBDCDD;
+}
+#contact-us-body .contact-us-box .map {
+  height: 40%;
+  width: 100%;
+  background: #fff;
+}
+#contact-us-body .contact-us-box .company-info {
+  padding: 70px 20px;
+}
+#contact-us-body .contact-us-box .company-info .zh-list {
+  display: flex;
+}
+#contact-us-body .contact-us-box .company-info .zh-list .icon {
+  margin-right: 10px;
+  margin-top: 3px;
+  color: #B5B6B7;
+}
+#contact-us-body .contact-us-box .company-info .zh-list span:last-child {
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+}
+#contact-us-body .contact-us-box .other-communication img {
+  width: 30px;
+  height: auto;
+  margin-left: 28px;
+  cursor: pointer;
+}
+@media screen and (max-width: 750px) {
+  .contact-us-wrap .contact-us-header .contact-us-header-content {
+    width: auto;
+    left: 15px;
+  }
+  #contact-us-body .contact-us-box > div {
+    width: 100%;
+  }
+  #contact-us-body .contact-us-box > div .box-item {
+    height: auto;
+  }
+  #contact-us-body .contact-us-box .other-communication img {
+    width: 30px;
+    height: auto;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}

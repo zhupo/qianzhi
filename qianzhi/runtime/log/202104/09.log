@@ -1,0 +1,21 @@
+---------------------------------------------------------------
+[ 2021-04-09T10:25:02+08:00 ] 127.0.0.1 GET demo.com/About.html
+[ error ] [8]未定义数组下标: 0
+---------------------------------------------------------------
+[ 2021-04-09T10:28:29+08:00 ] 127.0.0.1 GET demo.com/About.html
+[ error ] [0]模板标签错误:notempty
+---------------------------------------------------------------
+[ 2021-04-09T10:32:20+08:00 ] 127.0.0.1 GET demo.com/Services.html
+[ error ] [0]模板文件不存在:D:\phpstudy_pro\WWW\demo.com\addons\cms\view\default\channel_pageA.html
+---------------------------------------------------------------
+[ 2021-04-09T10:32:29+08:00 ] 127.0.0.1 GET demo.com/Services.html
+[ error ] [0]模板文件不存在:D:\phpstudy_pro\WWW\demo.com\addons\cms\view\default\channel_pageA.html
+---------------------------------------------------------------
+[ 2021-04-09T10:32:30+08:00 ] 127.0.0.1 GET demo.com/Services.html
+[ error ] [0]模板文件不存在:D:\phpstudy_pro\WWW\demo.com\addons\cms\view\default\channel_pageA.html
+---------------------------------------------------------------
+[ 2021-04-09T10:32:30+08:00 ] 127.0.0.1 GET demo.com/Services.html
+[ error ] [0]模板文件不存在:D:\phpstudy_pro\WWW\demo.com\addons\cms\view\default\channel_pageA.html
+---------------------------------------------------------------
+[ 2021-04-09T14:06:48+08:00 ] 127.0.0.1 GET demo.com/product/25.html
+[ error ] [8]未定义变量: img

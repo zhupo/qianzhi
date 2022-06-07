@@ -1,0 +1,15 @@
+---------------------------------------------------------------
+[ 2022-05-27T21:50:00+08:00 ] 127.0.0.1 GET zjs.com/Cart2.html?checkout%5Bshipping_address%5D%5Bprovince%5D=NSW
+[ error ] [2]strlen() expects parameter 1 to be string, array given
+---------------------------------------------------------------
+[ 2022-05-27T23:42:28+08:00 ] 127.0.0.1 GET zjs.com/
+[ error ] [0]模板文件不存在:/Users/panliu/Documents/project/zjs-copy/addons/cms/view/default/index.html
+---------------------------------------------------------------
+[ 2022-05-27T23:42:33+08:00 ] 127.0.0.1 GET zjs.com/
+[ error ] [0]模板文件不存在:/Users/panliu/Documents/project/zjs-copy/addons/cms/view/default/index.html
+---------------------------------------------------------------
+[ 2022-05-27T23:42:34+08:00 ] 127.0.0.1 GET zjs.com/
+[ error ] [0]模板文件不存在:/Users/panliu/Documents/project/zjs-copy/addons/cms/view/default/index.html
+---------------------------------------------------------------
+[ 2022-05-27T23:57:31+08:00 ] 127.0.0.1 GET zjs.com/
+[ error ] [0]语法解析错误: syntax error, unexpected '-->', expecting endswitch (T_ENDSWITCH) or case (T_CASE) or default (T_DEFAULT)

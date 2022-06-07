@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {include file="common/meta" /}
+    <link rel="stylesheet" href="__CDN__/assets/qianzhi/frontend/product/list/list.css">
+</head>
+
+<body class="product-wrap">
+{include file="common/header" /}
+<div id="header-banner" class="product-header">
+    <div class="container relative" style="height: 100%;">
+        <div class="product-header-content">
+            <p class="title font-bold">PRODUCT CENTER</p>
+            <div>
+                <span class="glyphicon glyphicon-home"></span>
+                <span>Home</span>
+                »
+                <span>Product Center</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<main id="product-list-body">
+    <div class="container card-item">
+        <div class="row" id="productList">
+            <script id="productListTemplate" type="text/html">
+                {{each productList as item index}}
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail content-item">
+                        <div class="card-img-wrap">
+                            <img src="{{item.image}}" alt="{{item.title}}">
+                        </div>
+                        <div class="caption">
+                            <p class="font-bold f20 mt-3">{{ item.title }}</p>
+                            <p class="caption-content multiple-text-ellipsis">{{ item.description }}</p>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+
+                {cms:pagelist id="item"}
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail content-item">
+                        <div class="card-img-wrap">
+                            <img src="{$item.image}" alt="{$item.title}">
+                        </div>
+                        <div class="caption">
+                            <p class="font-bold f20 mt-3">{$item.title}</p>
+                            <p class="caption-content multiple-text-ellipsis">{$item.description}</p>
+                        </div>
+                    </div>
+                </div>
+<!--                <li>-->
+<!--                    <a href="{$item.url}"  title="{$item.title}">-->
+<!--                        <div class="imghover"><img src="{$item.image}"></div>-->
+<!--                        <h3>{$item.title}</h3>-->
+<!--                        {notempty name="$item.description"}<p>{$item.description}</p>{/notempty}-->
+<!--                        <em>{$item.price}</em>-->
+<!--                    </a>-->
+<!--                </li>-->
+                {/cms:pagelist}
+            </script>
+        </div>
+        <nav aria-label="Product list pagination" class="text-center nav-pagination">
+<!--            <ul class="pagination" id="pagination">-->
+<!--                <li class="prev disabled"><a href="javascript: void(0)" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>-->
+<!--                <li class="active"><a href="javascript: void(0)">1</a></li>-->
+<!--                <li class=""><a href="javascript: void(0)">2</a></li>-->
+<!--                <li class=""><a href="javascript: void(0)">3</a></li>-->
+<!--                <li class=""><a href="javascript: void(0)">4</a></li>-->
+<!--                <li class=""><a href="javascript: void(0)">5</a></li>-->
+<!--                <li class=""><a href="javascript: void(0)">6</a></li>-->
+<!--                <li class="next"><a href="javascript: void(0)" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>-->
+<!--            </ul>-->
+            {cms:pageinfo type="full" /}
+        </nav>
+    </div>
+</main>
+
+{include file="common/footer" /}
+{include file="common/script" /}
+
+<script
+        data-main="__CDN__/assets/qianzhi/frontend/product/list/list.js"
+        src="__CDN__/assets/qianzhi/require.min.js"
+>
+</script>
+
+</body>
+
+</html>

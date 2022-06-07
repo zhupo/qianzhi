@@ -1,0 +1,53 @@
+{include file="common/top" /}
+{include file="common/mbx_page" /}
+ 
+ 
+ 
+ <div class="page box">
+    
+   
+      <div  class="BJQ">
+          {cms:page name="content" /}
+     </div>
+  
+    
+    <div class="pageUl">
+    {notempty name="$__PAGE__.images"}
+      <ul>
+      {volist name="$__PAGE__.images|explode=',',###" id="images"}
+        <li data-src="{$images|cdnurl}">
+            <img   src="{$images|cdnurl}">
+             <h3>{$__PAGE__.intro[$key]}  </h3>
+
+         </li>
+      {/volist}
+      </ul>
+      {/notempty}
+     </div>
+      
+      
+      <div class="pageOl">
+       {notempty name="$__PAGE__.imageslist"}
+              <ol>
+               {volist name="$__PAGE__.imageslist|explode=',',###" id="imageslist"}
+                <li data-src="{$imageslist|cdnurl}">
+                    <img   src="{$imageslist|cdnurl}">
+                     
+                     <div>
+                         <h3>{$__PAGE__.imgintro[$key]['info']}</h3> 
+                        <p>{$__PAGE__.imgintro[$key]['txt']}</p>
+                     </div> 
+                    
+                 </li> 
+              {/volist}
+        </ol>
+        {/notempty}  
+        </div> 
+    
+ </div>
+ 
+ 
+
+ 
+{include file="common/foot" /}
+ 

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	{include file="common/meta" /}
+	<link rel="stylesheet" href="__CDN__/assets/qianzhi/frontend/news/list/list.css">
+</head>
+
+<body class="news-wrap">
+{include file="common/header" /}
+{include file="common/mbx" /}
+<!--<div id="header-banner" class="news-header">-->
+<!--	<div class="container relative" style="height: 100%;">-->
+<!--		<div class="news-header-content">-->
+<!--			<p class="title font-bold">NEWS CENTER</p>-->
+<!--			<div>-->
+<!--				<span class="glyphicon glyphicon-home"></span>-->
+<!--				<span>Home</span>-->
+<!--				»-->
+<!--				<span>News Center</span>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</div>-->
+
+
+<main id="news-list-body">
+	<div class="container card-item">
+		<div id="newsList">
+			<script id="newsListTemplate" type="text/html">
+				{cms:pagelist id="item"}
+				<div class="content-item row d-flex">
+					<div class="col-md-4 card-img-wrap pl-0" >
+						<img src="{$item.image}" alt="{$item.title}">
+					</div>
+					<div class="col-md-8 col-sm-6 news-info-wrap pr-0 clearfix">
+						<div class="row">
+							<div class="col-md-8 font-bold f20 title">{$item.title}</div>
+							<div class="date col-md-4 text-right">
+								<img class="icon mr-1" src="__CDN__/assets/qianzhi/frontend/news/icon-date.png" alt="Date">
+								<span>{:date('Y-m-d', $item.updatetime)}</span>
+							</div>
+							<p class="col-md-12 info-content">{:str_replace(["<p>","</p>"], "", $item.content)}</p>
+							<a href="{$item.url}"><button class="btn btn-primary view-more">view more</button></a>
+						</div>
+					</div>
+				</div>
+				{/cms:pagelist}
+			</script>
+		</div>
+<!--		<nav aria-label="Product list pagination" class="text-center nav-pagination">-->
+<!--			<ul class="pagination" id="pagination">-->
+<!--				<li class="prev disabled"><a href="javascript: void(0)" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>-->
+<!--				<li class="active"><a href="javascript: void(0)">1</a></li>-->
+<!--				<li class=""><a href="javascript: void(0)">2</a></li>-->
+<!--				<li class=""><a href="javascript: void(0)">3</a></li>-->
+<!--				<li class=""><a href="javascript: void(0)">4</a></li>-->
+<!--				<li class=""><a href="javascript: void(0)">5</a></li>-->
+<!--				<li class=""><a href="javascript: void(0)">6</a></li>-->
+<!--				<li class="next"><a href="javascript: void(0)" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>-->
+<!--			</ul>-->
+<!--		</nav>-->
+		{cms:pageinfo type="full" /}
+	</div>
+</main>
+
+{include file="common/footer" /}
+{include file="common/script" /}
+
+<script
+		data-main="__CDN__/assets/qianzhi/frontend/news/list/list.js"
+		src="__CDN__/assets/qianzhi/require.min.js"
+>
+</script>
+
+</body>
+
+</html>

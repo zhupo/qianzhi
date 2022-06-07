@@ -1,0 +1,28 @@
+<div class="productLeft">
+     <div class="H2ol">
+        
+        <select onchange="window.location=this.value;">
+        <option selected="" value="/product.html">All Categories</option>
+        {cms:channellist id="nav" type="son" model="2"}
+            {cms:channellist id="channel" type="son"  typeid="nav['id']"}
+             <option {$channel.is_active?'selected':''} value="{$channel.url}">{$channel.name}</option>
+            {/cms:channellist}
+     	{/cms:channellist}
+     	</select>
+        
+        {cms:channellist id="nav" type="son"  model="2"}
+        <h2>{$nav.name}</h2>
+            <ol>
+           {cms:channellist id="channel" type="son"  typeid="nav['id']"}
+            <li>
+                <a class="{if $channel->is_active}this{/if}" href="{$channel.url}">
+
+                <span><i class="ico icon-choice2"></i></span>{$channel.name}
+
+                </a>
+            </li>
+            {/cms:channellist}
+            </ol>
+        {/cms:channellist}
+    </div>
+</div>

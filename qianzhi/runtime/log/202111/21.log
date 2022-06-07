@@ -1,0 +1,30 @@
+---------------------------------------------------------------
+[ 2021-11-21T19:34:34+08:00 ] 222.244.104.142 GET demo.zjszjs.com/
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'index ) ORDER BY weigh desc,id DESC LIMIT 10' at line 1
+---------------------------------------------------------------
+[ 2021-11-21T19:34:44+08:00 ] 222.244.104.142 GET demo.zjszjs.com/
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'index ) ORDER BY weigh desc,id DESC LIMIT 10' at line 1
+---------------------------------------------------------------
+[ 2021-11-21T19:35:05+08:00 ] 222.244.104.142 GET demo.zjszjs.com/
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'index ) ORDER BY weigh desc,id DESC LIMIT 10' at line 1
+---------------------------------------------------------------
+[ 2021-11-21T19:36:30+08:00 ] 222.244.104.142 GET demo.zjszjs.com/
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'index ) ORDER BY weigh desc,id DESC LIMIT 10' at line 1
+---------------------------------------------------------------
+[ 2021-11-21T19:38:12+08:00 ] 222.244.104.142 GET demo.zjszjs.com/
+[ error ] [0]类的属性不存在:addons\cms\model\Channel->sf
+---------------------------------------------------------------
+[ 2021-11-21T19:43:54+08:00 ] 222.244.104.142 GET demo.zjszjs.com/
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'index ) ORDER BY weigh desc,id DESC LIMIT 10' at line 1
+---------------------------------------------------------------
+[ 2021-11-21T19:43:55+08:00 ] 222.244.104.142 GET demo.zjszjs.com/
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'index ) ORDER BY weigh desc,id DESC LIMIT 10' at line 1
+---------------------------------------------------------------
+[ 2021-11-21T19:43:55+08:00 ] 222.244.104.142 GET demo.zjszjs.com/
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'index ) ORDER BY weigh desc,id DESC LIMIT 10' at line 1
+---------------------------------------------------------------
+[ 2021-11-21T19:43:55+08:00 ] 222.244.104.142 GET demo.zjszjs.com/
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'index ) ORDER BY weigh desc,id DESC LIMIT 10' at line 1
+---------------------------------------------------------------
+[ 2021-11-21T19:44:09+08:00 ] 222.244.104.142 GET demo.zjszjs.com/
+[ error ] [0]语法解析错误: syntax error, unexpected '=', expecting ']'

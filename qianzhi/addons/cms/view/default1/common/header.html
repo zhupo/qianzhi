@@ -1,0 +1,104 @@
+<link rel="stylesheet" href="__CDN__/assets/qianzhi/frontend/common/header/header.css">
+
+<nav id="page-navbar" class="navbar">
+  <div class="container-fluid container-flex">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <div class="logo-wrap d-flex">
+              <img src="__CDN__/assets/img/png/logo.png" alt="logo">
+          </div>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+          <ul class="nav navbar-nav navbar-right">
+              <li class="px-4">
+                  {range name="site.sousuo" value="1" type="in"}
+                  <form class="navbar-form navbar-left" id="js-search-from" action="/s.html" method="post">
+                      <div class="form-group">
+                          <input type="text" class="form-control search-input" id="js-search-input"
+                                 data-suggestion-url="/addons/cms/search/suggestion.html" placeholder="Search" />
+                      </div>
+                      <button class="glyphicon glyphicon-search media-middle cursor-pointer" id="js-search-btn"
+                          aria-label="search button" aria-hidden="true">
+                      </button>
+                  </form>
+                  {/range}
+<!--                  <form class="navbar-form navbar-left" id="js-search-from">-->
+<!--                      <div class="form-group">-->
+<!--                          <input type="text" class="form-control search-input" id="js-search-input"-->
+<!--                                 placeholder="Search" />-->
+<!--                      </div>-->
+<!--                      <span class="glyphicon glyphicon-search media-middle cursor-pointer" id="js-search-btn"-->
+<!--                            aria-label="search button" aria-hidden="true">-->
+<!--                      </span>-->
+<!--                  </form>-->
+<!--                  {range name="site.sousuo" value="1" type="in"}-->
+<!--                  <div class="sousuonr">-->
+<!--                      <form action="/s.html" method="post">-->
+<!--                          <input autocomplete = "off" class="form-control" name="q" data-suggestion-url="/addons/cms/search/suggestion.html" type="text" value="" placeholder="Key words">-->
+<!--                          <button class="ico icon-icon-test"></button>-->
+<!--                      </form>-->
+<!--                  </div>-->
+<!--                  {/range}-->
+              </li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                      aria-haspopup="true" aria-expanded="false">
+                      <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                      English
+                      <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a href="#">China</a></li>
+                      <li><a href="#">English</a></li>
+                  </ul>
+              </li>
+          </ul>
+
+          <ul class="nav navbar-nav pull-right menu-list">
+              {cms:channellist id="nav" type="top" cache="0" condition="1=isnav" row="20"}
+              <li>
+                  <a class="{if $nav->is_active}active{/if}" {if $nav.href eq 0}href="{$nav.url}"{/if}  {if $nav.target eq 1}target="_blank"{/if}>{$nav.name}</a>
+              </li>
+              {/cms:channellist}
+<!--              <li class="active"><a href="{:url('index/index/index')}">HOME</a></li>-->
+<!--              <li><a href="{{:url('index/about/index')}}">ABOUT US</a></li>-->
+<!--              <li><a href="{:url('index/product/list')}">PRODUCT</a></li>-->
+<!--              <li><a href="{:url('index/news/index')}">NEWS</a></li>-->
+<!--              <li><a href="{:url('index/contact/index')}">CONTACT US</a></li>-->
+          </ul>
+      </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<script>
+    (function() {
+        setTimeout(() => {
+            var $banner = document.querySelector('#header-banner')
+            var $navbar = document.querySelector('#page-navbar')
+            var height = $banner.clientHeight
+            var timeStamp = 0
+            updateBackgroundColor()
+
+            window.onscroll = function(e) {
+                if (e.timeStamp - timeStamp >= 200) {
+                    timeStamp = e.timeStamp
+                    updateBackgroundColor()
+                }
+            }
+
+            function updateBackgroundColor() {
+                var isOver = document.documentElement.scrollTop > height
+                $navbar.classList[isOver ? 'add' : 'remove']('is-over')
+            }
+        }, 2000)
+
+    })()
+</script>

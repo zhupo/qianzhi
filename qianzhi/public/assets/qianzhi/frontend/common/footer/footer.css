@@ -1,0 +1,99 @@
+footer .contact-us {
+  min-height: 100px;
+  line-height: 44px;
+  padding: 28px 0;
+  background-color: #1C71BF;
+  color: #fff;
+}
+footer .contact-us .btn {
+  background-color: #fff;
+  color: #000;
+}
+footer .page-footer {
+  min-height: 540px;
+  background-image: url('../../../../img/png/bg-footer.jpg');
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+footer .page-footer .footer-info {
+  flex: 1;
+  padding-bottom: 30px;
+}
+footer .page-footer .footer-info .container > .row > div {
+  padding-top: 30px;
+}
+footer .page-footer .footer-info .title {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+footer .page-footer .footer-info p {
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+footer .page-footer .footer-info .zh-list {
+  display: flex;
+  align-items: baseline;
+  font-size: 14px;
+}
+footer .page-footer .footer-info .zh-list .icon {
+  margin-right: 5px;
+}
+footer .page-footer .footer-info .media img {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 100px;
+  height: 80px;
+}
+footer .page-footer .footer-info .media .date {
+  display: block;
+  color: #999;
+  margin-top: 10px;
+}
+footer .page-footer .footer-info .media .media-body {
+  padding: 10px 0;
+}
+footer .page-footer .footer-info .media .media-heading {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+footer .page-footer .footer-info .contact-from input,
+footer .page-footer .footer-info .contact-from textarea {
+  background-color: #353637;
+  border-color: #353637;
+}
+footer .page-footer hr {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 1px;
+}
+footer .page-footer .footer-copyright {
+  min-height: 100px;
+  line-height: 30px;
+  border-top: 1px solid ;
+}
+footer .page-footer .footer-copyright .row {
+  padding: 35px 0;
+}
+footer .page-footer .footer-copyright .row > div {
+  height: 30px;
+}
+footer .page-footer .footer-copyright img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+@media screen and (max-width: 750px) {
+  .footer-copyright .row > div {
+    height: auto !important;
+    text-align: left;
+    margin-top: 20px;
+  }
+}

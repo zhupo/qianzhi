@@ -1,0 +1,100 @@
+<link rel="stylesheet" href="__CDN__/assets/qianzhi/frontend/common/footer/footer.css">
+
+<footer>
+  <div class="contact-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 f28">
+          YOUR ARE WELCOME TO CONTACT US
+        </div>
+        <div class="col-md-4 text-right">
+          <button class="btn"><a href="/ABOUTUS.html">CONTACT US</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <div class="footer-info">
+      <div class="container">
+        <div class="row d-flex" style="flex-wrap: wrap;">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <span class="title">Contact Information</span>
+            {cms:blocklist id="block" name="contact-qianzhi" orderby="id" orderway="asc"}
+            {if $block.id != 54}
+            <p class="zh-list">
+              <span class="icon glyphicon glyphicon-{$block.image}"></span>
+              <span>{:str_replace(["<p>","</p>"], "", $block.content)}</span>
+            </p>
+            {/if}
+            {/cms:blocklist}
+
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <span class="title">Product</span>
+            {cms:channellist id="channel" type="son" typeid="44" condition="1=cpindex" orderby="weigh" orderway="asc"}
+              <p>{$channel.name}</p>
+            {/cms:channellist}
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <span class="title">Recent post</span>
+            {cms:arclist id="item" flag="index" model="10"  row="10" orderby="updatetime" addon="content"}
+              <p>
+              <div class="media">
+                <div class="media-left">
+                  <di>
+                    <img src="{$item.image}" alt="{$item.title}">
+                  </di>
+                </div>
+                <div class="media-body">
+                  <span class="media-heading">{$item.title}</span>
+                  <span class="date">{:date('Y-m-d', $item.publishtime)}</span>
+                </div>
+              </div>
+              </p>
+            {/cms:arclist}
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <span class="title">Contact Form</span>
+            <form class="contact-from">
+              <div class="form-group">
+                <label class="sr-only" for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="country">Country</label>
+                <input type="text" class="form-control" id="country" placeholder="Country">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="email"></label>
+                <input type="email" class="form-control" id="email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="message"></label>
+                <textarea class="form-control" id="message" placeholder="Message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-info full-width">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-sm-6">
+            <img style="vertical-align: bottom;" src="__CDN__/assets/qianzhi/frontend/common/footer/icon-footer-logo.png" alt="logo">
+            Copyright: Huan Qianzhi Robot Technology Development Co,. Ltd
+          </div>
+          <div class="col-md-5 col-sm-6 text-right communications">
+            {cms:blocklist id="block" name="mt" orderby="weigh" orderway="asc" }
+            <a href="{$block.url}" title="{$block.title}" target="_blank">
+              <img src="{$block.image}" alt="logo">
+<!--              <i class="ico {$block.image}"></i>-->
+            </a>
+            {/cms:blocklist}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

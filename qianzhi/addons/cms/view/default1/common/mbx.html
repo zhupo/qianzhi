@@ -1,0 +1,18 @@
+<div class="lanmubanner qc">
+    <img src="{cms:channel name="image" /}" alt="{cms:channel name="name" /}">
+ 	<div class="lanmubannerTxt">
+		 	<div class="box">
+		 		<h2>{cms:channel name="name" /}</h2>
+		 		    
+                  
+                        <div class="Breadcrumbs">
+							<span class="glyphicon glyphicon-home"></span>
+                        {cms:breadcrumb id="item" key="k"}
+							{if $k>1}» {/if}<a title="{$item.name}" href="{$item.url}">{$item.name}</a>
+        				{/cms:breadcrumb}
+        				</div>
+                 
+                    
+		 	</div>
+	</div>
+</div>

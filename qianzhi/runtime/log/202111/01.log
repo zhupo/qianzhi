@@ -1,0 +1,12 @@
+---------------------------------------------------------------
+[ 2021-11-01T10:54:32+08:00 ] 175.8.51.186 GET demo.zjszjs.com/
+[ error ] [8]未定义数组索引: foot
+---------------------------------------------------------------
+[ 2021-11-01T10:57:45+08:00 ] 175.8.51.186 GET demo.zjszjs.com/
+[ error ] [0]语法解析错误: syntax error, unexpected '-->', expecting endswitch (T_ENDSWITCH) or case (T_CASE) or default (T_DEFAULT)
+---------------------------------------------------------------
+[ 2021-11-01T10:57:51+08:00 ] 175.8.51.186 GET demo.zjszjs.com/
+[ error ] [0]语法解析错误: syntax error, unexpected '-->', expecting endswitch (T_ENDSWITCH) or case (T_CASE) or default (T_DEFAULT)
+---------------------------------------------------------------
+[ 2021-11-01T14:17:43+08:00 ] 175.8.51.186 GET demo.zjszjs.com/
+[ error ] [8]未定义数组索引: head

@@ -1,0 +1,32 @@
+{include file="common/top" /}
+{include file="common/mbx" /} 
+
+
+<div class="ServicesListBJ">
+<div class="ServicesList box">
+        {notempty name="$__CHANNEL__.lanmujj"}
+        <div class="lanmujj">
+           {cms:channel name="lanmujj" /}
+        </div>
+        {/notempty} 
+        <ul>
+			{cms:pagelist id="item"}
+			<li>
+				<a href="{$item.url}"   title="{$item.title}">
+				    <div class="imghover ServicesListTitle"><img src="{$item.image}"></div>
+    			    <div class="ServicesListTxt BJQ">
+				        <h3>{$item.title}</h3>
+				         {notempty name="$item.description"}<p>{$item.description}</p>{/notempty}   
+				        <em>Read More </em>
+				    </div>
+				</a>
+			</li>
+			{/cms:pagelist}
+			 
+		</ul>
+		<div class="Pagination">
+            {cms:pageinfo type="full" /}
+        </div>
+</div>
+</div> 
+{include file="common/foot" /}

@@ -1,0 +1,32 @@
+@import url('../product');
+
+#product-list-body {
+  margin-top: 70px;
+  padding-bottom: 70px;
+  .content-item {
+    padding: 0;
+    border-color: #EEEFF0;
+    background-color: #F9FAFB;
+    box-shadow: 0 12px 5px -10px #ccc, 0 0 5px 0 #eee;
+    .card-img-wrap {
+      background-color: @themeColor;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .caption-content {
+      color: #666;
+      font-size: 14px;
+    }
+  }
+  .nav-pagination {
+    margin-top: 50px;
+    .pagination {
+      .active a {
+        background-color: #1D74C1;
+        border-color: #1D74C1;
+      }
+    }
+  }
+}

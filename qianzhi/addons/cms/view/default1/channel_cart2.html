@@ -1,0 +1,42 @@
+{include file="common/top" /}
+{include file="common/mbx" /}
+ 
+<div class="settlementBox box">
+ 
+
+	<div class="settlementBoxRight">
+		<form>
+		<div class="ShippingAddressHead">
+			<h3>Contact information</h3>
+			<input type="Email" placeholder="Email" required="">
+			<p><input type="checkbox">Keep me up to date on news and exclusive offers</p>
+		</div>
+		<div class="ShippingAddress">
+			<h3>Shipping address</h3>
+			<div class="formNr">
+				<input class="w50" type="text" required="" placeholder="First Name">
+				<input class="w50" type="text" required="" placeholder="Last Name">
+				<input type="text" required="" placeholder="Address">
+				<input type="text" required="" placeholder="Apartment, suite, etc. (optional)">
+				<input type="text" required="" placeholder="City">
+				<div class="AddressList">
+				 
+					 <div><input placeholder="Suburb" required=""></div>
+					 
+					<div>
+						<label>State/territory</label>
+					    <select placeholder="State/territory" autocomplete="shipping address-level1" autocorrect="off" data-backup="province" class="field__input field__input--select" aria-required="true" name="checkout[shipping_address][province]" id="checkout_shipping_address_province"><option disabled="">State/territory</option><option data-alternate-values="[&quot;Australian Capital Territory&quot;]" value="ACT">Australian Capital Territory</option><option data-alternate-values="[&quot;New South Wales&quot;]" value="NSW">New South Wales</option><option data-alternate-values="[&quot;Northern Territory&quot;]" value="NT">Northern Territory</option><option data-alternate-values="[&quot;Queensland&quot;]" value="QLD">Queensland</option><option data-alternate-values="[&quot;South Australia&quot;]" value="SA">South Australia</option><option data-alternate-values="[&quot;Tasmania&quot;]" value="TAS">Tasmania</option><option data-alternate-values="[&quot;Victoria&quot;]" value="VIC">Victoria</option><option data-alternate-values="[&quot;Western Australia&quot;]" value="WA">Western Australia</option></select>
+					</div>
+					<div><input placeholder="Zip Code" required=""></div>
+				</div>
+				<input required="" placeholder="Phone">
+				<div class="Continuetoshipping"><a href="/Cart.html">Return to cart</a>  <button>Continue to shipping</button></div>
+			</div>
+		</div>
+		</form>
+	</div>
+</div>
+
+{include file="common/foot" /}
+
+ 

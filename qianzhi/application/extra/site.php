@@ -1,0 +1,56 @@
+<?php
+
+return array (
+  'name' => 'www.qanzh.cn',
+  'beian' => 'Copyright ©  | www.qanzh.cn',
+  'cdnurl' => '',
+  'version' => '2022-5-22 16:16:07',
+  'timezone' => 'Asia/Shanghai',
+  'forbiddenip' => '',
+  'languages' => 
+  array (
+    ' Request A Quote ' => 'Contact-us.html',
+  ),
+  'fixedpage' => 'cms/archives',
+  'categorytype' => 
+  array (
+    'default' => 'Default',
+    'page' => 'Page',
+    'article' => 'Article',
+    'test' => 'Test',
+  ),
+  'configgroup' => 
+  array (
+    'basic' => 'Basic',
+    'email' => 'Email',
+    'dictionary' => 'Dictionary',
+    'user' => 'User',
+    'example' => 'Example',
+  ),
+  'mail_type' => '1',
+  'mail_smtp_host' => 'smtp.ym.163.com',
+  'mail_smtp_port' => '994',
+  'mail_smtp_user' => 'info@zjszjs.com',
+  'mail_smtp_pass' => 'Admin123456',
+  'mail_verify_type' => '2',
+  'mail_from' => 'info@zjszjs.com',
+  'email' => '913083812@qq.com',
+  'autosend' => '0',
+  'title' => 'www.qanzh.cn',
+  'keywords' => 'www.qanzh.cn',
+  'description' => 'Invess offers an extensive range of professional services and a high degree of spe-cialization. We serves both private & public traded companies. We bring over 35 years of experience.',
+  'logotxt' => 'Demo',
+  'logo' => '',
+  'logo2' => '',
+  'head' => '1',
+  'indexfw' => '1',
+  'indexfl' => '1',
+  'indexcp' => '1',
+  'indexfdc' => '1',
+  'sousuo' => '1',
+  'indexxm' => '1',
+  'footimg' => '',
+  'map' => '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7057.646989792663!2d112.9459345!3d27.8152034!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3420be4bdde1f223%3A0x39d7eb955218f88d!2sShuang%20Yong%20Nan%20Lu%2C%20Yue%20Tang%20Qu%2C%20Xiang%20Tan%20Shi%2C%20Hu%20Nan%20Sheng%2C%20China%2C%20411101!5e0!3m2!1sen!2shk!4v1654518784563!5m2!1sen!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+  'banner' => '0',
+  'ico' => '*****',
+);

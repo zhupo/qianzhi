@@ -1,0 +1,49 @@
+<!--{include file="common/top" /}-->
+{include file="common/mbx" /}
+ 
+
+ <div class="About box">
+    {cms:blocklist id="block" name="about" orderby="weigh" orderway="desc" } 
+ 	<div class="box">
+ 	  	<div class="BJQ">
+ 	  	    {notempty name="$block.image"}<div class="AboutImg" ><img src="{$block.image}"></div>{/notempty} 
+ 	  	    <div class="{empty name="$block.image"}AboutTxt100{else /}AboutTxt{/empty}">
+ 	  	        {$block.content}
+	 	    </div>
+	 	   
+	 	</div>
+ 	</div>
+ 	{notempty name="$block.images"}
+ 	<ul>
+ 	  {volist name="$block.images|explode=',',###" id="image"}
+        <li>
+            <img src="{$image|cdnurl}">
+            <div>
+               {notempty name="$block.intro[$key]['info']"}<h3>{$block.intro[$key]['info']}</h3>{/notempty}
+               {notempty name="$block.intro[$key]['txt']"}<p>{$block.intro[$key]['txt']}</p>{/notempty}
+            </div>
+        </li> 
+      {/volist}
+    </ul>
+    {/notempty} 
+ 	{/cms:blocklist}  
+ 	 
+ 
+ 	<div class="aboutListBox">
+ 	    	{cms:blocklist id="block" name="ab" orderby="weigh" orderway="desc" } 
+ 	    <div class="aboutList">
+ 	        <div class="aboutListImg"><img src="{$block.image}"></div>
+ 	        <div class="aboutListTxt">
+ 	            <h3>{$block.title}</h3>
+ 	            {$block.content}
+ 	        </div>
+ 	    </div>
+ 	    	{/cms:blocklist}
+ 	</div>
+ 
+ 	
+ </div>
+
+ 
+{include file="common/foot" /}
+ 

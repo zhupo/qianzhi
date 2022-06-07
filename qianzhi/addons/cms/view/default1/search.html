@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	{include file="common/meta" /}
+<!--	<link rel="stylesheet" href="__CDN__/assets/qianzhi/frontend/home/home.css">-->
+<!--	<link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_601403_l9mrrofm0m.css">-->
+<!--	<link rel="stylesheet" type="text/css" href="https:{$site.ico}">-->
+	<link rel="stylesheet" ype="text/css" href="__CDN__/template/default1/css/common.css?v={$site.version}">
+<!--	<link rel="stylesheet" type="text/css"media="screen and (min-width:1280px)" href="__CDN__/template/default1/css/pc.css?v={$site.version}">-->
+<!--	<link rel="stylesheet" type="text/css" media="screen and (max-width:1279px)" href="__CDN__/template/default1/css/wap.css?v={$site.version}">-->
+</head>
+
+<body class="home-wrap">
+{include file="common/header" /}
+<div class="searchList box qc">
+    <h1>{cms:config name="cms.title"/}</h1>
+    	<ul>
+	{cms:pagelist id="item"}
+	
+			<li><a href="{$item.url}">{$item.title}</a>  <span>Category：{$item.channel.name}</span></li>
+		
+	{/cms:pagelist}
+	</ul>
+ 	<div class="Pagination">
+	          {cms:pageinfo type="full" /}
+	</div>
+</div>
+{include file="common/footer" /}
+
+</body>
+
+</html>

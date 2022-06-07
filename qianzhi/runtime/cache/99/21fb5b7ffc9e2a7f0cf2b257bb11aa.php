@@ -1,0 +1,9 @@
+<?php
+//000000000000
+ exit();?>
+a:5:{i:0;a:4:{s:2:"id";i:56;s:4:"name";s:5:"lmimg";s:4:"type";s:5:"image";s:7:"content";s:28:"value1|title1
+value2|title2";}i:1;a:4:{s:2:"id";i:80;s:4:"name";s:7:"cpindex";s:4:"type";s:6:"switch";s:7:"content";s:28:"value1|title1
+value2|title2";}i:2;a:4:{s:2:"id";i:83;s:4:"name";s:6:"target";s:4:"type";s:6:"switch";s:7:"content";s:28:"value1|title1
+value2|title2";}i:3;a:4:{s:2:"id";i:84;s:4:"name";s:4:"href";s:4:"type";s:6:"switch";s:7:"content";s:28:"value1|title1
+value2|title2";}i:4;a:4:{s:2:"id";i:85;s:4:"name";s:7:"lanmujj";s:4:"type";s:6:"editor";s:7:"content";s:28:"value1|title1
+value2|title2";}}
