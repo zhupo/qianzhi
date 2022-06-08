@@ -1,18 +1,32 @@
-<div class="lanmubanner qc">
-    <img src="{cms:channel name="image" /}" alt="{cms:channel name="name" /}">
- 	<div class="lanmubannerTxt">
-		 	<div class="box">
-		 		<h2>{cms:channel name="name" /}</h2>
-		 		    
-                  
-                        <div class="Breadcrumbs">
-							<span class="glyphicon glyphicon-home"></span>
-                        {cms:breadcrumb id="item" key="k"}
-							{if $k>1}» {/if}<a title="{$item.name}" href="{$item.url}">{$item.name}</a>
-        				{/cms:breadcrumb}
-        				</div>
-                 
-                    
-		 	</div>
+<!--<div class="lanmubanner qc">-->
+<!--    <img src="{cms:channel name="image" /}" alt="{cms:channel name="name" /}">-->
+<!-- 	<div class="lanmubannerTxt">-->
+<!--		 	<div class="box">-->
+<!--		 		<h2>{cms:channel name="name" /}</h2>-->
+<!--		 		    -->
+<!--                  -->
+<!--                        <div class="Breadcrumbs">-->
+<!--							<span class="glyphicon glyphicon-home"></span>-->
+<!--                        {cms:breadcrumb id="item" key="k"}-->
+<!--							{if $k>1}» {/if}<a title="{$item.name}" href="{$item.url}">{$item.name}</a>-->
+<!--        				{/cms:breadcrumb}-->
+<!--        				</div>-->
+<!--                 -->
+<!--                    -->
+<!--		 	</div>-->
+<!--	</div>-->
+<!--</div>-->
+
+<div id="header-banner" class="product-header" style="background: url({cms:channel name="image" /})">
+<div class="container relative" style="height: 100%;">
+	<div class="product-header-content">
+		<p class="title font-bold">{cms:channel name="name" /} CENTER</p>
+		<div>
+			<span class="glyphicon glyphicon-home"></span>
+			{cms:breadcrumb id="item" key="k"}
+			{if $k>1}» {/if}<span><a title="{$item.name}" href="{$item.url}" style="color: #ffffff">{$item.name}</a></span>
+			{/cms:breadcrumb}
+		</div>
 	</div>
+</div>
 </div>

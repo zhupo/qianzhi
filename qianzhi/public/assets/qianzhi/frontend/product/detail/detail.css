@@ -4,7 +4,7 @@
 .product-wrap .product-header {
   height: 470px;
   width: 100%;
-  background: url('../../../../img/png/product-banner.jpg');
+  /*background: url('../../../../img/png/product-banner.jpg');*/
   background-position: center;
   background-repeat: no-repeat;
 }

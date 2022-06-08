@@ -1,6 +1,0 @@
----------------------------------------------------------------
-[ 2022-04-07T06:31:56+08:00 ] 45.134.144.140 GET 8.129.145.153///remote/fgt_lang?lang=/../../../..//////////dev/
-[ error ] [2]is_file(): open_basedir restriction in effect. File(/www/wwwroot/au.zjszjs.com/thinkphp/lang//../../../..//////////dev/.php) is not within the allowed path(s): (/www/wwwroot/au.zjszjs.com/:/tmp/)
----------------------------------------------------------------
-[ 2022-04-07T11:33:54+08:00 ] 175.9.128.126 GET au.zjszjs.com/
-[ error ] [0]语法解析错误: syntax error, unexpected '/'

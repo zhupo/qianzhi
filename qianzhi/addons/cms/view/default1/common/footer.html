@@ -55,25 +55,51 @@
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
             <span class="title">Contact Form</span>
-            <form class="contact-from">
+            <form class="contact-from" onsubmit="return $('.formPoint').show();" method="POST" action="/d/customer/post.html">
+              <input type="hidden" name="__diyname__" value="customer">
+              {:token()}
               <div class="form-group">
-                <label class="sr-only" for="name">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Name">
+                <label class="sr-only" for="name">Your name</label>
+                <input type="text" class="form-control" name="row[username]" id="name" placeholder="Your name">
               </div>
               <div class="form-group">
-                <label class="sr-only" for="country">Country</label>
-                <input type="text" class="form-control" id="country" placeholder="Country">
+                <label class="sr-only" for="email">Your email address</label>
+                <input type="email" class="form-control" name="row[email]" id="country" placeholder="Your email address">
               </div>
               <div class="form-group">
-                <label class="sr-only" for="email"></label>
-                <input type="email" class="form-control" id="email" placeholder="Email">
+                <label class="sr-only" for="phone">Your phone</label>
+                <input type="text" class="form-control" id="phone" placeholder="Your phone" name="row[telephone]">
               </div>
               <div class="form-group">
                 <label class="sr-only" for="message"></label>
-                <textarea class="form-control" id="message" placeholder="Message"></textarea>
+                <textarea class="form-control" id="message" placeholder="Message" name="row[content]"></textarea>
               </div>
               <button type="submit" class="btn btn-info full-width">Submit</button>
             </form>
+
+<!--            <form id="form"  onsubmit="return $('.formPoint').show();" method="POST" action="/d/customer/post.html">-->
+<!--              <input type="hidden" name="__diyname__" value="customer">-->
+<!--              {:token()}-->
+<!--              <div>-->
+<!--                <div class="form-group">-->
+<!--                  <label for="firstName"><sup>*</sup> Your name</label>-->
+<!--                  <input name="row[username]" type="text" class="form-control" id="firstName">-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                  <label for="email"><sup>*</sup> Your email address</label>-->
+<!--                  <input name="row[email]" type="email" class="form-control" id="email">-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                  <label for="phone"><sup>*</sup> Your phone</label>-->
+<!--                  <input name="row[telephone]" type="text" class="form-control" id="phone">-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                  <label for="message">Message</label>-->
+<!--                  <textarea name="row[content]" class="form-control" id="message" rows="5"></textarea>-->
+<!--                </div>-->
+<!--                <button type="submit" class="btn btn-info">SEND MESSAGE</button>-->
+<!--              </div>-->
+<!--            </form>-->
           </div>
         </div>
       </div>

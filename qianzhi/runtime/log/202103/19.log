@@ -1,6 +1,0 @@
----------------------------------------------------------------
-[ 2021-03-19T17:29:08+08:00 ] 101.91.62.65 GET zjszjs.com/
-[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'zjszjs.com.fa_cms_channel' doesn't exist
----------------------------------------------------------------
-[ 2021-03-19T17:31:18+08:00 ] 175.0.57.138 GET zjszjs.com/
-[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'zjszjs.com.fa_cms_channel' doesn't exist

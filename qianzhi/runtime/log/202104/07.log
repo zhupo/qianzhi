@@ -1,9 +1,0 @@
----------------------------------------------------------------
-[ 2021-04-07T20:53:07+08:00 ] 222.247.193.244 GET demo.zhoujiangshou.top/
-[ error ] [8]Array to string conversion
----------------------------------------------------------------
-[ 2021-04-07T20:53:57+08:00 ] 222.247.193.244 GET demo.zhoujiangshou.top/
-[ error ] [8]Array to string conversion
----------------------------------------------------------------
-[ 2021-04-07T22:06:46+08:00 ] 222.247.193.244 GET demo.zhoujiangshou.top/cms.php/cms/diydata/edit/diyform_id/8/ids/67?dialog=1
-[ error ] [0]类的属性不存在:addons\cms\model\Diydata->file

@@ -1,6 +1,0 @@
----------------------------------------------------------------
-[ 2021-05-20T09:48:26+08:00 ] 27.115.124.6 GET demo.zhoujiangshou.com/d/customer/post.html
-[ error ] [0]模板文件不存在:/www/wwwroot/demo.com/addons/cms/view/default/common/fields.html
----------------------------------------------------------------
-[ 2021-05-20T09:48:37+08:00 ] 180.163.220.5 GET demo.zhoujiangshou.com/d/customer/post.html
-[ error ] [0]模板文件不存在:/www/wwwroot/demo.com/addons/cms/view/default/common/fields.html

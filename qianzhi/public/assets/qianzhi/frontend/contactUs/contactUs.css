@@ -1,17 +1,17 @@
 body {
   background-color: #F3F4F5;
 }
-.contact-us-wrap {
+.product-wrap {
   padding-top: 0;
 }
-.contact-us-wrap .contact-us-header {
+.product-wrap .product-header {
   height: 470px;
   width: 100%;
-  background: url('./contact-us-banner.jpg');
+  /*background: url('./product-banner.jpg');*/
   background-position: center;
   background-repeat: no-repeat;
 }
-.contact-us-wrap .contact-us-header .contact-us-header-content {
+.product-wrap .product-header .product-header-content {
   position: absolute;
   left: 0;
   bottom: 20px;
@@ -21,7 +21,7 @@ body {
   color: #fff;
   padding: 16px 24px;
 }
-.contact-us-wrap .contact-us-header .contact-us-header-content .title {
+.product-wrap .product-header .product-header-content .title {
   font-size: 24px;
   margin-bottom: 10px;
 }

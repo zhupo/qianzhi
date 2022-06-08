@@ -1,6 +1,0 @@
----------------------------------------------------------------
-[ 2022-04-11T13:07:02+08:00 ] 45.134.144.140 GET 8.129.145.153///remote/fgt_lang?lang=/../../../..//////////dev/
-[ error ] [2]is_file(): open_basedir restriction in effect. File(/www/wwwroot/au.zjszjs.com/thinkphp/lang//../../../..//////////dev/.php) is not within the allowed path(s): (/www/wwwroot/au.zjszjs.com/:/tmp/)
----------------------------------------------------------------
-[ 2022-04-11T20:12:32+08:00 ] 222.247.204.206 GET au.zjszjs.com/Cart.html
-[ error ] [0]模板文件不存在:/www/wwwroot/au.zjszjs.com/addons/cms/view/default1/channel_pageA.html
