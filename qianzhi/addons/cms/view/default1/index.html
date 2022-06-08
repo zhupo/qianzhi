@@ -1,262 +1,201 @@
-{include file="common/top" /}
-<div class="swiper-container" id="indexBanner">
-      <div class="swiper-wrapper">
-        {cms:blocklist id="block" name="banner" orderby="weigh" orderway="desc" }   
-        <div class="swiper-slide">
-	        <div class="banner">
-             	<div class="bannerTxt box"{switch name="$block.lr" }
-                                                {case value="1"}style="text-align:left;"{/case}
-                                                {case value="2"}style="text-align:center;"{/case}
-                                                {case value="3"}style="text-align:right;"{/case}
-                                           {/switch}>
-             	    <div class="bannerTxtNr">
-             	            <h2>{$block.title}</h2>
-             	         	{$block.content}
-             	         	{notempty name="$block.url"}<a href="{$block.url}">Consult now</a>{/notempty} 
-             	    </div>
-             	</div>
-             	<img src="{$block.image}">
-             	<i class="ico icon-zuo-copy"></i>
-            </div>
-	    </div>
-	    {/cms:blocklist} 
-	    
-	   
-	  </div>
- 	{range name="$site.banner" value="1" type="in"}<div class="swiper-pagination"></div>{/range}
+<!DOCTYPE html>
+<html>
+
+<head>
+    {include file="common/meta" /}
+    <link rel="stylesheet" href="__CDN__/assets/qianzhi/frontend/home/home.css">
+</head>
+
+<body class="home-wrap">
+{include file="common/header" /}
+<div id="header-banner" class="home-header">
+    <div class="home-header-detail text-center">
+        <span class="d-block top-title f18">BEST QUALITY SERVICE</span>
+        <span class="d-block title f50 font-bold">QIANZHI ROBOT</span>
+        <span class="d-block sub-title f28">Towards the goal of building a R&D heights of special robots in china</span>
+        <div class="but-group">
+            <a type="button" href="/" class="btn btn-info btn-lg mr-4">
+                Learn More
+            </a>
+            <a type="button" href="/ABOUTUS.html" class="btn btn-danger btn-lg">
+                Contact Us
+            </a>
+        </div>
+    </div>
 </div>
 
 
-<script>
-  var indexBanner = new Swiper('#indexBanner', {
-  //effect: "fade",
-  observer:true,
-  observeParents:true,
-  slidesPerColumnFill : 'column', //column row
-  slidesPerView: 1, 
-  spaceBetween: 0,
-  slidesPerColumn: 1,//行
-  slidesPerGroup: 1,//移动个数
-  loop: true,
-  pagination: {
-  el: '#indexBanner .swiper-pagination',
-  clickable: true,
-  },
-  navigation: {
-  nextEl: '#indexBanner .swiper-button-next',
-  prevEl: '#indexBanner .swiper-button-prev',
-  },
-  {range name="$site.banner" value="1" type="in"}
-  autoplay: {
-  delay: 3000, 
-  disableOnInteraction: false,
-  },
-  {/range}
-  breakpoints:{
-  1600:{slidesPerView: 1,spaceBetween: 0, slidesPerColumn:1,},
-  1279:{slidesPerView: 1,spaceBetween: 0,slidesPerColumn:1,},
-  750:{slidesPerView: 1,spaceBetween: 0,slidesPerColumn:1,},
-  },
-  
- 
-});
- 
+<main id="home-body">
+    <!-- out product -->
+    <div class="home-body-card our-product">
+        <div class="container card-item">
+            <div class="text-center">
+                <span class="top-title">Our Products</span>
+                <span class="title">BEST OF OUR WORKS</span>
+            </div>
+            <div class="row" id="ourProduct">
+                <script id="ourProductTemplate" type="text/html">
+                    {cms:channellist id="channel" type="son" typeid="44" condition="1=cpindex"}
+                    {cms:arclist id="item" flag="index" row="9" orderby="updatetime" channel="channel['id']", addon="content,bgimage"}
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail content-item">
+                            <div class="card-img-wrap">
+                                <div class="card-img-wrap-bg"  style="background-image: url({$item.bgimage});">
+                                </div>
+                                <img src="{$item.image}" alt="{$item.title}">
+                            </div>
+                            <div class="caption">
+                                <p class="font-bold f20 mt-4">{$item.title}</p>
+<!--                                <p class="caption-content multiple-text-ellipsis">{:str_replace(["<p>","</p>"], "", $item.content)}</p>-->
+                                <p class="caption-content multiple-text-ellipsis">{$item.description}</p>
+                                <a href="{$item.url}" class="product-learn-more">
+                                    Learn More
+                                    <span class="glyphicon glyphicon-arrow-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    {/cms:arclist}
+                    {/cms:channellist}
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <!-- about us -->
+    <div class="home-body-card about-us">
+        <div class="container card-item">
+            <div class="text-center">
+                <span class="top-title">About Us</span>
+                {cms:blocklist id="block" name="aboutsTop" orderby="weigh" orderway="desc" }
+                    <span class="title f28 mb-4">{$block.title}</span>
+                    <span class="sub-title">{:str_replace(["<p>","</p>"], "", $block.content)}</span>
+                {/cms:blocklist}
+            </div>
+            <div id="aboutUs">
+                <script id="aboutUsTemplate" type="text/html">
+                    <div class="row">
+                        {cms:blocklist id="block" name="aboutsTop" orderby="weigh" orderway="desc" }
+                        {notempty name="$block.images"}
+                        {volist name="$block.images|explode=',',###" id="image"}
+                        <div class="text-center col-md-{{setCol({$key})}} mt-4">
+                            <span class="about-item-title f20 font-bold">{$block.intro[$key]['info']}</span>
+                            <p class="about-item-sub-title f14">{$block.intro[$key]['txt']}</p>
+                        </div>
+                        {/volist}
+                        {/notempty}
+                        {/cms:blocklist}
+                    </div>
+                    <div class="row d-flex about-us-content">
+                        <div class="col-md-8 about-us-list">
+                            <div id="about-us-carousel" class="carousel slide" data-ride="carousel">
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    {cms:blocklist id="block" name="aboutsFoot" orderby="weigh" orderway="desc" }
+                                    {notempty name="$block.images"}
+                                    {volist name="$block.images|explode=',',###" id="image"}
+                                    <div class="item {{setDefaultActive({$key})}}">
+                                        <img src="{$image}" alt="about us">
+                                        <div class="carousel-caption">
+                                            <span class="f30">{$block.intro[$key]['info']}</span>
+                                            <span>{$block.intro[$key]['txt']}</span>
+                                        </div>
+                                    </div>
+                                    {/volist}
+                                    {/notempty}
+                                    {/cms:blocklist}
+                                </div>
+
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 about-us-list right d-flex">
+                            {cms:blocklist id="block" name="aboutsMid" orderby="weigh" orderway="desc" }
+                            <div>
+                                <img src="{$block.image}" alt="{$block.title}">
+                                <span class="font-bold">{$block.title}</span>
+                            </div>
+                            {/cms:blocklist}
+                        </div>
+                    </div>
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <!-- strategic partners -->
+    <div class="home-body-card strategic-partners">
+        <div class="container">
+            {cms:blocklist id="block" name="hezuo" orderby="weigh" orderway="desc" }
+            <div class="text-center">
+                <span class="title font-bold">{$block.title}</span>
+                <hr />
+            </div>
+            <div class="row" id="strategicPartners">
+                <script id="strategicPartnersTemplate" type="text/html">
+                    {notempty name="$block.images"}
+                    {volist name="$block.images|explode=',',###" id="image"}
+                    <div class="item col-sm-4 col-md-3">
+                        <div href="#" class="thumbnail p-0">
+                            <img src="{$image}" alt="partners">
+                        </div>
+                    </div>
+                    {/volist}
+                    {/notempty}
+                </script>
+            </div>
+            {/cms:blocklist}
+        </div>
+    </div>
+
+    <!-- news center -->
+    <div class="home-body-card news-center">
+        <div class="container card-item">
+            <div class="text-center">
+                <span class="top-title">News Center</span>
+                <span class="title">Lastest News</span>
+            </div>
+            <div class="row" id="newsCenter">
+                <script id="newsCenterTemplate" type="text/html">
+                    {cms:arclist id="item" flag="index" model="10"  row="3" orderby="updatetime" addon="content"}
+                    <div class="item col-sm-6 col-md-4">
+                        <div class="thumbnail content-item news-content-item">
+                            <div class="card-img-wrap">
+                                <img src="{$item.image}" alt="{$item.title}">
+                            </div>
+                            <div class="caption">
+                                <p class="font-bold f14 mt-2 text-ellipsis">{$item.title}</p>
+                                <p class="caption-content multiple-text-ellipsis mt-2">{:str_replace(["<p>","</p>"], "", $item.content)}</p>
+                                <p class="news-date text-right f12">
+                                    <span class="d-iblock">{:date('Y-m-d', $item.updatetime)}</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    {/cms:arclist}
+                </script>
+            </div>
+        </div>
+    </div>
+</main>
+
+{include file="common/footer" /}
+{include file="common/script" /}
+
+<script
+        data-main="__CDN__/assets/qianzhi/frontend/home/home.js"
+        src="__CDN__/assets/qianzhi/require.min.js"
+>
 </script>
 
+</body>
 
-<!--公司介绍-->
-{cms:blocklist id="block" name="indexabout" orderby="weigh" orderway="desc" } 
-<div class="indexAbout" id="about">
-    <div class="indexA">
-     <div class="indexAboutTxt box">
-            {notempty name="$block.image"}<img src="{$block.image}">{/notempty}
-         	<div class="BJQ" style="{empty name="$block.image"}width: 100%;{/empty}">
-         	    <h2>{$block.title}</h2>
-         	    {$block.content}
-         	    {notempty name="$block.url"}<a href="{$block.url}">Learn more</a>{/notempty}
-         	</div>
-     </div>
-    </div>
-
-
-  {notempty name="$block.images"}
-  <ul class="indexAUl box">
-    {volist name="$block.images|explode=',',###" id="image"}
-        <li>
-            <em><i class="ico {$image|cdnurl}"></i></em>
-            <div>
-                 <h3>{$block.intro[$key]['info']}</h3>
-                 <p>{$block.intro[$key]['txt']}</p>
-            </div>
-        </li>
-      {/volist}
-    </ul>
-    {/notempty}
-    
-    
- </div> 
-{/cms:blocklist} 
-
-
-
-<!--隔断-->
-{cms:blocklist id="block" name="homegd" orderby="weigh" orderway="desc" } 
- <div class="indexF" {notempty name="$block.image"}style="background-image: url({$block.image});"{/notempty}>
-     	<div class="box indexFHead">
-     	    <div class="BJQ" style="{empty name="$block.url"}width: 100%;{/empty}">
-     	        	{$block.content}
-     	    </div>
-            {notempty name="$block.url"}<a class="indexFa" href="{$block.url}">{$block.title}</a>{/notempty} 
-     	</div>
-      {notempty name="$block.images"}
-      <ul class="box indexFul">
-        {volist name="$block.images|explode=',',###" id="image"}
-            <li>
-                <em><i class="ico {$image|cdnurl}"></i></em>
-                <div>
-                     <h3>{$block.intro[$key]['info']}</h3>
-                     <p>{$block.intro[$key]['txt']}</p>
-                </div>
-            </li> 
-          {/volist}
-        </ul>
-        {/notempty}
- </div>
-{/cms:blocklist} 
-
-
- 
-
-
-<!--首页服务 -->
-{range name="$site.indexfw" value="1" type="in"}   
-<div class="indexCp">
-    <div class="box">
-    <div class="indexCpTitle">
-         <h2>Services</h2>
-    </div>
-    <ol class="indexCpOl">
-        {cms:arclist id="item" flag="index" model="7"  row="8" orderby="weigh" } 
-        <li>
-            <a href="{$item.url}">
-              <div class="imghover"><img src="{$item.image}"></div>
-              <div class="indexCpdefaultTxt">
-                  <h3>{$item.title}</h3>
-                  {notempty name="$item.description"}<p>{$item.description}</p>{/notempty} 
-                  <em>Read More</em>
-              </div>    
-            </a>
-        </li>
-        {/cms:arclist}
-       </ol>
-    
-   </div>
-</div> 
-{/range}
-
-
-
-<!--产品类目-->
-{range name="$site.indexfl" value="1" type="in"}
-<div class="ProductClassificationBJ">
-    <div class="ProductClassification box">
-       <h2>Product Category</h2>
-      <ul>
-           {cms:channellist id="channel" type="son" typeid="44" condition="1=cpindex"}
-           <li><a href="{$channel.url}"><div class="imghover"><img src="{$channel.lmimg}"></div><h3>{$channel.name}</h3></a></li>
-           {/cms:channellist}
-       </ul>
-  </div>
-</div>
-{/range}
-
-
-
-<!--首页项目-->
-{range name="$site.indexxm" value="1" type="in"}
-<div class="indexProjectBJ">
-    <div class="indexProject box">
-       <h2>Project</h2>
-
-      <ul>
-           {cms:arclist id="item" flag="index" model="10"  row="10" orderby="updatetime"  }
-           <li><a href="{$item.url}"><div class="imghover"><img src="{$item.image}"></div><h3>{$item.title}</h3></a></li>
-           {/cms:arclist}
-       </ul>
-  </div>
-</div>
-{/range}
-    
-    
-    
-<!--产品-->    
-{range name="$site.indexcp" value="1" type="in"}     
-<div class="IndexProduct">
-    <div class="IndexProductNr">
-       {cms:channellist id="channel" type="son" typeid="44" condition="1=cpindex"}
-       <dl class="box">
-            <dt> <em>{$channel.name}</em>  <a href="{$channel.url}">More</a></dt>
-            <dd>
-                <ul>
-                    
-                    {cms:arclist id="item"  row="4" orderby="updatetime" channel="channel['id']"}
-                    <li>
-                        <a href="{$item.url}">
-                          <div class="imghover"><img src="{$item.image}"></div>
-                          <div class="IndexProductTxt">
-                              <h3>{$item.title}</h3>
-                              {notempty name="$item.price"}<span>{$item.price}</span>{/notempty} 
-                            
-                          </div>    
-                        </a>
-                    </li>
-                    {/cms:arclist}
-                </ul>
-            </dd>
-        </dl>
-        {/cms:channellist}
-        
-    </div>
-</div>
-{/range}   
- 
- 
- 
-<!--房地产-->    
-{range name="$site.indexfdc" value="1" type="in"}    
-<div class="indexFdc">
-    <div class="box">   
-    <div class="indexFdcTitle">
-         <h3>Find your dream property</h3> <a href="/Buy.html">More +</a>
-    </div>
-        <ul>
-            
-            {cms:arclist id="item" flag="index" model="8"  row="6" orderby="updatetime" addon="true"} 
-            	<li>
-            		<a href="{$item.url}"  title="{$item.title}">
-            		<div class="imghover"><img src="{$item.image}"></div>
-            		
-            		<div class="FdcLitstxt">
-            			<h3>{$item.title}</h3>
-            			 {notempty name="$item.add"}<h4>{$item.add}</h4>{/notempty}
-            			 {notempty name="$item.price"}<span>{$item.price}</span>{/notempty}
-            	        <h5>
-            	            <i class="ico icon-chuang1"></i><em>{$item.woshi}</em>
-            	            <i class="ico icon-bathroom"></i><em>{$item.yushi}</em>
-            	            <i class="ico icon-wode-wodecheku"></i><em>{$item.chewei}</em>
-            	        </h5>
-                    </div>
-            		</a>
-            	</li>
-            {/cms:arclist}
-            
-        </ul>
-    </div> 
-</div>
-{/range} 	
- 
-
-
-   
-
-{include file="common/foot" /}
+</html>

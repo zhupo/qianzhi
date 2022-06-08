@@ -1,49 +1,238 @@
-<!--{include file="common/top" /}-->
-{include file="common/mbx" /}
- 
+<!DOCTYPE html>
+<html>
 
- <div class="About box">
-    {cms:blocklist id="block" name="about" orderby="weigh" orderway="desc" } 
- 	<div class="box">
- 	  	<div class="BJQ">
- 	  	    {notempty name="$block.image"}<div class="AboutImg" ><img src="{$block.image}"></div>{/notempty} 
- 	  	    <div class="{empty name="$block.image"}AboutTxt100{else /}AboutTxt{/empty}">
- 	  	        {$block.content}
-	 	    </div>
-	 	   
-	 	</div>
- 	</div>
- 	{notempty name="$block.images"}
- 	<ul>
- 	  {volist name="$block.images|explode=',',###" id="image"}
-        <li>
-            <img src="{$image|cdnurl}">
-            <div>
-               {notempty name="$block.intro[$key]['info']"}<h3>{$block.intro[$key]['info']}</h3>{/notempty}
-               {notempty name="$block.intro[$key]['txt']"}<p>{$block.intro[$key]['txt']}</p>{/notempty}
-            </div>
-        </li> 
-      {/volist}
-    </ul>
-    {/notempty} 
- 	{/cms:blocklist}  
- 	 
- 
- 	<div class="aboutListBox">
- 	    	{cms:blocklist id="block" name="ab" orderby="weigh" orderway="desc" } 
- 	    <div class="aboutList">
- 	        <div class="aboutListImg"><img src="{$block.image}"></div>
- 	        <div class="aboutListTxt">
- 	            <h3>{$block.title}</h3>
- 	            {$block.content}
- 	        </div>
- 	    </div>
- 	    	{/cms:blocklist}
- 	</div>
- 
- 	
- </div>
+<head>
+	{include file="common/meta" /}
+	<link rel="stylesheet" href="__CDN__/assets/qianzhi/frontend/aboutUs/swiper-bundle.min.css">
+	<link rel="stylesheet" href="__CDN__/assets/qianzhi/frontend/aboutUs/aboutUs.css">
+</head>
 
- 
-{include file="common/foot" /}
- 
+<body class="about-wrap">
+{include file="common/header" /}
+{include file="common/mbx_about"}
+<!--<div id="header-banner" class="about-header">-->
+<!--	<div class="about-header-detail text-center">-->
+<!--		<span class="d-block title f50 font-bold">QIANZHI ROBOT</span>-->
+<!--		<span class="d-block sub-title f28">Open iNNOVATION, Cooperation and Win-win</span>-->
+<!--		<div class="but-group">-->
+<!--			<a href="/" class="btn btn-default btn-lg mr-4">-->
+<!--				<img src="" alt="">-->
+<!--				Advanced Technology-->
+<!--			</a>-->
+<!--			<a href="/" class="btn btn-default btn-lg mr-4">-->
+<!--				Convenient Order-->
+<!--			</a>-->
+<!--			<a href="/" class="btn btn-default btn-lg">-->
+<!--				Satisfactory Service-->
+<!--			</a>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</div>-->
+
+
+<main id="about-body">
+	<!-- out product -->
+	<div class="about-body-card our-agency">
+		<div class="container card-item">
+			<div class="text-center">
+				<span class="top-title">Who we are & what we do</span>
+				<span class="title">OUR AGENCY</span>
+			</div>
+			{cms:blocklist id="block" name="movie" orderby="weigh" orderway="desc" }
+			<div class="video-wrap">
+				<video autoplay loop class="video" poster="" src="{$block.movie}" controls="controls" controlsList="nodownload">
+					您的浏览器不支持 video 标签。
+				</video>
+			</div>
+			{/cms:blocklist}
+		</div>
+	</div>
+
+	<!-- about us -->
+	<div class="about-body-card about-us-technology">
+		<div class="part-of-top">
+			<div class="container card-item row d-flex">
+				{cms:blocklist id="block" name="about-left" orderby="weigh" orderway="desc" }
+				<div class="col-md-5" style="padding-top: 60px">
+					<img width="100%" src="{$block.image}" alt="img">
+				</div>
+                {/cms:blocklist}
+				<div class="col-md-7">
+					<span class="top-title">About Us</span>
+					{cms:blocklist id="block" name="about-upper-right" orderby="weigh" orderway="desc" }
+						<span class="title mb-0">Qianzhi Robotics</span>
+						<span class="d-block font-bold f18 mb-2">{$block.title}</span>
+						<span class="sub-title">{:str_replace(["<p>","</p>"], "", $block.content)}</span>
+                    {/cms:blocklist}
+
+					{cms:blocklist id="block" name="about-lower-right" orderby="weigh" orderway="desc" }
+						<div class="item-content mt-4">
+							<div class="row">
+								<div class="col-md-6">
+									<button class="btn btn-danger full-width">
+										Future Direction
+									</button>
+								</div>
+								<div class="col-md-6 platform-plus text-center">
+									{$block.title}
+								</div>
+								<div class="col-md-12 my-3">
+									{:str_replace(["<p>","</p>"], "", $block.content)}
+								</div>
+								{notempty name="$block.images"}
+									<div class="col-md-12">
+										{volist name="$block.images|explode=',',###" id="image"}
+											<div class="px-4 mb-1">
+												<span class="icon mr-2 mt-1 glyphicon glyphicon-triangle-right"></span>
+												{$block.intro[$key]['info']}
+											</div>
+                                        {/volist}
+									</div>
+                                {/notempty}
+							</div>
+						</div>
+					{/cms:blocklist}
+				</div>
+			</div>
+		</div>
+		<div class="part-of-bottom text-center">
+			<div class="container card-item row">
+
+				{cms:blocklist id="block" name="about-foot" orderby="weigh" orderway="desc" }
+				{notempty name="$block.images"}
+				{volist name="$block.images|explode=',',###" id="image"}
+				<div class="col-md-3">
+					<div class="tech-item">
+						<img src="{$image|cdnurl}" alt="advanced">
+						<p>{$block.intro[$key]['info']}</p>
+						<div>{$block.intro[$key]['txt']}</div>
+					</div>
+				</div>
+				{/volist}
+				{/notempty}
+				{/cms:blocklist}
+				<div class="col-md-12">
+					<span class="title my-4">Qianzhi Robotics</span>
+					<span class="d-block font-bold f18 pb-4 mb-2">Towards the goal of building a R&D Heights of special robots in China</span>
+					<a href="/CONTACTUS.html" class="btn btn-danger btn-lg">Contact Us</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="about-body-card about-us-version">
+		<div class="container card-item">
+			{cms:blocklist id="block" name="contact-top" orderby="weigh" orderway="desc" }
+			<div class="row d-flex">
+				<div class="col-md-6">
+					<span class="title mb-0">Vision of Qianzhi</span>
+					<span class="d-block font-bold f18 mb-2">{$block.title}</span>
+					<span class="sub-title">{:str_replace(["<p>","</p>"], "", $block.content)}</span>
+				</div>
+
+				{notempty name="$block.images"}
+				<div class="col-md-6">
+					<div class="row text-center">
+						{volist name="$block.images|explode=',',###" id="image"}
+						<div class="col-md-6">
+							<div class="img-wrap">
+								<img width="100%" src="{$image|cdnurl}" alt="img">
+								<div class="our-team">
+									<span>{$block.intro[$key]['info']}</span>
+									<span>{$block.intro[$key]['txt']}</span>
+								</div>
+							</div>
+						</div>
+						{/volist}
+					</div>
+				</div>
+				{/notempty}
+			</div>
+            {/cms:blocklist}
+			<div class="row version-steps">
+				{cms:blocklist id="block" name="contact-foot" orderby="weigh" orderway="desc" }
+				{notempty name="$block.images"}
+				{volist name="$block.images|explode=',',###" id="image"}
+				<div class="col-md-4">
+					<div class="d-flex">
+						<span>0{$key + 1}.</span>
+						<div>
+							<p class="title">{$block.intro[$key]['info']}</p>
+							<span>{$block.intro[$key]['txt']}</span>
+						</div>
+					</div>
+				</div>
+				{/volist}
+				{/notempty}
+				{/cms:blocklist}
+			</div>
+		</div>
+	</div>
+
+	<div class="about-body-card about-us-honor">
+		{cms:blocklist id="block" name="zs" orderby="weigh" orderway="desc" }
+		{notempty name="$block.images"}
+		<div class="part-of-honor card-item">
+			<div class="container">
+				<div class="text-center">
+					<span class="title mb-0">{$block.title}</span>
+					<span class="sub-title font-bold">{:str_replace(["<p>","</p>"], "", $block.content)}</span>
+				</div>
+				<div class="live-box">
+					<ul id="liveSlide">
+						{volist name="$block.images|explode=',',###" id="image"}
+						<li>
+							<img src="{$image|cdnurl}" alt="honor">
+						</li>
+                        {/volist}
+					</ul>
+				</div>
+			</div>
+		</div>
+		{/notempty}
+        {/cms:blocklist}
+		{cms:blocklist id="block" name="history" orderby="weigh" orderway="desc" }
+		{notempty name="$block.images"}
+		<div class="part-of-timeline">
+			<div class="container">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						{volist name="$block.images|explode=',',###" id="image"}
+						<div class="swiper-slide">
+							<div class="slide-content">
+								<span class="dot"></span>
+								<p>{$block.intro[$key]['info']}</p>
+								<span>{$block.intro[$key]['txt']}</span>
+							</div>
+						</div>
+                        {/volist}
+					</div>
+
+					<!-- 如果需要导航按钮 -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+					<div class="time-line"></div>
+				</div>
+			</div>
+		</div>
+		{/notempty}
+		{/cms:blocklist}
+	</div>
+
+</main>
+
+{include file="common/footer" /}
+{include file="common/script" /}
+
+<script src="__CDN__/assets/qianzhi/frontend/aboutUs/jquery.easing.1.3.js"></script>
+<script src="__CDN__/assets/qianzhi/frontend/aboutUs/jquery.roundabout.min.js"></script>
+<script src="__CDN__/assets/qianzhi/frontend/aboutUs/swiper-bundle.min.js"></script>
+<script
+		data-main="__CDN__/assets/qianzhi/frontend/aboutUs/aboutUs.js"
+		src="__CDN__/assets/qianzhi/require.min.js"
+>
+</script>
+
+</body>
+
+</html>

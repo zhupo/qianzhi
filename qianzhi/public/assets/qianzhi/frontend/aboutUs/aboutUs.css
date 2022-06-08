@@ -1,0 +1,308 @@
+body {
+  background-color: #fff;
+}
+.about-wrap {
+  padding-top: 0;
+}
+.about-wrap .about-header {
+  height: 900px;
+  width: 100%;
+  /*background: url('./about-us-banner.jpg');*/
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  padding-top: 300px;
+}
+.about-wrap .about-header .about-header-detail {
+  color: #fff;
+}
+.about-wrap .about-header .about-header-detail .title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.about-wrap .about-header .about-header-detail .sub-title {
+  margin-bottom: 100px;
+}
+.about-wrap .about-header .about-header-detail .btn {
+  background: transparent;
+  padding: 20px 30px;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 14px;
+}
+.about-wrap #about-body .about-body-card {
+  width: 100%;
+}
+.about-wrap #about-body .about-body-card .video-wrap {
+  background-color: #F9FAFB;
+}
+.about-wrap #about-body .about-body-card .video-wrap .video {
+  margin: auto;
+  height: auto;
+  width: 100%;
+  max-height: 600px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+}
+.about-wrap #about-body .about-body-card .card-item {
+  margin: auto;
+  margin-top: 40px;
+}
+.about-wrap #about-body .about-body-card .card-item .top-title {
+  display: block;
+  color: #1C71BF;
+}
+.about-wrap #about-body .about-body-card .card-item .title {
+  display: block;
+  font-size: 38px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.about-wrap #about-body .about-body-card .card-item .sub-title {
+  display: block;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+.about-wrap #about-body .about-body-card .card-item .item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.about-wrap #about-body .about-body-card.about-us-technology .card-item {
+  flex-wrap: wrap;
+}
+.about-wrap #about-body .about-body-card.about-us-technology .card-item .item-content {
+  padding: 20px 30px;
+  border-radius: 5px;
+  background-image: url(./technology-bg.jpg);
+  background-repeat: no-repeat;
+  font-size: 12px;
+  color: #fff;
+}
+.about-wrap #about-body .about-body-card.about-us-technology .card-item .item-content .btn-danger {
+  background-color: #EF4E5D;
+  height: 30px;
+  line-height: 30px;
+  padding: 0;
+}
+.about-wrap #about-body .about-body-card.about-us-technology .card-item .item-content .platform-plus {
+  line-height: 30px;
+  color: #EF4E5D;
+  font-size: 16px;
+}
+.about-wrap #about-body .about-body-card.about-us-technology .card-item .item-content .glyphicon {
+  color: #EF4E5D;
+}
+.about-wrap #about-body .about-body-card.about-us-technology .part-of-top {
+  padding-bottom: 150px;
+  background-image: url(./technology-bg-01.png), url(./technology-bg-02.png);
+  background-position: 0 40px, 100% 40px;
+  background-repeat: no-repeat;
+}
+.about-wrap #about-body .about-body-card.about-us-technology .part-of-bottom {
+  background-color: #F2F6F9;
+  padding-bottom: 50px;
+}
+.about-wrap #about-body .about-body-card.about-us-technology .part-of-bottom .tech-item {
+  margin-top: -40%;
+  padding: 40px 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 #ccc;
+}
+.about-wrap #about-body .about-body-card.about-us-technology .part-of-bottom .tech-item p {
+  font-weight: bold;
+  color: #000;
+}
+.about-wrap #about-body .about-body-card.about-us-technology .part-of-bottom .tech-item div {
+  font-size: 12px;
+}
+.about-wrap #about-body .about-body-card.about-us-version {
+  padding-top: 50px;
+}
+.about-wrap #about-body .about-body-card.about-us-version .img-wrap {
+  position: relative;
+}
+.about-wrap #about-body .about-body-card.about-us-version .img-wrap > div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px 5px;
+}
+.about-wrap #about-body .about-body-card.about-us-version .img-wrap > div span {
+  display: block;
+  font-size: 12px;
+}
+.about-wrap #about-body .about-body-card.about-us-version .img-wrap > div span:first-child {
+  font-weight: bold;
+}
+.about-wrap #about-body .about-body-card.about-us-version .version-steps {
+  padding-top: 50px;
+}
+.about-wrap #about-body .about-body-card.about-us-version .version-steps .d-flex {
+  height: 100%;
+  padding-bottom: 40px;
+}
+.about-wrap #about-body .about-body-card.about-us-version .version-steps .d-flex > span {
+  font-size: 30px;
+  line-height: 30px;
+  color: #EF4E5D;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.about-wrap #about-body .about-body-card.about-us-version .version-steps .d-flex .title {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.about-wrap #about-body .about-body-card.about-us-version .version-steps .d-flex > div {
+  flex: 1;
+  padding-top: 10px;
+}
+.about-wrap #about-body .about-body-card.about-us-version .version-steps .d-flex > div > span {
+  font-size: 12px;
+}
+.about-wrap #about-body .about-body-card.about-us-honor {
+  padding-top: 50px;
+}
+.about-wrap #about-body .about-body-card.about-us-honor ul,
+.about-wrap #about-body .about-body-card.about-us-honor li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-honor {
+  background-image: url(./honor-bg.jpg);
+  background-position: center 0;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding: 70px 0;
+}
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-honor .title {
+  color: #fff;
+}
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-honor .sub-title {
+  color: #fff;
+  padding-bottom: 30px;
+}
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-honor .live-box ul {
+  width: 50%;
+  height: 500px;
+  margin: auto;
+  transform-style: preserve-3d;
+}
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-honor .live-box li {
+  height: 100%;
+  position: relative;
+}
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-honor .live-box img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 5px 6px #ccc, 0px 1px 10px #ccc;
+}
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-timeline {
+  background: #F2F6F9;
+  padding: 60px 0 50px;
+}
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-timeline .swiper {
+  height: 320px;
+  font-size: 12px;
+}
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-timeline .swiper-slide {
+  text-align: center;
+  background: transparent;
+  height: calc(100% / 2);
+  padding: 20px 0;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-timeline .swiper-slide .slide-content {
+  text-align: left;
+  align-self: flex-start;
+  position: relative;
+}
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-timeline .swiper-slide .slide-content::before {
+  content: '';
+  border-left: 1px solid #8A8B8C;
+  position: absolute;
+  left: -10px;
+}
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-timeline .swiper-slide .slide-content p {
+  font-weight: bold;
+  color: #EF4E5D;
+  margin-bottom: 10px;
+}
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-timeline .swiper-slide .slide-content span {
+  font-size: 12px;
+  line-height: 1.5em;
+}
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-timeline .swiper-slide .slide-content .dot {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #EF4E5D;
+  left: -12px;
+  top: 8px;
+}
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-timeline .swiper-slide:nth-child(2n+1) {
+  padding-left: 50px;
+  padding-top: 40px;
+}
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-timeline .swiper-slide:nth-child(2n+1) .slide-content::before {
+  top: 12px;
+  height: 108px;
+}
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-timeline .swiper-slide:nth-child(2n) {
+  padding-left: 110px;
+  padding-top: 50px;
+}
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-timeline .swiper-slide:nth-child(2n) .slide-content::before {
+  top: -50px;
+  height: 60px;
+}
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-timeline .swiper-button-next {
+  right: 0;
+}
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-timeline .swiper-button-prev {
+  left: 0;
+}
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-timeline .swiper-button-next,
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-timeline .swiper-button-prev {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #007aff;
+  margin-top: -15px;
+}
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-timeline .swiper-button-next::after,
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-timeline .swiper-button-prev::after {
+  font-size: 14px;
+}
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-timeline .swiper-button-next.swiper-button-disabled,
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-timeline .swiper-button-prev.swiper-button-disabled {
+  opacity: 1;
+}
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-timeline .swiper-button-next.swiper-button-disabled::after,
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-timeline .swiper-button-prev.swiper-button-disabled::after {
+  color: #ccc;
+}
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-timeline .time-line {
+  width: calc(100% - 20px);
+  height: 2px;
+  background-color: #007aff;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  z-index: 9;
+}

@@ -1,0 +1,19 @@
+<div id="header-banner" class="about-header" style="background: url({cms:channel name="image" /})">
+    <div class="about-header-detail text-center">
+
+        {cms:blocklist id="block" name="banner" orderby="weigh" orderway="desc" }
+        <span class="d-block title f50 font-bold">{$block.title}</span>
+        <span class="d-block sub-title f28">{:str_replace(["<p>","</p>"], "", $block.content)}</span>
+        {notempty name="$block.images"}
+        <div class="but-group">
+            {volist name="$block.images|explode=',',###" id="image"}
+            <a href="/" class="btn btn-default btn-lg mr-4">
+                <img src="" alt="">
+                {$block.intro[$key]['info']}
+            </a>
+            {/volist}
+        </div>
+        {/notempty}
+        {/cms:blocklist}
+    </div>
+</div>

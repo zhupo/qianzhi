@@ -48,7 +48,7 @@ class Index extends Base
         if ($this->request->isAjax()) {
             $this->success("", "", $this->view->fetch('common/index_list'));
         }
-        return $this->view->fetch('/index-qianzhi');
+        return $this->view->fetch('/index');
     }
 
 }
