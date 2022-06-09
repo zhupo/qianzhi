@@ -1,0 +1,48 @@
+
+.nav-pagination {
+  .Pagination_list {
+    position: relative;
+    margin: 0 auto;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px 0;
+    a:not(:first-child, :last-child), span {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      margin: 0 8px;
+      cursor: pointer;
+    }
+    span {
+      border-radius: 50%;
+      color: #fff;
+      background-color: #3c8dbc;
+    }
+    strong {
+      margin-left: 10px;
+    }
+    a:first-child, a:last-child {
+      width: 16px;
+      height: 16px;
+      background-color: #3c8dbc;
+      position: absolute;
+      top: 18px;
+    }
+    a:first-child {
+      left: 20px;
+    }
+    a:last-child {
+      right: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) { 
+  .nav-pagination {
+    .Pagination_list {
+      width: 100%;
+    }
+  }
+}

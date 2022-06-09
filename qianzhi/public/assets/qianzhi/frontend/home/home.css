@@ -11,10 +11,17 @@ body {
   background-position: center;
   background-size: auto 100%;
   background-repeat: no-repeat;
-  padding-top: 250px;
+  position: relative;
 }
 .home-wrap .home-header .home-header-detail {
+  height: 360px;
   color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 .home-wrap .home-header .home-header-detail .title {
   padding-top: 20px;

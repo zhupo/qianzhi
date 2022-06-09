@@ -3,10 +3,6 @@ define([
   '../../../../assets/qianzhi/frontend/home/homeData.js'
 ], function (Template, homeData) {
   const $elms = {
-    searchBtn: $("#js-search-btn"),
-    searchInput: $("#js-search-input"),
-    searchFrom: $("#js-search-from"),
-
     ourProduct: $('#ourProduct'),
     ourProductTemplate: $('#ourProductTemplate'),
 
@@ -67,23 +63,7 @@ define([
 
 
     events() {
-      const that = homePage;
-      $elms.searchBtn.off("click").on("click", function () {
-        if ($elms.searchInput.is(":visible")) {
-          $($elms.searchInput)
-            .animate(
-              {
-                width: "0",
-              },
-              800
-            )
-            .hide(1);
-        } else {
-          $elms.searchInput.show().animate({
-            width: "170px",
-          });
-        }
-      });
+      
     },
   };
 

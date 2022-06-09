@@ -4,7 +4,7 @@
 .product-wrap .product-header {
   height: 470px;
   width: 100%;
-  /*background: url('../../../../img/png/product-banner.jpg');*/
+  background: url('../../../../img/png/product-banner.jpg');
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -27,6 +27,50 @@
     width: auto;
   }
 }
+.nav-pagination .Pagination_list {
+  position: relative;
+  margin: 0 auto;
+  width: 50%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px 0;
+}
+.nav-pagination .Pagination_list a:not(:first-child, :last-child),
+.nav-pagination .Pagination_list span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin: 0 8px;
+  cursor: pointer;
+}
+.nav-pagination .Pagination_list span {
+  border-radius: 50%;
+  color: #fff;
+  background-color: #3c8dbc;
+}
+.nav-pagination .Pagination_list strong {
+  margin-left: 10px;
+}
+.nav-pagination .Pagination_list a:first-child,
+.nav-pagination .Pagination_list a:last-child {
+  width: 16px;
+  height: 16px;
+  background-color: #3c8dbc;
+  position: absolute;
+  top: 18px;
+}
+.nav-pagination .Pagination_list a:first-child {
+  left: 20px;
+}
+.nav-pagination .Pagination_list a:last-child {
+  right: 20px;
+}
+@media screen and (max-width: 750px) {
+  .nav-pagination .Pagination_list {
+    width: 100%;
+  }
+}
 #product-list-body {
   margin-top: 70px;
   padding-bottom: 70px;
@@ -35,6 +79,7 @@
   padding: 0;
   border-color: #EEEFF0;
   background-color: #F9FAFB;
+  margin-bottom: 40px;
   box-shadow: 0 12px 5px -10px #ccc, 0 0 5px 0 #eee;
 }
 #product-list-body .content-item .card-img-wrap {
@@ -43,6 +88,10 @@
 #product-list-body .content-item .card-img-wrap img {
   width: 100%;
   height: auto;
+}
+#product-list-body .content-item .caption {
+  height: 130px;
+  overflow: hidden;
 }
 #product-list-body .content-item .caption-content {
   color: #666;

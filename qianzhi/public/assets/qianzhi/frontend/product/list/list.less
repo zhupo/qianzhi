@@ -1,4 +1,5 @@
 @import url('../product');
+@import url('../../common/pagination');
 
 #product-list-body {
   margin-top: 70px;
@@ -7,6 +8,7 @@
     padding: 0;
     border-color: #EEEFF0;
     background-color: #F9FAFB;
+    margin-bottom: 40px;
     box-shadow: 0 12px 5px -10px #ccc, 0 0 5px 0 #eee;
     .card-img-wrap {
       background-color: @themeColor;
@@ -14,6 +16,10 @@
         width: 100%;
         height: auto;
       }
+    }
+    .caption {
+      height: 130px;
+      overflow: hidden;
     }
     .caption-content {
       color: #666;

@@ -2,3 +2,5 @@
 /runtime
 
 .idea/
+
+.DS_Store

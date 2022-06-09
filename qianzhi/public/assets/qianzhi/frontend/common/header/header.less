@@ -1,7 +1,6 @@
 @themeColor: #fff;
 
 .navbar {
-  height: 100px;
   font-size: 16px;
   width: 100%;
   border-radius: 0 !important;
@@ -43,10 +42,24 @@
 
   .navbar-form {
     line-height: 30px;
-    .search-input {
-      display: none;
-      width: 0;
-      border-radius: 5px;
+    .form-wrap {
+      background-color: #fff;
+      border-radius: 35px;
+      padding-left: 10px;
+      padding-right: 10px;
+      overflow: hidden;
+      .form-group {
+        flex: 1;
+      }
+      .search-input {
+        width: 120px;
+        border: 0;
+      }
+      .search-button {
+        color: #666;
+        background-color: transparent;
+        border: 0;
+      }
     }
   }
 
@@ -59,6 +72,7 @@
 
     .logo-wrap {
       height: 50px;
+      padding-left: 15px;
       img {
         height: 100%;
       }
@@ -67,5 +81,41 @@
 
   .navbar-header {
     white-space: nowrap;
+  }
+
+  &.navbar-default {
+    .navbar-toggle {
+      background-color: transparent;
+      &:hover, 
+      &:focus {
+        background-color: transparent;
+      }
+      .icon-bar {
+        background-color: @themeColor;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .navbar {
+    .container-flex {
+      display: block;
+      height: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      .logo-wrap {
+        padding: 8px 15px;
+      }
+      .navbar-nav.navbar-right {
+        margin: 0;
+      }
+      .navbar-form .form-group {
+        margin-bottom: 0;
+        input {
+          width: 100%;
+        }
+      }
+    }
   }
 }

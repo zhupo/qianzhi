@@ -1,5 +1,4 @@
 .navbar {
-  height: 100px;
   font-size: 16px;
   width: 100%;
   border-radius: 0 !important;
@@ -15,7 +14,7 @@
   transition: all 1s ease-in-out;
 }
 .navbar.is-over {
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .navbar .navbar-nav > li > a {
   color: #fff;
@@ -37,10 +36,24 @@
 .navbar .navbar-form {
   line-height: 30px;
 }
-.navbar .navbar-form .search-input {
-  display: none;
-  width: 0;
-  border-radius: 5px;
+.navbar .navbar-form .form-wrap {
+  background-color: #fff;
+  border-radius: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow: hidden;
+}
+.navbar .navbar-form .form-wrap .form-group {
+  flex: 1;
+}
+.navbar .navbar-form .form-wrap .search-input {
+  width: 120px;
+  border: 0;
+}
+.navbar .navbar-form .form-wrap .search-button {
+  color: #666;
+  background-color: transparent;
+  border: 0;
 }
 .navbar .container-flex {
   display: flex;
@@ -51,10 +64,41 @@
 }
 .navbar .container-flex .logo-wrap {
   height: 50px;
+  padding-left: 15px;
 }
 .navbar .container-flex .logo-wrap img {
   height: 100%;
 }
 .navbar .navbar-header {
   white-space: nowrap;
+}
+.navbar.navbar-default .navbar-toggle {
+  background-color: transparent;
+}
+.navbar.navbar-default .navbar-toggle:hover,
+.navbar.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+.navbar.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+@media screen and (max-width: 750px) {
+  .navbar .container-flex {
+    display: block;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .navbar .container-flex .logo-wrap {
+    padding: 8px 15px;
+  }
+  .navbar .container-flex .navbar-nav.navbar-right {
+    margin: 0;
+  }
+  .navbar .container-flex .navbar-form .form-group {
+    margin-bottom: 0;
+  }
+  .navbar .container-flex .navbar-form .form-group input {
+    width: 100%;
+  }
 }

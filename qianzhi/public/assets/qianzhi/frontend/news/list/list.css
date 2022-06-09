@@ -1,14 +1,14 @@
-.product-wrap {
+.news-wrap {
   padding-top: 0;
 }
-.product-wrap .product-header {
+.news-wrap .news-header {
   height: 470px;
   width: 100%;
-  /*background: url('../news-banner.jpg');*/
+  background: url('../news-banner.jpg');
   background-position: center;
   background-repeat: no-repeat;
 }
-.product-wrap .product-header .product-header-content {
+.news-wrap .news-header .news-header-content {
   position: absolute;
   left: 0;
   bottom: 20px;
@@ -18,14 +18,58 @@
   color: #fff;
   padding: 16px 24px;
 }
-.product-wrap .product-header .product-header-content .title {
+.news-wrap .news-header .news-header-content .title {
   font-size: 24px;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 750px) {
-  .product-wrap .product-header .product-header-content {
+  .news-wrap .news-header .news-header-content {
     width: auto;
     left: 15px;
+  }
+}
+.nav-pagination .Pagination_list {
+  position: relative;
+  margin: 0 auto;
+  width: 50%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px 0;
+}
+.nav-pagination .Pagination_list a:not(:first-child, :last-child),
+.nav-pagination .Pagination_list span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin: 0 8px;
+  cursor: pointer;
+}
+.nav-pagination .Pagination_list span {
+  border-radius: 50%;
+  color: #fff;
+  background-color: #3c8dbc;
+}
+.nav-pagination .Pagination_list strong {
+  margin-left: 10px;
+}
+.nav-pagination .Pagination_list a:first-child,
+.nav-pagination .Pagination_list a:last-child {
+  width: 16px;
+  height: 16px;
+  background-color: #3c8dbc;
+  position: absolute;
+  top: 18px;
+}
+.nav-pagination .Pagination_list a:first-child {
+  left: 20px;
+}
+.nav-pagination .Pagination_list a:last-child {
+  right: 20px;
+}
+@media screen and (max-width: 750px) {
+  .nav-pagination .Pagination_list {
+    width: 100%;
   }
 }
 #news-list-body {
