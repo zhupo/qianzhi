@@ -16,10 +16,17 @@ body {
     background-position: center;
     background-size: auto 100%;
     background-repeat: no-repeat;
-    padding-top: 300px;
+    position: relative;
 
     .about-header-detail {
+      height: 360px;
       color: @themeColor;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
       .title {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -68,9 +75,12 @@ body {
           margin-bottom: 30px;
         }
         .sub-title {
-          display: block;
-          font-size: 12px;
-          line-height: 1.5em;
+          * {
+            display: block;
+            font-size: 12px !important;
+            font-weight: normal;
+            line-height: 1.5em;
+          }
         }
 
         .item {

@@ -88,7 +88,7 @@ body {
   padding-right: 10px;
 }
 .home-wrap #home-body .home-body-card .card-item .content-item {
-  height: 680px;
+  height: 560px;
   overflow: hidden;
   position: relative;
   border: 0;
@@ -97,12 +97,12 @@ body {
   margin-bottom: 30px;
 }
 .home-wrap #home-body .home-body-card .card-item .content-item .card-img-wrap {
-  height: 430px;
+  height: 360px;
   position: relative;
 }
 .home-wrap #home-body .home-body-card .card-item .content-item .card-img-wrap-bg {
   width: 100%;
-  height: 370px;
+  height: 300px;
   opacity: 0.5;
   background-position: center;
   background-size: auto 100%;
@@ -121,14 +121,14 @@ body {
 }
 .home-wrap #home-body .home-body-card .card-item .content-item .caption-content {
   color: #919293;
-  line-height: 1.8em;
+  line-height: 1.5em;
   margin-top: 20px;
-  height: 90px;
+  height: 72px;
   -webkit-line-clamp: 3;
 }
 .home-wrap #home-body .home-body-card .card-item .content-item .product-learn-more {
   position: absolute;
-  bottom: 50px;
+  bottom: 30px;
 }
 .home-wrap #home-body .home-body-card .card-item .content-item.news-content-item {
   height: auto;
@@ -168,22 +168,16 @@ body {
 }
 .home-wrap #home-body .home-body-card .card-item #aboutUs .about-us-content {
   align-items: center;
-}
-.home-wrap #home-body .home-body-card .card-item #aboutUs .about-us-list {
   margin-top: 50px;
 }
 .home-wrap #home-body .home-body-card .card-item #aboutUs .about-us-list #about-us-carousel .carousel-inner .item {
   background-color: #fff;
+  padding: 0;
 }
 .home-wrap #home-body .home-body-card .card-item #aboutUs .about-us-list #about-us-carousel .carousel-inner .item img {
   width: auto;
 }
-.home-wrap #home-body .home-body-card .card-item #aboutUs .about-us-list.right {
-  flex-direction: column;
-  justify-content: space-between;
-}
 .home-wrap #home-body .home-body-card .card-item #aboutUs .about-us-list.right > div {
-  width: 100%;
   position: relative;
 }
 .home-wrap #home-body .home-body-card .card-item #aboutUs .about-us-list.right > div img {

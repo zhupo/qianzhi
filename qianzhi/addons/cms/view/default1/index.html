@@ -45,7 +45,7 @@
                                 <img src="{$item.image}" alt="{$item.title}">
                             </div>
                             <div class="caption">
-                                <p class="font-bold f20 mt-4">{$item.title}</p>
+                                <p class="font-bold f20">{$item.title}</p>
 <!--                                <p class="caption-content multiple-text-ellipsis">{:str_replace(["<p>","</p>"], "", $item.content)}</p>-->
                                 <p class="caption-content multiple-text-ellipsis">{$item.description}</p>
                                 <a href="{$item.url}" class="product-learn-more">
@@ -86,8 +86,18 @@
                         {/notempty}
                         {/cms:blocklist}
                     </div>
-                    <div class="row d-flex about-us-content">
-                        <div class="col-md-8 about-us-list">
+                    <div class="row about-us-content">
+                        <div class="col-md-12 about-us-list right">
+                            <div class="row">
+                                {cms:blocklist id="block" name="aboutsMid" orderby="weigh" orderway="desc" }
+                                <div class="col-md-6 mb-4">
+                                    <img src="{$block.image}" alt="{$block.title}">
+                                    <span class="font-bold">{$block.title}</span>
+                                </div>
+                                {/cms:blocklist}
+                            </div>
+                        </div>
+                        <div class="col-md-12 about-us-list">
                             <div id="about-us-carousel" class="carousel slide" data-ride="carousel">
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner" role="listbox">
@@ -116,14 +126,6 @@
                                     <span class="sr-only">Next</span>
                                 </a>
                             </div>
-                        </div>
-                        <div class="col-md-4 about-us-list right d-flex">
-                            {cms:blocklist id="block" name="aboutsMid" orderby="weigh" orderway="desc" }
-                            <div>
-                                <img src="{$block.image}" alt="{$block.title}">
-                                <span class="font-bold">{$block.title}</span>
-                            </div>
-                            {/cms:blocklist}
                         </div>
                     </div>
                 </script>

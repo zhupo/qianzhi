@@ -7,14 +7,21 @@ body {
 .about-wrap .about-header {
   height: 900px;
   width: 100%;
-  /*background: url('./about-us-banner.jpg');*/
+  background: url('./about-us-banner.jpg');
   background-position: center;
   background-size: auto 100%;
   background-repeat: no-repeat;
-  padding-top: 300px;
+  position: relative;
 }
 .about-wrap .about-header .about-header-detail {
+  height: 360px;
   color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 .about-wrap .about-header .about-header-detail .title {
   padding-top: 20px;
@@ -59,9 +66,10 @@ body {
   font-weight: bold;
   margin-bottom: 30px;
 }
-.about-wrap #about-body .about-body-card .card-item .sub-title {
+.about-wrap #about-body .about-body-card .card-item .sub-title * {
   display: block;
-  font-size: 12px;
+  font-size: 12px !important;
+  font-weight: normal;
   line-height: 1.5em;
 }
 .about-wrap #about-body .about-body-card .card-item .item {

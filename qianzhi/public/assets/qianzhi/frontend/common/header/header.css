@@ -19,12 +19,12 @@
 .navbar .navbar-nav > li > a {
   color: #fff;
 }
-.navbar .navbar-nav.menu-list li {
+.navbar .navbar-nav.menu-list > li {
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 5px;
 }
-.navbar .navbar-nav.menu-list li a:hover {
+.navbar .navbar-nav.menu-list > li > a:hover {
   transform: scale(1.3);
   transition: all 0.3s ease-in-out;
 }
@@ -95,10 +95,18 @@
   .navbar .container-flex .navbar-nav.navbar-right {
     margin: 0;
   }
+  .navbar .container-flex .navbar-form {
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+  }
   .navbar .container-flex .navbar-form .form-group {
     margin-bottom: 0;
   }
   .navbar .container-flex .navbar-form .form-group input {
     width: 100%;
+  }
+  .navbar .container-flex .navbar-nav.menu-list li a:hover {
+    transform: scale(1);
   }
 }

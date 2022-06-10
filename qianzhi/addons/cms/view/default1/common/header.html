@@ -20,9 +20,17 @@
 
             <ul class="nav navbar-nav menu-list">
                 {cms:channellist id="nav" type="top" cache="0" condition="1=isnav" row="20"}
-                <li>
+                <li class="{if $nav.name eq 'PRODUCT'}dropdown{/if}">
                     <a class="{if $nav->is_active}active{/if}" {if $nav.href eq 0}href="{$nav.url}" {/if} {if
                         $nav.target eq 1}target="_blank" {/if}>{$nav.name}</a>
+                    {if $nav.name eq 'PRODUCT'}
+                    <ul class="dropdown-menu" style="min-width: 100px;">
+                        <li><a href="#">product1</a></li>
+                        <li><a href="#">product2</a></li>
+                    </ul>
+                    {/if}
+                </li>
+                {/cms:channellist}
 
 <!--                    {if $nav.has_child}-->
 <!--                    <ul>-->
@@ -41,8 +49,6 @@
 <!--                        {/cms:channellist}-->
 <!--                    </ul>-->
 <!--                    {/if}-->
-                </li>
-                {/cms:channellist}
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
@@ -65,7 +71,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                         aria-expanded="false">
-                        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-globe mr-1" aria-hidden="true"></span>
                         English
                         <span class="caret"></span>
                     </a>

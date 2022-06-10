@@ -50,15 +50,15 @@
   background-color: #3c8dbc;
 }
 .nav-pagination .Pagination_list strong {
+  display: none;
   margin-left: 10px;
 }
 .nav-pagination .Pagination_list a:first-child,
 .nav-pagination .Pagination_list a:last-child {
   width: 16px;
   height: 16px;
-  background-color: #3c8dbc;
   position: absolute;
-  top: 18px;
+  top: 14px;
 }
 .nav-pagination .Pagination_list a:first-child {
   left: 20px;
@@ -84,6 +84,7 @@
 }
 #product-list-body .content-item .card-img-wrap {
   background-color: #fff;
+  height: 256px;
 }
 #product-list-body .content-item .card-img-wrap img {
   width: 100%;

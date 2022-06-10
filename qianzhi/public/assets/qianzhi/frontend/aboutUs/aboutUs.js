@@ -9,6 +9,7 @@ define(["../../../../../assets/libs/art-template/dist/template.js"], function (
     },
 
     events() {
+      var that = aboutUs
       $("video").on("contextmenu", function () {
         return false;
       });
@@ -46,9 +47,8 @@ define(["../../../../../assets/libs/art-template/dist/template.js"], function (
       };
       liveChange();
 
-
       var mySwiper = new Swiper ('.swiper', {
-        slidesPerView: 3,
+        slidesPerView: that.getSliderPerView(),
         grid: {
           rows: 2,
         },
@@ -58,6 +58,17 @@ define(["../../../../../assets/libs/art-template/dist/template.js"], function (
           prevEl: '.swiper-button-prev',
         }
       })  
+    },
+
+    getSliderPerView () {
+      var wid = window.outerWidth
+      if (wid < 640) {
+        return 1
+      } else if (wid < 990) {
+        return 2
+      } else {
+        return 3
+      }
     }
     
   };
