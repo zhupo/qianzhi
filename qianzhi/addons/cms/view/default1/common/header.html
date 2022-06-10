@@ -23,13 +23,26 @@
                 <li>
                     <a class="{if $nav->is_active}active{/if}" {if $nav.href eq 0}href="{$nav.url}" {/if} {if
                         $nav.target eq 1}target="_blank" {/if}>{$nav.name}</a>
+
+<!--                    {if $nav.has_child}-->
+<!--                    <ul>-->
+<!--                        {cms:channellist id="son" type="son" condition="1=isnav" typeid="nav['id']" cache="0" row="20"}-->
+
+<!--                        <li><a class="{if $son->is_active}this{/if}"  href="{$son.url}">{$son.name}</a>-->
+<!--                            {if $son.has_child}-->
+<!--                            <ul>-->
+<!--                                {cms:channellist id="sons" condition="1=isnav" type="son" typeid="son['id']" cache="0" }-->
+<!--                                <li><a class="{if $sons->is_active}this{/if}"  href="{$sons.url}">{$sons.name}</a></li>-->
+<!--                                {/cms:channellist}-->
+<!--                            </ul>-->
+<!--                            {/if}-->
+<!--                        </li>-->
+
+<!--                        {/cms:channellist}-->
+<!--                    </ul>-->
+<!--                    {/if}-->
                 </li>
                 {/cms:channellist}
-                <!--              <li class="active"><a href="{:url('index/index/index')}">HOME</a></li>-->
-                <!--              <li><a href="{{:url('index/about/index')}}">ABOUT US</a></li>-->
-                <!--              <li><a href="{:url('index/product/list')}">PRODUCT</a></li>-->
-                <!--              <li><a href="{:url('index/news/index')}">NEWS</a></li>-->
-                <!--              <li><a href="{:url('index/contact/index')}">CONTACT US</a></li>-->
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
@@ -38,9 +51,9 @@
                     <form class="navbar-form navbar-left" id="js-search-from" action="/s.html" method="post">
                         <div class="form-wrap d-flex">
                             <div class="form-group">
-                                <input type="text" class="form-control search-input" id="js-search-input"
+                                <input type="text" class="form-control search-input" name="q" value=""  id="js-search-input"
                                     autocomplete="off" data-suggestion-url="/addons/cms/search/suggestion.html"
-                                    placeholder="Search" />
+                                    placeholder="Key words" />
                             </div>
                             <button class="glyphicon glyphicon-search media-middle cursor-pointer search-button"
                                 id="js-search-btn" aria-label="search button" aria-hidden="true">
@@ -48,23 +61,6 @@
                         </div>
                     </form>
                     {/range}
-                    <!--                  <form class="navbar-form navbar-left" id="js-search-from">-->
-                    <!--                      <div class="form-group">-->
-                    <!--                          <input type="text" class="form-control search-input" id="js-search-input"-->
-                    <!--                                 placeholder="Search" />-->
-                    <!--                      </div>-->
-                    <!--                      <span class="glyphicon glyphicon-search media-middle cursor-pointer" id="js-search-btn"-->
-                    <!--                            aria-label="search button" aria-hidden="true">-->
-                    <!--                      </span>-->
-                    <!--                  </form>-->
-                    <!--                  {range name="site.sousuo" value="1" type="in"}-->
-                    <!--                  <div class="sousuonr">-->
-                    <!--                      <form action="/s.html" method="post">-->
-                    <!--                          <input autocomplete = "off" class="form-control" name="q" data-suggestion-url="/addons/cms/search/suggestion.html" type="text" value="" placeholder="Key words">-->
-                    <!--                          <button class="ico icon-icon-test"></button>-->
-                    <!--                      </form>-->
-                    <!--                  </div>-->
-                    <!--                  {/range}-->
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
