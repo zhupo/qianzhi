@@ -64,7 +64,37 @@ define([
 
     events() {
       
+      homePage.setBannerHeight()
+
+      window.onresize = function () {
+        homePage.setBannerHeight()
+      }
+
+      var mySwiper = new Swiper('.swiper', {
+        loop: true,
+        slidesPerView: 1,
+        loopPreventsSlide: true, //默认true，阻止
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // navigation: {
+        //   nextEl: '.swiper-button-next',
+        //   prevEl: '.swiper-button-prev',
+        // },
+      })
+      
     },
+
+    setBannerHeight () {
+      var winHeight = $(window).height()
+      $('.home-header').height(winHeight)
+    }
   };
 
   return {
