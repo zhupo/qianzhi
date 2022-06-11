@@ -23,11 +23,29 @@
                 <li class="{if $nav.name eq 'PRODUCT'}dropdown{/if}">
                     <a class="{if $nav->is_active}active{/if}" {if $nav.href eq 0}href="{$nav.url}" {/if} {if
                         $nav.target eq 1}target="_blank" {/if}>{$nav.name}</a>
-                    {if $nav.name eq 'PRODUCT'}
-                    <ul class="dropdown-menu" style="min-width: 100px;">
-                        <li><a href="#">product1</a></li>
-                        <li><a href="#">product2</a></li>
-                    </ul>
+<!--                    {if $nav.name eq 'PRODUCT'}-->
+<!--                    <ul class="dropdown-menu" style="min-width: 100px;">-->
+<!--                        <li><a href="#">product1</a></li>-->
+<!--                        <li><a href="#">product2</a></li>-->
+<!--                    </ul>-->
+<!--                    {/if}-->
+
+                    {if $nav.has_child}
+                        <ul class="dropdown-menu" style="min-width: 100px;">
+                            {cms:channellist id="son" type="son" condition="1=isnav" typeid="nav['id']" cache="0" row="20"}
+
+                            <li><a class="{if $son->is_active}this{/if}"  href="{$son.url}">{$son.name}</a>
+                                {if $son.has_child}
+                                <ul class="dropdown-menu", style="min-width: 100px;">
+                                    {cms:channellist id="sons" condition="1=isnav" type="son" typeid="son['id']" cache="0" }
+                                    <li><a class="{if $sons->is_active}this{/if}"  href="{$sons.url}">{$sons.name}</a></li>
+                                    {/cms:channellist}
+                                </ul>
+                                {/if}
+                            </li>
+
+                            {/cms:channellist}
+                        </ul>
                     {/if}
                 </li>
                 {/cms:channellist}
