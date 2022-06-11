@@ -7,15 +7,16 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 15px 0;
-    a:not(:first-child, :last-child), span {
+    a:not(:first-child, :last-child), & > span {
       display: inline-block;
       width: 20px;
       height: 20px;
       line-height: 20px;
       margin: 0 8px;
+      font-size: 14px;
       cursor: pointer;
     }
-    span {
+    & > span {
       border-radius: 50%;
       color: #fff;
       background-color: #3c8dbc;
@@ -25,16 +26,27 @@
       margin-left: 10px;
     }
     a:first-child, a:last-child {
-      width: 16px;
-      height: 16px;
+      font-size: 14px;
       position: absolute;
       top: 14px;
+      span {
+        font-size: 14px;
+        span {
+          vertical-align: 1px;
+        }
+      }
     }
     a:first-child {
       left: 20px;
+      i {
+        margin-right: 5px;
+      }
     }
     a:last-child {
       right: 20px;
+      i {
+        margin-left: 5px;
+      }
     }
   }
 }

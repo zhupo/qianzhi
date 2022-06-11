@@ -37,15 +37,16 @@
   padding: 15px 0;
 }
 .nav-pagination .Pagination_list a:not(:first-child, :last-child),
-.nav-pagination .Pagination_list span {
+.nav-pagination .Pagination_list > span {
   display: inline-block;
   width: 20px;
   height: 20px;
   line-height: 20px;
   margin: 0 8px;
+  font-size: 14px;
   cursor: pointer;
 }
-.nav-pagination .Pagination_list span {
+.nav-pagination .Pagination_list > span {
   border-radius: 50%;
   color: #fff;
   background-color: #3c8dbc;
@@ -56,16 +57,29 @@
 }
 .nav-pagination .Pagination_list a:first-child,
 .nav-pagination .Pagination_list a:last-child {
-  width: 16px;
-  height: 16px;
+  font-size: 14px;
   position: absolute;
   top: 14px;
+}
+.nav-pagination .Pagination_list a:first-child span,
+.nav-pagination .Pagination_list a:last-child span {
+  font-size: 14px;
+}
+.nav-pagination .Pagination_list a:first-child span span,
+.nav-pagination .Pagination_list a:last-child span span {
+  vertical-align: 1px;
 }
 .nav-pagination .Pagination_list a:first-child {
   left: 20px;
 }
+.nav-pagination .Pagination_list a:first-child i {
+  margin-right: 5px;
+}
 .nav-pagination .Pagination_list a:last-child {
   right: 20px;
+}
+.nav-pagination .Pagination_list a:last-child i {
+  margin-left: 5px;
 }
 @media screen and (max-width: 750px) {
   .nav-pagination .Pagination_list {
