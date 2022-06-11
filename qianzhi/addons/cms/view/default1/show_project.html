@@ -9,19 +9,6 @@
 <body class="product-wrap news-wrap">
 {include file="common/header" /}
 {include file="common/mbx" /}
-<!--<div id="header-banner" class="news-header">-->
-<!--    <div class="container relative" style="height: 100%;">-->
-<!--        <div class="news-header-content">-->
-<!--            <p class="title font-bold">NEWS CENTER</p>-->
-<!--            <div>-->
-<!--                <span class="glyphicon glyphicon-home"></span>-->
-<!--                <span>Home</span>-->
-<!--                »-->
-<!--                <span>News Center</span>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
 
 
 <main id="news-detail-body">
@@ -32,24 +19,6 @@
             <span>{cms:archives name="createtime|date='Y-m-d',###" /}</span>
         </div>
         {cms:archives name="content" /}
-
-<!--        <div class="row part-of-img">-->
-<!--            <div class="col-md-4">-->
-<!--                <div class="img-wrap">-->
-<!--                    <img src="__CDN__/assets/qianzhi/frontend/news/news-01.png" alt="news">-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-md-4">-->
-<!--                <div class="img-wrap">-->
-<!--                    <img src="__CDN__/assets/qianzhi/frontend/news/news-02.jpg" alt="news">-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-md-4">-->
-<!--                <div class="img-wrap">-->
-<!--                    <img src="__CDN__/assets/qianzhi/frontend/news/news-03.jpg" alt="news">-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
 
         <div class="row part-of-img">
         {notempty name="$__ARCHIVES__.images"}
@@ -64,20 +33,6 @@
         </div>
 
         <div class="pagination-button clearfix">
-<!--            <div class="col-md-6">-->
-<!--                <div class="d-iblock cursor-pointer">-->
-<!--                    <span class="glyphicon glyphicon-arrow-left"></span>-->
-<!--                    PREV:-->
-<!--                    <span class="summery">Company website official launch notice</span>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-md-6 text-right">-->
-<!--                <div class="d-iblock cursor-pointer">-->
-<!--                    NEXT:-->
-<!--                    <span class="summery">Company website official launch notice</span>-->
-<!--                </div>-->
-<!--            </div>-->
-
             {cms:prevnext id="prev" type="prev" archives="$__ARCHIVES__.id" channel="$__CHANNEL__.id"}
             <div class="col-md-6">
                 <div class="d-iblock cursor-pointer">
@@ -93,11 +48,6 @@
                 </div>
             </div>
             {/cms:prevnext}
-<!--            <a href="{$prev.url}" class="fl">上一篇：{$prev.title}</a>-->
-<!--            {/cms:prevnext}-->
-<!--            {cms:prevnext id="next" type="next" archives="$__ARCHIVES__.id" channel="$__CHANNEL__.id"}-->
-<!--            <a href="{$next.url}" class="fr">下一篇：{$next.title}</a>-->
-<!--            {/cms:prevnext}-->
         </div>
 
     </div>

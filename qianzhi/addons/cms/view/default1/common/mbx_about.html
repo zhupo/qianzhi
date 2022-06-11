@@ -1,7 +1,7 @@
 <div id="header-banner" class="about-header" style="background: url({cms:channel name="image" /})">
     <div class="about-header-detail text-center">
 
-        {cms:blocklist id="block" name="banner" orderby="weigh" orderway="desc" }
+        {cms:blocklist id="block" name="banner-about" orderby="weigh" orderway="desc" }
         <span class="d-block title f50 font-bold">{$block.title}</span>
         <span class="d-block sub-title f28">{:str_replace(["<p>","</p>"], "", $block.content)}</span>
         {notempty name="$block.images"}

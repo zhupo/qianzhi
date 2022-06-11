@@ -12,12 +12,10 @@
     <div id="header-banner" class="home-header">
         <div class="swiper" style="height: 100%;">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                </div>
-                <div class="swiper-slide">
-                </div>
-                <div class="swiper-slide">
-                </div>
+
+                {cms:blocklist id="block" name="banner" orderby="weigh" orderway="desc" }
+                    <div class="swiper-slide" style="background: url({$block.image});"></div>
+                {/cms:blocklist}
             </div>
 
             <div class="home-header-detail text-center">
@@ -26,10 +24,10 @@
                 <span class="d-block sub-title f28">Towards the goal of building a R&D heights of special robots in
                     china</span>
                 <div class="but-group">
-                    <a type="button" href="/" class="btn btn-info btn-lg mr-4">
+                    <a type="button" href="/ABOUTUS.html" class="btn btn-info btn-lg mr-4">
                         Learn More
                     </a>
-                    <a type="button" href="/ABOUTUS.html" class="btn btn-danger btn-lg">
+                    <a type="button" href="/CONTACTUS.html" class="btn btn-danger btn-lg">
                         Contact Us
                     </a>
                 </div>
@@ -41,21 +39,6 @@
             <div class="swiper-pagination"></div>
         </div>
     </div>
-    <!-- <div id="header-banner" class="home-header">
-    <div class="home-header-detail text-center">
-        <span class="d-block top-title f18">BEST QUALITY SERVICE</span>
-        <span class="d-block title f50 font-bold">QIANZHI ROBOT</span>
-        <span class="d-block sub-title f28">Towards the goal of building a R&D heights of special robots in china</span>
-        <div class="but-group">
-            <a type="button" href="/" class="btn btn-info btn-lg mr-4">
-                Learn More
-            </a>
-            <a type="button" href="/ABOUTUS.html" class="btn btn-danger btn-lg">
-                Contact Us
-            </a>
-        </div>
-    </div>
-</div> -->
 
 
     <main id="home-body">
