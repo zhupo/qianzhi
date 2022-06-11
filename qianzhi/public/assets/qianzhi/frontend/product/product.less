@@ -13,8 +13,7 @@
       position: absolute;
       left: 15px;
       bottom: 20px;
-      width: 450px;
-      height: 105px;
+      min-width: 450px;
       background-color: rgba(28, 113, 192, 0.5);
       color: @themeColor;
       padding: 16px 24px;
@@ -26,12 +25,16 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 993px) {
   .product-wrap {
     .product-header {
       .product-header-content {
-        width: auto;
+        min-width: auto;
+        width: calc(100% - 30px);
       }
+    }
+    .big-img-wrap {
+      display: none;
     }
   }
 }

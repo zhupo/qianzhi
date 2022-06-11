@@ -14,9 +14,19 @@
     img {
       width: 100%;
       height: auto;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .imgs-wrap {
+      padding-right: 50px;
+    }
+    .params-wrap {
+      padding-right: 50px;
     }
     .big-img-wrap {
       .border();
+      margin-bottom: 27px;
     }
     .small-img-wrap {
       flex-direction: column;
@@ -91,7 +101,9 @@
   }
 
   .part-of-appearance {
-    padding-top: 40px;
+    .row >div {
+      padding-top: 40px;
+    }
     .title {
       padding-bottom: 40px;
     }
@@ -100,6 +112,21 @@
       img {
         width: 100%;
         height: auto;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 9930px) {
+  #product-detail-body {
+    .part-of-main-wrap {
+
+      .imgs-wrap {
+        padding-right: 15px;
+      }
+      .params-wrap {
+        padding-right: 15px;
       }
     }
   }

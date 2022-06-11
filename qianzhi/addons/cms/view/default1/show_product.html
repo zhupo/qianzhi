@@ -27,8 +27,8 @@
 <main id="product-detail-body">
     <div class="part-of-main-wrap">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6" style="padding-right: 50px;">
+            <div class="row pb-4">
+                <div class="col-md-6 imgs-wrap">
                     <div class="row">
                         <div class="col-md-9">
                             <div class="big-img-wrap"><img src="{$__ARCHIVES__.image}" alt="product"></div>
@@ -42,7 +42,7 @@
                         {/notempty}
                     </div>
                 </div>
-                <div class="col-md-6" style="padding-left: 50px;">
+                <div class="col-md-6 params-wrap">
                     <div class="product-name">
                         <span class="f22 font-bold mr-4 title">Fire Robot</span>
                         <span>Model: {$__ARCHIVES__.model}</span>
@@ -126,7 +126,7 @@
 
 
             <div class="row">
-                <div class="col-md-6" style="padding-right: 50px;">
+                <div class="col-md-6 mb-4 clearfix">
                     <p class="font-bold f12 mb-1 title">List of main parts</p>
                     {$__ARCHIVES__.Introduction}
 <!--                    <table class="table table-bordered">-->
@@ -197,7 +197,7 @@
 <!--                    </table>-->
                 </div>
                 {notempty name="$__ARCHIVES__.use"}
-                <div class="col-md-6" style="padding-left: 50px;">
+                <div class="col-md-6 mb-4 clearfix">
                     <p class="font-bold f12 mb-2 title">Conditions of Use</p>
                     <div class="conditions-list pl-2">
                         {$__ARCHIVES__.use}
