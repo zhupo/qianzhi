@@ -51,15 +51,15 @@
   background-color: #3c8dbc;
 }
 .nav-pagination .Pagination_list strong {
+  display: none;
   margin-left: 10px;
 }
 .nav-pagination .Pagination_list a:first-child,
 .nav-pagination .Pagination_list a:last-child {
   width: 16px;
   height: 16px;
-  background-color: #3c8dbc;
   position: absolute;
-  top: 18px;
+  top: 14px;
 }
 .nav-pagination .Pagination_list a:first-child {
   left: 20px;
@@ -71,6 +71,10 @@
   .nav-pagination .Pagination_list {
     width: 100%;
   }
+}
+img {
+  display: inline-block;
+  max-width: inherit;
 }
 #news-list-body {
   padding-top: 20px;
@@ -95,6 +99,7 @@
   width: 16px;
   height: 16px;
   vertical-align: -2px;
+  display: inline;
 }
 #news-list-body .content-item .news-info-wrap .info-content {
   font-size: 14px;

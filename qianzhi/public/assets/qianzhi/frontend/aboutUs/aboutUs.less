@@ -96,6 +96,7 @@ body {
             padding: 20px 30px;
             border-radius: 5px;
             background-image: url(./technology-bg.jpg);
+            background-size: cover;
             background-repeat: no-repeat;
             font-size: 12px;
             color: @themeColor;
@@ -198,7 +199,6 @@ body {
         .part-of-honor {
           background-image: url(./honor-bg.jpg);
           background-position: center 0;
-          background-size: 100% auto;
           background-repeat: no-repeat;
           padding: 70px 0;
           .title {
@@ -207,6 +207,9 @@ body {
           .sub-title {
             color: @themeColor;
             padding-bottom: 30px;
+          }
+          .live-box {
+            margin-top: 40px;
           }
           .live-box ul {
             width: 50%;
@@ -333,4 +336,24 @@ body {
     }
   }
 
+}
+
+@media screen and (max-width: 993px) { 
+  .part-of-top {
+    padding-bottom: 50px !important;
+  }
+  .part-of-bottom {
+    .tech-item {
+      margin-top: 20px !important;
+    }
+  }
+  .part-of-honor {
+    padding-top: 40px !important;
+    .live-box {
+      margin-top: 30px;
+      ul {
+        height: 280px !important;
+      }
+    }
+  } 
 }

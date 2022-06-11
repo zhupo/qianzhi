@@ -71,6 +71,10 @@
     width: 100%;
   }
 }
+img {
+  display: inline-block;
+  max-width: inherit;
+}
 #product-list-body {
   margin-top: 70px;
   padding-bottom: 70px;

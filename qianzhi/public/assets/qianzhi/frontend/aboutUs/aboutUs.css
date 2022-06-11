@@ -83,6 +83,7 @@ body {
   padding: 20px 30px;
   border-radius: 5px;
   background-image: url(./technology-bg.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   font-size: 12px;
   color: #fff;
@@ -182,7 +183,6 @@ body {
 .about-wrap #about-body .about-body-card.about-us-honor .part-of-honor {
   background-image: url(./honor-bg.jpg);
   background-position: center 0;
-  background-size: 100% auto;
   background-repeat: no-repeat;
   padding: 70px 0;
 }
@@ -192,6 +192,9 @@ body {
 .about-wrap #about-body .about-body-card.about-us-honor .part-of-honor .sub-title {
   color: #fff;
   padding-bottom: 30px;
+}
+.about-wrap #about-body .about-body-card.about-us-honor .part-of-honor .live-box {
+  margin-top: 40px;
 }
 .about-wrap #about-body .about-body-card.about-us-honor .part-of-honor .live-box ul {
   width: 50%;
@@ -313,4 +316,21 @@ body {
   top: 50%;
   left: 10px;
   z-index: 9;
+}
+@media screen and (max-width: 993px) {
+  .part-of-top {
+    padding-bottom: 50px !important;
+  }
+  .part-of-bottom .tech-item {
+    margin-top: 20px !important;
+  }
+  .part-of-honor {
+    padding-top: 40px !important;
+  }
+  .part-of-honor .live-box {
+    margin-top: 30px;
+  }
+  .part-of-honor .live-box ul {
+    height: 280px !important;
+  }
 }
