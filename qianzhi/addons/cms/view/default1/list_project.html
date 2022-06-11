@@ -11,20 +11,6 @@
 <body class="product-wrap news-wrap">
 {include file="common/header" /}
 {include file="common/mbx" /}
-<!--<div id="header-banner" class="news-header">-->
-<!--	<div class="container relative" style="height: 100%;">-->
-<!--		<div class="news-header-content">-->
-<!--			<p class="title font-bold">NEWS CENTER</p>-->
-<!--			<div>-->
-<!--				<span class="glyphicon glyphicon-home"></span>-->
-<!--				<span>Home</span>-->
-<!--				»-->
-<!--				<span>News Center</span>-->
-<!--			</div>-->
-<!--		</div>-->
-<!--	</div>-->
-<!--</div>-->
-
 
 <main id="news-list-body">
 	<div class="container card-item">
@@ -33,7 +19,7 @@
 				{cms:pagelist id="item"}
 				<div class="content-item row d-flex">
 					<div class="col-md-4 card-img-wrap pl-0" >
-						<img src="{$item.image}" alt="{$item.title}">
+						<a href="{$item.url}"><img src="{$item.image}" alt="{$item.title}"></a>
 					</div>
 					<div class="col-md-8 col-sm-6 news-info-wrap pr-0 clearfix">
 						<div class="row">
@@ -50,18 +36,6 @@
 				{/cms:pagelist}
 			</script>
 		</div>
-<!--		<nav aria-label="Product list pagination" class="text-center nav-pagination">-->
-<!--			<ul class="pagination" id="pagination">-->
-<!--				<li class="prev disabled"><a href="javascript: void(0)" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>-->
-<!--				<li class="active"><a href="javascript: void(0)">1</a></li>-->
-<!--				<li class=""><a href="javascript: void(0)">2</a></li>-->
-<!--				<li class=""><a href="javascript: void(0)">3</a></li>-->
-<!--				<li class=""><a href="javascript: void(0)">4</a></li>-->
-<!--				<li class=""><a href="javascript: void(0)">5</a></li>-->
-<!--				<li class=""><a href="javascript: void(0)">6</a></li>-->
-<!--				<li class="next"><a href="javascript: void(0)" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>-->
-<!--			</ul>-->
-<!--		</nav>-->
 		<nav aria-label="Product list pagination" class="text-center nav-pagination">
 			{cms:pageinfo type="full" /}
 		</nav>

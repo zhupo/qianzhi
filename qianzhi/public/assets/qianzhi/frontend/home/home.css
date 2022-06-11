@@ -10,7 +10,7 @@ body {
   position: relative;
 }
 .home-wrap .home-header .swiper-slide {
-  background: url('../../../img/png/banner.jpg');
+  /*background: url('../../../img/png/banner.jpg');*/
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
