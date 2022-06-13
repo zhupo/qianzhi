@@ -13,12 +13,13 @@
 
 <main id="news-detail-body">
     <div class="container">
-        <div class="title f30 text-center">{cms:archives name="title" /}</div>
+        <div class="title f30 text-center family-jost-bold">{cms:archives name="title" /}</div>
         <div class="date text-center mb-4">
             <img class="icon mr-1" src="__CDN__/assets/qianzhi/frontend/news/icon-date.png" alt="Date">
-            <span>{cms:archives name="createtime|date='Y-m-d',###" /}</span>
+            <span style="font-style: italic; color: #999">{cms:archives name="createtime|date='Y-m-d',###" /}</span>
         </div>
-        {cms:archives name="content" /}
+        <div class="family-openSans" style="color: #666;">{cms:archives name="content" /}</div>
+        
 
         <div class="row part-of-img">
         {notempty name="$__ARCHIVES__.images"}

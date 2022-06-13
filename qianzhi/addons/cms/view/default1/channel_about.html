@@ -17,7 +17,7 @@
 		<div class="container card-item">
 			<div class="text-center">
 				<span class="top-title">Who we are & what we do</span>
-				<span class="title">OUR AGENCY</span>
+				<span class="title family-jost-bold">OUR AGENCY</span>
 			</div>
 			{cms:blocklist id="block" name="movie" orderby="weigh" orderway="desc" }
 			<div class="video-wrap">
@@ -41,13 +41,13 @@
 				<div class="col-md-7">
 					<span class="top-title">About Us</span>
 					{cms:blocklist id="block" name="about-upper-right" orderby="weigh" orderway="desc" }
-						<span class="title mb-0">Qianzhi Robotics</span>
-						<span class="d-block font-bold f18 mb-2">{$block.title}</span>
-						<span class="sub-title">{:str_replace(["<p>","</p>"], "", $block.content)}</span>
+						<span class="title mb-0 family-jost-bold">Qianzhi Technology</span>
+						<span class="d-block font-bold f16 mb-2">{$block.title}</span>
+						<span class="sub-title family-openSans f12">{:str_replace(["<p>","</p>"], "", $block.content)}</span>
                     {/cms:blocklist}
 
 					{cms:blocklist id="block" name="about-lower-right" orderby="weigh" orderway="desc" }
-						<div class="item-content mt-4">
+						<div class="item-content mt-4 family-sourceSansPro">
 							<div class="row">
 								<div class="col-md-6">
 									<button class="btn btn-danger full-width">
@@ -86,14 +86,14 @@
 					<div class="tech-item">
 						<img src="{$image|cdnurl}" alt="advanced">
 						<p>{$block.intro[$key]['info']}</p>
-						<div>{$block.intro[$key]['txt']}</div>
+						<div class="family-openSans">{$block.intro[$key]['txt']}</div>
 					</div>
 				</div>
 				{/volist}
 				{/notempty}
 				{/cms:blocklist}
 				<div class="col-md-12">
-					<span class="title my-4">Qianzhi Robotics</span>
+					<span class="title my-4 family-jost-bold">Qianzhi Technology</span>
 					<span class="d-block font-bold f18 pb-4 mb-2">Towards the goal of building a R&D Heights of special robots in China</span>
 					<a href="/CONTACTUS.html" class="btn btn-danger btn-lg">Contact Us</a>
 				</div>
@@ -106,9 +106,9 @@
 			{cms:blocklist id="block" name="contact-top" orderby="weigh" orderway="desc" }
 			<div class="row">
 				<div class="col-md-6">
-					<span class="title mb-0">Vision of Qianzhi</span>
-					<span class="d-block font-bold f18 mb-2">{$block.title}</span>
-					<span class="sub-title">{:str_replace(["<p>","</p>"], "", $block.content)}</span>
+					<span class="title mb-0 family-jost-bold">Vision of Qianzhi</span>
+					<span class="d-block font-bold f16 mb-2">{$block.title}</span>
+					<span class="sub-title family-openSans">{:str_replace(["<p>","</p>"], "", $block.content)}</span>
 				</div>
 
 				{notempty name="$block.images"}
@@ -120,7 +120,7 @@
 								<img width="100%" src="{$image|cdnurl}" alt="img">
 								<div class="our-team">
 									<span>{$block.intro[$key]['info']}</span>
-									<span>{$block.intro[$key]['txt']}</span>
+									<span class="family-openSans">{$block.intro[$key]['txt']}</span>
 								</div>
 							</div>
 						</div>
@@ -138,8 +138,8 @@
 					<div class="d-flex">
 						<span>0{$key + 1}.</span>
 						<div>
-							<p class="title">{$block.intro[$key]['info']}</p>
-							<span>{$block.intro[$key]['txt']}</span>
+							<p class="title family-jost-middle" style="letter-spacing: 1px;">{$block.intro[$key]['info']}</p>
+							<span class="family-openSans">{$block.intro[$key]['txt']}</span>
 						</div>
 					</div>
 				</div>
@@ -156,8 +156,8 @@
 		<div class="part-of-honor card-item">
 			<div class="container">
 				<div class="text-center">
-					<span class="title mb-0">{$block.title}</span>
-					<span class="sub-title font-bold">{:str_replace(["<p>","</p>"], "", $block.content)}</span>
+					<span class="title mb-0 family-jost-bold">{$block.title}</span>
+					<span class="sub-title f14 font-bold family-jost-middle" style="color: #ccc;">{:str_replace(["<p>","</p>"], "", $block.content)}</span>
 				</div>
 				<div class="live-box">
 					<ul id="liveSlide">
@@ -182,8 +182,8 @@
 						<div class="swiper-slide">
 							<div class="slide-content">
 								<span class="dot"></span>
-								<p>{$block.intro[$key]['info']}</p>
-								<span>{$block.intro[$key]['txt']}</span>
+								<p class="mb-0">{$block.intro[$key]['info']}</p>
+								<span class="family-sourceSansPro">{$block.intro[$key]['txt']}</span>
 							</div>
 						</div>
                         {/volist}

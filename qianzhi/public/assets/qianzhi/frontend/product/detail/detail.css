@@ -73,12 +73,13 @@
   font-size: 12px;
 }
 #product-detail-body .part-of-main-wrap table > tbody > tr > td {
-  padding: 6px 8px;
+  padding: 6px 2px;
 }
 #product-detail-body .part-of-main-wrap .product-function-item {
   font-size: 12px;
   display: flex;
   margin-bottom: 35px;
+  font-family: 'Open Sans';
 }
 #product-detail-body .part-of-main-wrap .product-function-item .icon {
   color: #EE4E5D;
@@ -87,11 +88,12 @@
   flex: 1;
 }
 #product-detail-body .part-of-main-wrap .product-function-item > div .title {
-  font-style: italic;
+  font-family: 'Open Sans Italic';
   font-size: 14px;
+  color: #333;
 }
 #product-detail-body .part-of-main-wrap .product-function-item > div .item-content {
-  color: #333;
+  color: #666;
 }
 #product-detail-body .part-of-main-wrap .conditions-list {
   position: relative;

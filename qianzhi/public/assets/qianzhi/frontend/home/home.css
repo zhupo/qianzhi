@@ -10,7 +10,7 @@ body {
   position: relative;
 }
 .home-wrap .home-header .swiper-slide {
-  /*background: url('../../../img/png/banner.jpg');*/
+  background: url('../../../img/png/banner.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -85,6 +85,7 @@ body {
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 30px;
+  font-family: 'Jost Bold';
 }
 .home-wrap #home-body .home-body-card .card-item .sub-title {
   display: block;
@@ -103,6 +104,7 @@ body {
   box-shadow: 0 0 20px #ccc;
   padding: 0;
   margin-bottom: 30px;
+  font-family: 'Open Sans';
 }
 .home-wrap #home-body .home-body-card .card-item .content-item .card-img-wrap {
   height: 360px;
@@ -129,14 +131,16 @@ body {
 }
 .home-wrap #home-body .home-body-card .card-item .content-item .caption-content {
   color: #919293;
-  line-height: 1.5em;
+  line-height: 1.6em;
   margin-top: 20px;
   height: 72px;
   -webkit-line-clamp: 3;
+  font-size: 14px;
 }
 .home-wrap #home-body .home-body-card .card-item .content-item .product-learn-more {
   position: absolute;
   bottom: 30px;
+  font-family: 'Jost Middle';
 }
 .home-wrap #home-body .home-body-card .card-item .content-item.news-content-item {
   height: auto;
@@ -184,6 +188,14 @@ body {
 }
 .home-wrap #home-body .home-body-card .card-item #aboutUs .about-us-list #about-us-carousel .carousel-inner .item img {
   width: auto;
+}
+.home-wrap #home-body .home-body-card .card-item #aboutUs .about-us-list #about-us-carousel .carousel-inner .item .carousel-caption {
+  text-align: left;
+  left: 5%;
+  padding-bottom: 10px;
+}
+.home-wrap #home-body .home-body-card .card-item #aboutUs .about-us-list #about-us-carousel .carousel-inner .item .carousel-caption span {
+  display: block;
 }
 .home-wrap #home-body .home-body-card .card-item #aboutUs .about-us-list.right > div {
   position: relative;

@@ -1,5 +1,8 @@
 @import url('../news');
 @import url('../../common/pagination');
+* {
+  font-family: 'Open Sans';
+}
 img {
   display: inline-block;
   max-width: inherit;
@@ -21,6 +24,10 @@ img {
         height: auto;
       }
     }
+    .date span {
+      font-style: italic;
+      color: #999;
+    }
     
     .news-info-wrap {
       position: relative;
@@ -34,6 +41,7 @@ img {
         font-size: 14px;
         margin-top: 20px;
         line-height: 2em;
+        color: #666;
       }
       .view-more {
         position: absolute;
@@ -42,6 +50,7 @@ img {
         left: 15px;
         background-color: #EDEEEF;
         color: #333;
+        font-family: 'Jost Middle';
       }
     }
   }

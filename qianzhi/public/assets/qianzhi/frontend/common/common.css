@@ -1,3 +1,65 @@
+
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../../../fonts/qianzhi/BarlowCondensed-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../../../fonts/qianzhi/Jost-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Jost Black';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../../../fonts/qianzhi/Jost-Black.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Jost bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../../../fonts/qianzhi/Jost-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Jost Middle';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../../../fonts/qianzhi/Jost-Medium.ttf) format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../../../fonts/qianzhi/OpenSans_Condensed-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../../../fonts/qianzhi/OpenSans-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../../../fonts/qianzhi/OpenSans-Italic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../../../fonts/qianzhi/SourceSansPro-Regular.ttf) format('truetype');
+}
+
 html{
     height: 100%;
     width: 100%;
@@ -6,7 +68,7 @@ html{
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: "Roboto", "SF Pro SC", "SF Pro Display", "SF Pro Icons", "PingFang SC", BlinkMacSystemFont, -apple-system, "Segoe UI", "Microsoft Yahei", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: "Jost", "Roboto", "SF Pro SC", "SF Pro Display", "SF Pro Icons", "PingFang SC", BlinkMacSystemFont, -apple-system, "Segoe UI", "Microsoft Yahei", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     height: auto;
     width: 100%;
@@ -47,6 +109,35 @@ p {
     margin-bottom: 20px;
 }
 
+/* font family */
+.family-barlowCondensed {
+  font-family: 'Barlow Condensed' !important;
+}
+.family-jost {
+  font-family: 'Jost' !important;
+}
+.family-jost-black {
+  font-family: 'Jost Black' !important;
+}
+.family-jost-bold {
+  font-family: 'Jost Bold' !important;
+}
+.family-jost-middle {
+  font-family: 'Jost Middle' !important;
+}
+.family-openSansCondensed {
+  font-family: 'Open Sans Condensed' !important;
+}
+.family-openSans {
+  font-family: 'Open Sans' !important;
+}
+.family-openSansItalic {
+  font-family: 'Open Sans Italic' !important;
+}
+.family-sourceSansPro {
+  font-family: 'Source Sans Pro' !important;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -67,6 +158,9 @@ p {
 }
 .f14 {
   font-size: 14px !important;
+}
+.f16 {
+  font-size: 16px !important;
 }
 .f18 {
   font-size: 18px !important;

@@ -44,7 +44,7 @@
   width: 20px;
   height: 20px;
   line-height: 20px;
-  margin: 0 8px;
+  margin: 0 5px;
   font-size: 14px;
   cursor: pointer;
 }
@@ -88,6 +88,9 @@
     width: 100%;
   }
 }
+* {
+  font-family: 'Jost';
+}
 img {
   display: inline-block;
   max-width: inherit;
@@ -118,6 +121,7 @@ img {
 #product-list-body .content-item .caption-content {
   color: #666;
   font-size: 14px;
+  font-family: 'Source Sans';
 }
 #product-list-body .nav-pagination {
   margin-top: 50px;

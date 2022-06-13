@@ -44,12 +44,12 @@
                 </div>
                 <div class="col-md-6 params-wrap">
                     <div class="product-name">
-                        <span class="f22 font-bold mr-4 title">Fire Robot</span>
-                        <span>Model: {$__ARCHIVES__.model}</span>
+                        <span class="f22 family-jost-bold mr-4 title">Fire Robot</span>
+                        <span class="family-openSans">Model: {$__ARCHIVES__.model}</span>
                     </div>
-                    <p class="mt-2 mb-4 f12">{$__ARCHIVES__.description}</p>
-                    <p class="font-bold f12 mb-1">Main Specifications</p>
-                    {$__ARCHIVES__.content}
+                    <p class="mt-2 mb-4 f12 family-openSans">{$__ARCHIVES__.description}</p>
+                    <p class="font-bold f12 mb-1 family-jost-bold">Main Specifications</p>
+                    <div class="family-sourceSansPro">{$__ARCHIVES__.content}</div>
 <!--                    <table class="table table-bordered">-->
 <!--                        <colgroup>-->
 <!--                            <col width="60%">-->
@@ -127,7 +127,7 @@
 
             <div class="row">
                 <div class="col-md-6 mb-4 clearfix">
-                    <p class="font-bold f12 mb-1 title">List of main parts</p>
+                    <p class="family-jost-bold f12 mb-1 title">List of main parts</p>
                     {$__ARCHIVES__.Introduction}
 <!--                    <table class="table table-bordered">-->
 <!--                        <colgroup>-->
@@ -198,8 +198,8 @@
                 </div>
                 {notempty name="$__ARCHIVES__.use"}
                 <div class="col-md-6 mb-4 clearfix">
-                    <p class="font-bold f12 mb-2 title">Conditions of Use</p>
-                    <div class="conditions-list pl-2">
+                    <p class="family-jost-bold f12 mb-2 title">Conditions of Use</p>
+                    <div class="conditions-list pl-2 family-openSans">
                         {$__ARCHIVES__.use}
 <!--                        <p>(1) Robot changing power supply: 220VAC, 400w</p>-->
 <!--                        <p>(2) Changing conditions: 29.4V, 5A</p>-->
@@ -228,7 +228,7 @@
     {notempty name="$__ARCHIVES__.images"}
     <div class="part-of-appearance">
         <div class="container">
-            <div class="title font-bold f30 text-center">Appearance design drawing</div>
+            <div class="title family-jost-bold f30 text-center">Appearance design drawing</div>
             <div class="row">
                 {volist name="$__ARCHIVES__.images|explode=',',###" id="image"}
                 <div class="col-md-4">

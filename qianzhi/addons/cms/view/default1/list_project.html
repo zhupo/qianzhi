@@ -23,10 +23,10 @@
 					</div>
 					<div class="col-md-8 col-sm-6 news-info-wrap pr-0 clearfix">
 						<div class="row">
-							<div class="col-md-8 font-bold f20 title">{$item.title}</div>
+							<div class="col-md-8 family-jost-bold f20 title">{$item.title}</div>
 							<div class="date col-md-4 text-right">
 								<img class="icon mr-1" src="__CDN__/assets/qianzhi/frontend/news/icon-date.png" alt="Date">
-								<span>{:date('Y-m-d', $item.updatetime)}</span>
+								<span class="f14">{:date('Y-m-d', $item.updatetime)}</span>
 							</div>
 							<p class="col-md-12 info-content">{:str_replace(["<p>","</p>"], "", $item.content)}</p>
 							<a href="{$item.url}"><button class="btn btn-primary view-more">view more</button></a>

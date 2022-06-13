@@ -20,9 +20,9 @@
 
             <div class="home-header-detail text-center">
                 <span class="d-block top-title f18">BEST QUALITY SERVICE</span>
-                <span class="d-block title f50 font-bold">QIANZHI ROBOT</span>
-                <span class="d-block sub-title f28">Towards the goal of building a R&D heights of special robots in
-                    china</span>
+                <span class="d-block title f50 font-bold family-jost-black">QIANZHI ROBOT</span>
+                <span class="d-block sub-title f28 ">Towards the goal of building a R&D heights of special robots in
+                    China</span>
                 <div class="but-group">
                     <a type="button" href="/ABOUTUS.html" class="btn btn-info btn-lg mr-4">
                         Learn More
@@ -61,12 +61,12 @@
                                 <img src="{$item.image}" alt="{$item.title}">
                             </div>
                             <div class="caption">
-                                <p class="font-bold f20">{$item.title}</p>
+                                <p class="family-jost-bold f18">{$item.title}</p>
 <!--                                <p class="caption-content multiple-text-ellipsis">{:str_replace(["<p>","</p>"], "", $item.content)}</p>-->
                                 <p class="caption-content multiple-text-ellipsis">{$item.description}</p>
                                 <a href="{$item.url}" class="product-learn-more">
                                     Learn More
-                                    <span class="glyphicon glyphicon-arrow-right"></span>
+                                    <span class="glyphicon glyphicon-arrow-right ml-3"></span>
                                 </a>
                             </div>
                         </div>
@@ -85,7 +85,7 @@
                     <span class="top-title">About Us</span>
                     {cms:blocklist id="block" name="aboutsTop" orderby="weigh" orderway="desc" }
                     <span class="title f28 mb-4">{$block.title}</span>
-                    <span class="sub-title">{:str_replace(["<p>","</p>"], "", $block.content)}</span>
+                    <span class="sub-title family-sourceSansPro">{:str_replace(["<p>","</p>"], "", $block.content)}</span>
                     {/cms:blocklist}
                 </div>
                 <div id="aboutUs">
@@ -96,7 +96,7 @@
                         {volist name="$block.images|explode=',',###" id="image"}
                         <div class="text-center col-md-{{setCol({$key})}} mt-4">
                             <span class="about-item-title f20 font-bold">{$block.intro[$key]['info']}</span>
-                            <p class="about-item-sub-title f14">{$block.intro[$key]['txt']}</p>
+                            <p class="about-item-sub-title f12 family-openSansItalic">{$block.intro[$key]['txt']}</p>
                         </div>
                         {/volist}
                         {/notempty}
@@ -123,8 +123,8 @@
                                     <div class="item {{setDefaultActive({$key})}}">
                                         <img src="{$image}" alt="about us">
                                         <div class="carousel-caption">
-                                            <span class="f30">{$block.intro[$key]['info']}</span>
-                                            <span>{$block.intro[$key]['txt']}</span>
+                                            <span class="f30 family-jost-black">{$block.intro[$key]['info']}</span>
+                                            <span class="f16">{$block.intro[$key]['txt']}</span>
                                         </div>
                                     </div>
                                     {/volist}
@@ -190,7 +190,7 @@
                                 <img src="{$item.image}" alt="{$item.title}">
                             </div>
                             <div class="caption">
-                                <p class="font-bold f14 mt-2 text-ellipsis">{$item.title}</p>
+                                <p class="f14 mt-2 text-ellipsis family-jost-bold">{$item.title}</p>
                                 <p class="caption-content multiple-text-ellipsis mt-2">{:str_replace(["<p>","</p>"], "", $item.content)}</p>
                                 <p class="news-date text-right f12">
                                     <span class="d-iblock">{:date('Y-m-d', $item.updatetime)}</span>

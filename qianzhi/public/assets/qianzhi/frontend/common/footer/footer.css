@@ -25,10 +25,14 @@ footer .page-footer .footer-info {
 footer .page-footer .footer-info .container > .row > div {
   padding-top: 30px;
 }
+footer .page-footer .footer-info .footer-info-item {
+  font-family: 'Open Sans';
+}
 footer .page-footer .footer-info .title {
   display: block;
   font-size: 20px;
   margin-bottom: 25px;
+  font-family: 'Jost';
 }
 footer .page-footer .footer-info p {
   margin-bottom: 15px;

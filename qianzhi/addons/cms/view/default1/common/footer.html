@@ -17,7 +17,7 @@
     <div class="footer-info">
       <div class="container">
         <div class="row d-flex footer-info-wrap" style="flex-wrap: wrap;">
-          <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="col-md-3 col-sm-6 col-xs-12 footer-info-item">
             <span class="title">Contact Information</span>
             {cms:blocklist id="block" name="contact-qianzhi" orderby="id" orderway="asc"}
             {if $block.id != 54}
@@ -29,13 +29,13 @@
             {/cms:blocklist}
 
           </div>
-          <div class="col-md-2 col-sm-6 col-xs-12">
+          <div class="col-md-2 col-sm-6 col-xs-12 footer-info-item">
             <span class="title">Product</span>
             {cms:channellist id="channel" type="son" typeid="44" condition="1=cpindex" orderby="weigh" orderway="asc"}
               <p>{$channel.name}</p>
             {/cms:channellist}
           </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="col-md-4 col-sm-6 col-xs-12 footer-info-item">
             <span class="title">Recent post</span>
             {cms:arclist id="item" flag="index" model="10"  row="10" orderby="updatetime" addon="content"}
               <p>
@@ -53,7 +53,7 @@
               </p>
             {/cms:arclist}
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="col-md-3 col-sm-6 col-xs-12 footer-info-item">
             <span class="title">Contact Form</span>
             <form class="contact-from" onsubmit="return $('.formPoint').show();" method="POST" action="/d/customer/post.html">
               <input type="hidden" name="__diyname__" value="customer">
@@ -74,7 +74,7 @@
                 <label class="sr-only" for="message"></label>
                 <textarea class="form-control" id="message" placeholder="Message" name="row[content]"></textarea>
               </div>
-              <button type="submit" class="btn btn-info full-width">Submit</button>
+              <button type="submit" class="btn btn-info full-width">SUBMIT</button>
             </form>
           </div>
         </div>
